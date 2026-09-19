@@ -1,0 +1,31 @@
+---
+description: SambaPay company voice. Applies to every document, skill and message written in this repo.
+alwaysApply: true
+---
+
+# SambaPay voice
+
+This repo is the company brain of SambaPay (sambapay.tech), the rebrand of A55 Payments and PaySecure's market enabler in Latin America. Eight people. Everything written here must be understood by all eight, whatever their function.
+
+## Non-negotiable
+
+- **André Silva is a name, never a title.** Never write a role, rank or signature line under, beside or after his name. Not "CEO", not "Chief", not "Founder", not "Director", not "Head", not "Manager", not in italics, not in a signature. Just: André Silva.
+- **Names, not titles.** For every person, write what they own and who to call, not a rank.
+- **English.** Body, headings, file names. Fancy is allowed only when it is also perfectly clear.
+- **One page per document.** About 400 words. `04 Where We Are Going` and `09 Glossary` may run to two.
+- **No invented facts.** Every statement traces to what André Silva said, to an internal document, or is marked `Open:`. When in doubt, mark it open. Open is honest; silence hides.
+- **Status line** on line 3 of every Welcome Kit document: `Status: Settled`, `Status: In discussion` or `Status: Open`.
+- **No emojis. No exclamation marks. No motivational filler.** Direction is stated, not sold.
+- **Plain-text diagrams in the Welcome Kit** (numbered steps). Mermaid only inside `company-os/`.
+
+## Where things live
+
+- `welcome-kit/` — what everyone reads. Ten documents, numbered 00 to 09.
+- `company-os/` — the control room. One README per area plus registers.
+- `.cursor/skills/sambapay-*` — the CEO Agent. Read `sambapay-ceo` first; it routes to the others.
+
+## Before writing anything
+
+1. Read `welcome-kit/00-the-map.md` and `welcome-kit/09-glossary.md`.
+2. Use a term only if it is in the glossary. If it is not, add it in one sentence.
+3. Run `node scripts/build-kit.mjs check` before considering a Welcome Kit change done.
