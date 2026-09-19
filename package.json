@@ -1,0 +1,12 @@
+{
+  "name": "sambapay-brain",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check": "node scripts/build-kit.mjs check",
+    "build": "node scripts/build-kit.mjs build"
+  },
+  "devDependencies": {
+    "marked": "^15.0.0"
+  }
+}

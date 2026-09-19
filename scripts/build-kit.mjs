@@ -1,0 +1,189 @@
+#!/usr/bin/env node
+// SambaPay Welcome Kit: check and build.
+// Usage: node scripts/build-kit.mjs check | build
+import { readdirSync, readFileSync, writeFileSync, mkdirSync, existsSync } from "node:fs";
+import { join, resolve, basename } from "node:path";
+import { fileURLToPath } from "node:url";
+import { execFileSync } from "node:child_process";
+
+const ROOT = resolve(fileURLToPath(new URL("..", import.meta.url)));
+const KIT = join(ROOT, "welcome-kit");
+const DIST = join(ROOT, "dist");
+const CHROME = process.env.CHROME || "/usr/bin/google-chrome";
+
+const TITLE_WORDS_KIT = /\b(CEO|Chief|Founder|Director|Head|Manager|Owner|President)\b/;
+const TITLE_WORDS_OS = /\b(CEO|Chief|Founder|Director|Head|Manager|President)\b/;
+const NAME = /André Silva/;
+const WORD_LIMIT_DEFAULT = 600;
+const WORD_LIMIT_LONG = 1600; // 04 and 09
+const PT_LEAK = [" não ", " você ", " também ", " então ", " porque ", " para "];
+// Board view that must never appear in the Welcome Kit.
+const BOARD_ONLY = [/\bSPA\b/, /Side Letter/i, /Exhibit E/, /\bUnits\b/, /Group Holdings/, /180,680/, /1,905,924/, /1\.70M/, /680[–-]710K/];
+
+// [glossary term, regex that finds the term in the documents]
+const JARGON = [
+  ["2D", /\b2D\b/], ["3DS", /\b3DS\b/], ["2-step verification", /\b2-step verification\b/i],
+  ["acquirer", /\bacquirers?\b/i], ["AML", /\bAML\b/], ["anticipation", /\banticipation\b/i],
+  ["approval rate", /\bapproval rate\b/i], ["Asaas", /\bAsaas\b/], ["BIN", /\bBINs?\b/], ["boleto", /\bboletos?\b/i],
+  ["Break Even", /\bBreak Even\b/i], ["CAID", /\bCAIDs?\b/], ["Central Bank of Brazil", /\bCentral Bank of Brazil\b/],
+  ["chargeback", /\bchargebacks?\b/i], ["Chargeblast", /\bChargeblast\b/], ["checkout", /\bcheckout\b/i],
+  ["Cielo", /\bCielo\b/], ["Company OS", /\bCompany OS\b/], ["corridor", /\bcorridors?\b/i], ["cross-border", /\bcross-border\b/i],
+  ["cut-off", /\bcut-off\b/i], ["D+n", /\bD\+n\b/], ["DD2", /\bDD2\b/], ["decision log", /\bdecision log\b/i],
+  ["Double Diamond", /\bDouble Diamond\b/], ["DPO", /\bDPO\b|dpo@/], ["EFI", /\bEFI\b/], ["factoring", /\bfactoring\b/i],
+  ["Finnera", /\bFinnera\b/], ["FX", /\bFX\b/], ["G2", /\bG2\b/],
+  ["Global Pass", /\bGlobal Pass\b/], ["ICC++", /ICC\+\+/], ["interchange", /\binterchange\b/i],
+  ["Jumio", /\bJumio\b/], ["Key Vault", /\bKey Vault\b/], ["KYB", /\bKYB\b/], ["KYC", /\bKYC\b/],
+  ["LGPD", /\bLGPD\b/], ["local commercial policy", /\blocal commercial policy\b/i],
+  ["local entity", /\blocal entit(y|ies)\b/i], ["market enabler", /\bmarket enabler\b/i],
+  ["MCC", /\bMCC\b|merchant category code/i], ["MDR", /\bMDR\b/], ["merchant", /\bmerchants?\b/i],
+  ["Merchant of Record", /\bMerchant of Record\b/], ["MID", /\bMIDs?\b/], ["on-ramp", /\bon-ramp\b/i],
+  ["OTC", /\bOTC\b/], ["payment facilitator", /\bpayment facilitator\b/i],
+  ["payment institution", /\bpayment[- ]institution\b/i], ["PaySecure", /\bPaySecure\b/],
+  ["paytech", /\bpaytech\b/i], ["PCI DSS", /\bPCI DSS\b|\bPCI\b/], ["PEP", /\bPEP\b/], ["PIX", /\bPIX\b/],
+  ["rail", /\brails?\b/i], ["reconciliation", /\breconciliation\b/i], ["remittance", /\bremittances?\b/i],
+  ["rolling reserve", /\brolling reserve\b/i], ["sanctions", /\bsanction(s|ed)\b/i], ["SAQ-D", /\bSAQ-D\b/],
+  ["scheme", /\bschemes?\b/i], ["settlement", /\bsettlements?\b/i], ["SimilarWeb", /\bSimilarWeb\b/],
+  ["storefront", /\bstorefronts?\b/i], ["sub-acquirer", /\bsub-acquir/i], ["Sridhar", /\bSridhar\b/],
+  ["take rate", /\btake rate\b/i], ["The Map", /\bThe Map\b/], ["Transfero", /\bTransfero\b/],
+  ["tokenisation", /\btokenis(ed|ation)\b/i], ["tokenized-PIX rail", /\btokenized-PIX rail\b/i],
+  ["USDC", /\bUSDC\b/], ["Website Factory", /\bWebsite Factory\b/], ["Welcome Kit", /\bWelcome Kit\b/],
+  ["PTAX", /\bPTAX\b/], ["wallet", /\bwallets?\b/i], ["horizontal scaling", /\bhorizontal(ly)? scal/i],
+  ["payment institution", /\bpayment[- ]institution\b/i],
+];
+
+const CSS = `
+@page { size: A4; margin: 20mm 22mm; }
+body { font-family: Inter, "Segoe UI", Helvetica, Arial, sans-serif; font-size: 11pt; line-height: 1.45; color: #111; max-width: 720px; margin: 0 auto; }
+h1 { font-size: 20pt; margin: 0 0 4pt; letter-spacing: -0.2px; }
+h2 { font-size: 13pt; margin: 18pt 0 6pt; }
+p, li { margin: 0 0 6pt; }
+ul, ol { padding-left: 20px; }
+code { font-family: "JetBrains Mono", Menlo, Consolas, monospace; font-size: 9.5pt; background: #f3f3f3; padding: 0 3px; }
+p.status { color: #666; font-size: 9.5pt; margin-bottom: 14pt; }
+.page-break { page-break-after: always; }
+`;
+
+function kitFiles() {
+  return readdirSync(KIT).filter((f) => /^\d\d-.*\.md$/.test(f)).sort();
+}
+
+function normalizeTerm(t) {
+  return t.toLowerCase().replace(/-/g, " ").trim();
+}
+
+function words(text) {
+  return text.replace(/[#*_`>|]/g, " ").split(/\s+/).filter(Boolean).length;
+}
+
+function check() {
+  const failures = [];
+  const ok = (msg) => console.log(`ok    ${msg}`);
+  const fail = (msg) => { failures.push(msg); console.log(`FAIL  ${msg}`); };
+
+  const files = kitFiles();
+  if (files.length !== 10) fail(`expected 10 kit files, found ${files.length}`); else ok("10 kit files");
+
+  const glossaryText = existsSync(join(KIT, "09-glossary.md")) ? readFileSync(join(KIT, "09-glossary.md"), "utf8") : "";
+  const glossaryTerms = new Set(
+    [...glossaryText.matchAll(/^- \*\*(.+?)\*\*/gm)].map((m) => normalizeTerm(m[1]))
+  );
+  if (glossaryTerms.size < 60) fail(`glossary has ${glossaryTerms.size} entries, expected at least 60`); else ok(`glossary entries: ${glossaryTerms.size}`);
+
+  const bodyTexts = [];
+  for (const f of files) {
+    const before = failures.length;
+    const text = readFileSync(join(KIT, f), "utf8");
+    const lines = text.split("\n");
+    const num = f.slice(0, 2);
+    if (!/^# \d\d · .+$/.test(lines[0])) fail(`${f}: line 1 must be "# NN · Title"`);
+    if (lines[1] !== "") fail(`${f}: line 2 must be blank`);
+    if (!/^Status: (Settled|In discussion|Open)$/.test(lines[2])) fail(`${f}: line 3 must be a Status line`);
+    lines.forEach((line, i) => {
+      if (NAME.test(line) && TITLE_WORDS_KIT.test(line)) fail(`${f}:${i + 1}: title word next to André Silva`);
+    });
+    const limit = num === "04" || num === "09" ? WORD_LIMIT_LONG : WORD_LIMIT_DEFAULT;
+    const w = words(text);
+    if (w > limit) fail(`${f}: ${w} words, limit ${limit}`);
+    if (/\p{Extended_Pictographic}/u.test(text)) fail(`${f}: emoji found`);
+    if (text.includes("!")) fail(`${f}: exclamation mark found`);
+    const lower = ` ${text.toLowerCase().replace(/\n/g, " ")} `;
+    for (const leak of PT_LEAK) if (lower.includes(leak)) fail(`${f}: Portuguese word "${leak.trim()}" found`);
+    for (const re of BOARD_ONLY) if (re.test(text)) fail(`${f}: board-view content (${re}) must not appear in the Welcome Kit`);
+    if (num >= "01" && num <= "08") bodyTexts.push(text);
+    if (failures.length === before) ok(`${f}: structure, words ${w}/${limit}`);
+  }
+
+  const body = bodyTexts.join("\n");
+  const missing = [];
+  for (const [term, re] of JARGON) {
+    if (re.test(body) && !glossaryTerms.has(normalizeTerm(term))) missing.push(term);
+  }
+  if (missing.length) fail(`glossary missing: ${missing.join(", ")}`); else ok("glossary covers every jargon term used in 01–08");
+
+  // Company OS and skills: name never next to a title word. The rule file is excluded on purpose.
+  for (const dir of ["company-os", ".cursor/skills"]) {
+    const abs = join(ROOT, dir);
+    if (!existsSync(abs)) continue;
+    for (const file of walk(abs)) {
+      const text = readFileSync(file, "utf8");
+      text.split("\n").forEach((line, i) => {
+        if (NAME.test(line) && TITLE_WORDS_OS.test(line)) fail(`${file.replace(ROOT + "/", "")}:${i + 1}: title word next to André Silva`);
+      });
+    }
+  }
+
+  if (failures.length) {
+    console.log(`\n${failures.length} failure(s)`);
+    process.exit(1);
+  }
+  console.log("\nall checks passed");
+}
+
+function walk(dir) {
+  const out = [];
+  for (const entry of readdirSync(dir, { withFileTypes: true })) {
+    const p = join(dir, entry.name);
+    if (entry.isDirectory()) out.push(...walk(p));
+    else if (/\.(md|mdc)$/.test(entry.name)) out.push(p);
+  }
+  return out;
+}
+
+async function build() {
+  check();
+  const { marked } = await import("marked");
+  mkdirSync(DIST, { recursive: true });
+  const files = kitFiles();
+  const bodies = [];
+  for (const f of files) {
+    const md = readFileSync(join(KIT, f), "utf8").replace(/^Status: (.+)$/m, '<p class="status">Status: $1</p>');
+    const html = marked.parse(md);
+    bodies.push(html);
+    const page = wrap(html, f.replace(/\.md$/, ""));
+    const htmlPath = join(DIST, f.replace(/\.md$/, ".html"));
+    writeFileSync(htmlPath, page);
+    toPdf(htmlPath, join(DIST, f.replace(/\.md$/, ".pdf")));
+    console.log(`pdf   ${basename(htmlPath, ".html")}.pdf`);
+  }
+  const bundle = wrap(bodies.map((b) => `<section class="page-break">${b}</section>`).join("\n"), "SambaPay Welcome Kit");
+  const bundlePath = join(DIST, "SambaPay-Welcome-Kit.html");
+  writeFileSync(bundlePath, bundle);
+  toPdf(bundlePath, join(DIST, "SambaPay-Welcome-Kit.pdf"));
+  console.log("pdf   SambaPay-Welcome-Kit.pdf");
+}
+
+function wrap(inner, title) {
+  return `<!doctype html><html lang="en"><head><meta charset="utf-8"><title>${title}</title><style>${CSS}</style></head><body>${inner}</body></html>`;
+}
+
+function toPdf(htmlPath, pdfPath) {
+  execFileSync(CHROME, [
+    "--headless=new", "--disable-gpu", "--no-sandbox", "--no-pdf-header-footer",
+    `--print-to-pdf=${pdfPath}`, `file://${htmlPath}`,
+  ], { stdio: "ignore" });
+}
+
+const cmd = process.argv[2];
+if (cmd === "check") check();
+else if (cmd === "build") await build();
+else { console.error("usage: node scripts/build-kit.mjs check | build"); process.exit(2); }

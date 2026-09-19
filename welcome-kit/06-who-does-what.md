@@ -2,7 +2,7 @@
 
 Status: In discussion
 
-Eight people. Every one of us has a title and owns named processes, so a colleague in London, an acquirer or a merchant knows exactly who to reach. One exception: André Silva uses his name only. Titles, reporting lines and ownership below were confirmed on 19 September 2026. The full process map, thirty-three processes with owner and backup, is in the Company OS, people.
+Eight people. Every one of us has a title and owns named processes, so a colleague in London, an acquirer or a merchant knows exactly who to reach. One exception: André Silva uses his name only. Titles, reporting lines and ownership below were confirmed on 19 September 2026. The process map, thirty-three processes with owner and backup, is in the Company OS, people.
 
 ## The eight
 
@@ -47,7 +47,7 @@ Leandro, Thiago, Sheila and Abner report to André Silva. Clayton, Taina and Raf
 
 ## Processes with no owner yet
 
-Factoring (all volume anticipated at a competitive price; nobody sells it). Website Factory commercial side. Brazilian / 2D acquirer restart, until its path is decided. Say so if you want one.
+Factoring (all volume anticipated at a competitive price; nobody sells it). Website Factory commercial side. Brazilian / 2D acquirer restart, until its path is decided.
 
 ## Outside the eight
 
