@@ -13,6 +13,7 @@ This repo is the company brain of SambaPay (sambapay.tech), the rebrand of A55 P
 - **Everyone else has a clear title and named processes.** Write the title exactly as in `company-os/people/README.md` the first time a person appears in a document, and the processes as in `company-os/people/process-map.md`. A global company must know who runs what.
 - **Never put a title word on the same line as André Silva's name.** Reporting lines go on their own line.
 - **English.** Body, headings, file names. Fancy is allowed only when it is also perfectly clear.
+- **Nothing generic. The swap test.** Put a competitor's name where SambaPay is. If the sentence is still true, it is generic: cut it or make it ours. Every page must say what only we do — market enablement in Latin America, which is how we serve PaySecure.
 - **One page per document.** About 400 words. `04 Where We Are Going` and `09 Glossary` may run to two.
 - **No invented facts.** Every statement traces to what André Silva said, to an internal document, or is marked `Open:`. When in doubt, mark it open. Open is honest; silence hides.
 - **Board view stays in the Company OS.** The ownership transaction (SPA, Side Letter, Exhibit E, Units, the buyer entity), payroll figures and PaySecure legacy balances never appear in `welcome-kit/`. The kit says "the rebrand of A55 Payments and part of PaySecure" and stops there.
