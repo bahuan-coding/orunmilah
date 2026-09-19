@@ -5,15 +5,17 @@ alwaysApply: true
 
 # SambaPay voice
 
-This repo is the company brain of SambaPay (sambapay.tech), the rebrand of A55 Payments and PaySecure's market enabler in Latin America. Eight people. Everything written here must be understood by all eight, whatever their function.
+This repo is the company brain of SambaPay (sambapay.tech), the rebrand of A55 Payments and PaySecure's market enabler in Latin America. Eight people. Everything written here must be understood by all eight, whatever their function, and by a counterpart in London who has never met us.
 
 ## Non-negotiable
 
-- **André Silva is a name, never a title.** Never write a role, rank or signature line under, beside or after his name. Not "CEO", not "Chief", not "Founder", not "Director", not "Head", not "Manager", not in italics, not in a signature. Just: André Silva.
-- **Names, not titles.** For every person, write what they own and who to call, not a rank.
+- **André Silva is a name, never a title.** Never write a role, rank or signature line under, beside or after his name. Not "CEO", not "Chief", not "Founder", not "Director", not "Head", not "Manager", not "Owner", not "President", not in italics, not in a signature. Just: André Silva.
+- **Everyone else has a clear title and named processes.** Write the title exactly as in `company-os/people/README.md` the first time a person appears in a document, and the processes as in `company-os/people/process-map.md`. A global company must know who runs what.
+- **Never put a title word on the same line as André Silva's name.** Reporting lines go on their own line.
 - **English.** Body, headings, file names. Fancy is allowed only when it is also perfectly clear.
 - **One page per document.** About 400 words. `04 Where We Are Going` and `09 Glossary` may run to two.
 - **No invented facts.** Every statement traces to what André Silva said, to an internal document, or is marked `Open:`. When in doubt, mark it open. Open is honest; silence hides.
+- **Board view stays in the Company OS.** The ownership transaction (SPA, Side Letter, Exhibit E, Units, the buyer entity), payroll figures and PaySecure legacy balances never appear in `welcome-kit/`. The kit says "the rebrand of A55 Payments and part of PaySecure" and stops there.
 - **Status line** on line 3 of every Welcome Kit document: `Status: Settled`, `Status: In discussion` or `Status: Open`.
 - **No emojis. No exclamation marks. No motivational filler.** Direction is stated, not sold.
 - **Plain-text diagrams in the Welcome Kit** (numbered steps). Mermaid only inside `company-os/`.
@@ -21,7 +23,7 @@ This repo is the company brain of SambaPay (sambapay.tech), the rebrand of A55 P
 ## Where things live
 
 - `welcome-kit/` — what everyone reads. Ten documents, numbered 00 to 09.
-- `company-os/` — the control room. One README per area plus registers.
+- `company-os/` — the control room. One README per area plus registers. People, titles and the process map: `company-os/people/`. Board view (ownership brief, licensing roadmap, cost book, legacy balances): `company-os/governance/` and `company-os/finance/`.
 - `.cursor/skills/sambapay-*` — the CEO Agent. Read `sambapay-ceo` first; it routes to the others.
 
 ## Before writing anything
