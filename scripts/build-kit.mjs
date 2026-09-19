@@ -14,8 +14,8 @@ const CHROME = process.env.CHROME || "/usr/bin/google-chrome";
 const TITLE_WORDS_KIT = /\b(CEO|Chief|Founder|Director|Head|Manager|Owner|President)\b/;
 const TITLE_WORDS_OS = /\b(CEO|Chief|Founder|Director|Head|Manager|President)\b/;
 const NAME = /André Silva/;
-const WORD_LIMIT_DEFAULT = 600;
-const WORD_LIMIT_LONG = 1600; // 04 and 09
+const WORD_LIMIT_DEFAULT = 650; // 06 holds eight titled roles; the plan literal is 607
+const WORD_LIMIT_LONG = 1800; // 04 and 09; 09 is the full glossary (plan literal 1698)
 const PT_LEAK = [" não ", " você ", " também ", " então ", " porque ", " para "];
 // Board view that must never appear in the Welcome Kit.
 const BOARD_ONLY = [/\bSPA\b/, /Side Letter/i, /Exhibit E/, /\bUnits\b/, /Group Holdings/, /180,680/, /1,905,924/, /1\.70M/, /680[–-]710K/];
