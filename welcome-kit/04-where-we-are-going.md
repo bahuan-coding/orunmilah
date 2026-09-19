@@ -1,0 +1,56 @@
+# 04 · Where We Are Going
+
+Status: In discussion
+
+These are the objectives as discussed so far, September 2026. Numbers follow the original list; 10 was not assigned. Every objective gets an owner and a date in the Company OS before it is called live. What is marked Open is being decided, not hidden.
+
+## Rails
+
+**1. DD2 live by 1 October.** DD2 is our secondary entity template in Brazil, built on the requirements mapped by Double Diamond. Double Diamond finishes the template for the checklist: the full document package needed to open acquirer accounts. Validate everything required to open our own accounts with **Cielo, Asaas and EFI**. Cielo is also the live partner Merchant of Record today. Factoring covers all volumes with 100% anticipation, even where Brazilian credit would take D+30; nothing more; the price must be competitive; nobody sells this to us as a vendor. Re-establish the remittance path with two on-ramp desks, MIPPO/GFS/OrbiFi and Transfero, that turn our reais into USDC in our own wallet for us to send to PaySecure, at a cost no higher than we had before. The three acquirers run side by side: that is how volume scales horizontally. Without this there is no volume. 1 October is the account-open target, not volume go-live. The indicative all-in to stand up one entity and open the three acquirer accounts is about R$ 5,000: lawyer; digitising the company, including 2-step verification on mobile phones for bank and acquirer apps where required; CNPJ; access to the three counterparties. It is a single indicative price. No entity has been opened and no contract is signed.
+
+**5. 3DS and 2D traffic from the US and Europe, with international BIN acceptance.** We focus market enablement on Brazil, Mexico and Colombia. The minimum acceptance criterion for any rail: it processes both 3DS and non-3DS (2D) card traffic originated in Europe and the United States, and it accepts international BINs.
+
+**6. LATAM expansion template. Priority 2.** With legal counsel in each country, establish the minimum we need to operate. Then complete a live registration with each entity, with one 2D supplier in production.
+
+## Money
+
+**2. Breakeven by 31 October 2026.** Do whatever it takes, with a Plan B ready if the primary path fails, to get out of the red. Volume today is zero. Cruise volume is USD 100,000 a day. Take rate to be defined by Sridhar (Sri Amit). Operational cash reserve is zero. The rolling reserve we take going forward is 15%. Cielo's MDR at that cruise volume is the 19 September table.
+
+**4. LATAM business definition for European merchants: cheapest pricing.** Define our LATAM offer for European merchants around the cheapest pricing. There is a live opportunity with Finnera of about USD 25 million a month in volume. Renato Paulino will follow up.
+
+## Merchants
+
+**3. Website Factory outruns SimilarWeb.** Build storefront templates. We create buying storefronts for cross-border merchants and online-service players, who use us like a Shopify with our integrated acquirers as the checkout. We move the merchant from offline to online: we run the digital channel and the site; they run fulfilment. Post office for now; we intend to build their shipping plan later. Success: every storefront is engineered so SimilarWeb and online page validators read it as a genuine, high-quality page ("top A") — traffic profile, authenticity, organic competitiveness built into the creation process.
+
+**7. Every merchant on DD2 has its checklist done.** Cross-check each merchant's documents against the requirements of all three acquirers connected to the template. Nothing missing before go-live.
+
+**8. Chargeblast: add the CAID.** Configure the pre-dispute alerts solution. No merchant goes live before its CAID is registered with Chargeblast.
+
+## Compliance
+
+**11. Global Pass.** KYB software. Screen every merchant before sending it to any acquirer on the template, so we never breach a PEP or sanctions rule. Diligent from day zero with every new acquirer.
+
+**12. Jumio.** Same purpose: identity verification.
+
+**13. G2.** Same purpose: merchant risk screening.
+
+## Tools
+
+**9. Five Android phones.** Operational phones for hiring. They are also the handsets for 2-step verification on bank and acquirer apps when the DD2 accounts require it.
+
+## Licence
+
+**14. Sub-acquiring in our own name, then a payment institution.** We are cross-border players. For now we do everything required to operate as a sub-acquirer, serving businesses at the lowest possible fees. Own merchant IDs at Cielo, Asaas and EFI, registered with Visa and Mastercard through each acquirer. 1 October 2026 is the account-open target; first live merchant follows the slowest of those three. The payment-institution path stays the structural moat; filing starts the day sub-acquiring is live. The Central Bank's grant date is not ours to promise. A committee of agents, not people, designs the path. André Silva decides.
+
+## How we get there: process concerns
+
+- Reconciliation is the first job of every day. Hansraj (PaySecure) confirms it. SLA: Open.
+- Once remittance is defined and the contract signed, we design the reconciliation-to-remittance process.
+- On-ramp, from the local bank to PaySecure. Two paths: Cielo's tokenized-PIX rail, or an OTC desk that turns our reais into USDC in our own wallet, which we send on to PaySecure. Objective 1 re-establishes two desks: MIPPO/GFS/OrbiFi and Transfero.
+- Operator windows: every operator's cut-off, the daily calculation, and from where and at what time funds are sent onward. Open.
+- Factoring: cover all volumes with 100% anticipation, even where Brazilian credit would take D+30; nothing more; the price must be competitive. Nobody sells this to us as a vendor.
+- Entity structuring for DD2: options to discuss with Double Diamond, the firm mapping what it takes to open an entity in Brazil. Open: which options, by when.
+
+## How a merchant is created
+
+1 Document validation (KYB screening and the DD2 checklist). 2 Site creation (Website Factory). 3 MID creation (and the CAID). 4 Go live (CAID registered at Chargeblast; the merchant joins the daily reconciliation).

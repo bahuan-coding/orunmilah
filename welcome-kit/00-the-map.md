@@ -16,14 +16,14 @@ SambaPay (sambapay.tech) is the rebrand of A55 Payments and part of PaySecure (p
 - 03 How We Win — the thesis. Settled.
 - 04 Where We Are Going — the objectives as discussed so far. In discussion.
 - 05 How We Work — principles, rituals, decisions, London. In discussion.
-- 06 Who Does What — eight names and what each one owns. In discussion.
+- 06 Who Does What — eight people, their titles, and the processes each one owns. In discussion.
 - 07 How the Business Works — how a payment flows and where the money is made. In discussion.
 - 08 Rules We Live By — regulation in plain language. Settled.
 - 09 Glossary — every term in one sentence. Settled.
 
 ## The Company OS, the control room (`company-os/`)
 
-- governance — decision rights, decision log, London reporting. In discussion.
+- governance — decision rights, decision log, London reporting, the licensing roadmap (sub-acquiring, then payment institution). In discussion.
 - finance — business model, unit economics, breakeven, cash. In discussion.
 - risk-compliance — regulatory map, obligations, KYB stack, disputes. In discussion.
 - product-tech — payment engine, acquirer integrations, Website Factory. In discussion.
@@ -40,7 +40,5 @@ SambaPay (sambapay.tech) is the rebrand of A55 Payments and part of PaySecure (p
 
 ## Open right now
 
-- What DD2, Double Diamond and Generation refer to.
-- The month of the breakeven objective, the currency of the Finnera volume, the SimilarWeb benchmark.
 - Operator windows, the reconciliation SLA, the remittance contract.
-- Owners for the 2D acquirer restart, anticipation and factoring, Website Factory, and commercial.
+- Owners for the 2D acquirer restart, the Factoring process (internal), and the Website Factory commercial side.
