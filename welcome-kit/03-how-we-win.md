@@ -4,24 +4,24 @@ Status: Settled
 
 ## The thesis
 
-Most solutions sell connectivity. We sell the relationship. A merchant connects to one company, SambaPay, and gets local acquiring in every market where we have a regulated, PCI-compliant local entity, with the local commercial policy already negotiated and every interface with the local entities handled.
+We offer a local connection as a presence for businesses that do not have access to cheap markets. We want a cheap market. Our strategy is to hold negotiation points in geographies that are very cost-efficient. Latin America is that market. A client connects to one company, SambaPay, for market enablement and orchestration; that client's merchants already sit with the client. Local merchants in that geography come through the Website Factory. Two niches. European and American cardholders, identified by issuing BIN, land on that local commercial policy, on PaySecure's white label, on an engine that stays up.
 
-## Five reasons a merchant chooses us
+## Five reasons a client chooses us
 
-1. **Local price.** We are connected locally, so our clients pay local rates. Brazil is the cheapest product we have; local entity hubs keep it that way.
-2. **Approval.** Every decision from transaction capture onwards aims at the best possible approval under the best possible commercial condition. Approval times margin is the number that matters.
-3. **Risk limited by design, volume scaled by design.** Different payment methods, instant payments, cards and local instruments spread the risk instead of concentrating it. Several acquirers per market, integrated side by side, let volume grow horizontally: DD2, our secondary entity template in Brazil, starts with three.
-4. **Speed of response.** Our obsession. When a client needs something from a local entity, we answer faster than anyone.
-5. **Delegation without surprises.** The client's executive team focuses on its core priorities and hands a dynamic, heavily regulated market to a partner that knows it. No surprise for lack of expertise.
+1. **Local commercial policy, on thin margins.** Once we have local infrastructure, the commercial policy applied to a thin-margin client is what makes the difference.
+2. **Latin America, on purpose.** We put the company here because these geographies are very cost-efficient. Negotiation points in a cheap market are the strategy.
+3. **European and American cardholders, by issuing BIN.** Our priority is always to give those cardholders access to local commercial policy. Europe and the United States hold the largest cardholder bases in the world, identified by those issuing BINs. Local cost in Latin America; that volume from those BINs.
+4. **The barrier.** Compliance is hard to hold. So is the full structure a regulated institution needs. We do that work. We give our clients access to a local commercial policy. That is a severe barrier to entry. The bureaucracy of these markets is the difficulty we took on. It is our expertise.
+5. **Intelligence on strategic pricing.** We are focused on this. Our expertise is to develop intelligence on the processes of the players who hold the most strategic pricings in the world.
 
 ## Who wins the most
 
-Clients who need rate efficiency and clients who need approval efficiency. High-volume merchants, where a change in rate makes the company's numbers much larger. Merchants with an expansion plan facing a complex strategic decision. For thin-margin businesses, our service is what makes a new market viable at all.
+Clients who already have merchants and run on thin margins, where a local commercial policy changes the result. Clients whose cardholders hold European and American issuing BINs and who need that volume to land on Latin American cost. Local merchants who want to digitise in a geography where we have structure, and who need capture channels and a commercial policy that maximises sales margin. Clients whose business has more than one nationality: one system, with local entities and teams already in those markets.
 
 ## Where we stand today and where we go
 
-Today **Cielo** acts as Merchant of Record in production: it carries the merchant risk and the rolling reserve, is PCI SAQ-D assessed, and is connected to a growing set of local acquirers. We supply the rails and the relationships; PaySecure supplies the flow. Next: everything required to operate as a sub-acquirer in our own name, at the lowest possible fees for cross-border businesses. Own accounts at Cielo, Asaas and EFI are the first gate (target 1 October 2026; that date is account-open, not volume go-live). The payment-institution licence stays the structural moat; filing starts the day sub-acquiring is live. The grant date is the Central Bank's, not ours to promise.
+Today **Cielo** acts as Merchant of Record in production: it carries the merchant risk and the rolling reserve, and is connected to a growing set of local acquirers. We operate as payment facilitator on that rail. We take production API keys from the acquirers and deliver them to the core team. The integration is deployed on PaySecure's white label for our clients. We configure and reconcile on that white label, everything the PaySecure system already does. The PCI we operate under is PaySecure's, on that white label. We inherit PaySecure's commercial policies in other markets. We supply the local rails and the relationships; PaySecure supplies the flow. We will be a sub-acquirer: own merchant IDs at Cielo, Asaas and EFI, at the lowest possible fees for cross-border businesses. Own accounts at those three open on 1 October 2026, and October volume starts that day. That is day one of the month: a partial of October. 31 October is breakeven. The payment-institution licence stays the structural moat; filing starts the day sub-acquiring is live. The grant date is the Central Bank's, not ours to promise.
 
 ## What we never forget
 
-Margin mechanics in most markets have not changed in decades. Access has. We keep looking for, and structuring ourselves as, an entity in every market where thin-margin clients need us. Nothing else.
+Margin mechanics in most markets have not changed in decades. Access has. We stay in Latin America because these geographies are very cost-efficient. We do not take our clients' merchants. Local merchants on the Website Factory are another niche. Nothing else.

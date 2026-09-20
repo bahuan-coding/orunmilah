@@ -7,16 +7,16 @@ Registers: `model.md`.
 
 ## Business model
 
-- Revenue = volume × take rate. Structure: ICC++. Take rate defined by Sridhar. Until he names the number, working structure is 1% ICC++. Acquirer, scheme and FX costs pass through at cost with zero markup.
-- Rolling reserve we take going forward: 15%. Legacy books: 10% of gross (BRL) or 9.58% of net (CLP). Open: confirm 15% with PaySecure as the single going-forward basis.
+- Revenue = volume × take rate. Structure: ICC++. Hansraj proposes the take rate so we cover the company's costs and hold a reserve. Until he proposes the number, working structure is 1% ICC++. Acquirer, scheme and FX costs pass through at cost with zero markup.
+- Rolling reserve going forward: omitted from the Welcome Kit until named. Legacy books (history, not the going-forward rule): 10% of gross (BRL) or 9.58% of net (CLP).
 - Operational cash reserve: zero.
-- Brazil is the cheapest product; local entity hubs keep the price.
-- Volume premises (19 Sep 2026): today **zero**; cruise **USD 100,000 per day** (confirmed). Sources: PaySecure flow; Finnera (about USD 25 million a month; Renato Paulino follows up); Website Factory merchants.
+- Latin America is a cheap market: geographies that are very cost-efficient. That is why the company is here. Priority: European and American cardholders, identified by those issuing BINs, into a local commercial policy.
+- Volume premises (19 Sep 2026): the live book in September is **zero**; from **1 October** volume is on (day one of the month); **31 October** is breakeven; cruise **USD 100,000 per day** (confirmed). History of the same engine: more than R$ 3 billion already processed on this premise; do not conflate that history with the September live book. Sources for the live book: PaySecure flow; Finnera (about USD 25 million a month; Renato Paulino follows up); local merchants on the Website Factory.
 - DD2 entity stand-up: about R$ 5,000 indicative all-in for one entity (lawyer; digitising including 2-step on mobile for bank and acquirer apps; CNPJ; three acquirer accounts). No entity opened, no contract signed. One-off in `model.md`, marked indicative.
 
 ## Objective 2: breakeven by 31 Oct 2026
 
-Plan A: DD2 accounts at Cielo, Asaas, EFI by 1 Oct, PaySecure flow on the rails, Finnera offer sent, cruise volume ramp. Plan B: cost-book actions, PaySecure legacy releases (below), Finnera volume. Owner: André Silva. Reviewed every Friday in the pulse.
+Plan A: DD2 accounts at Cielo, Asaas, EFI open on 1 Oct and October volume starts that day; PaySecure flow on the rails; Finnera offer sent; cruise volume across the month; breakeven 31 Oct. Plan B: cost-book actions, PaySecure legacy releases (below), Finnera volume. Owner: André Silva. Reviewed in the weekly pulse.
 
 ## Cost book (board view; never in the Welcome Kit)
 
@@ -38,4 +38,4 @@ Open: what has been remitted or released since the email.
 
 ## Open
 
-Q37 Website Factory commercial; Q38 15% with PaySecure; Q39 filing entity; Sridhar's email; Renato Paulino's email; Double Diamond fee and date; P29 Factoring process owner; the five numbers in `model.md` now have premises, still need sources.
+Q37 Website Factory commercial; Q38 going-forward rolling reserve (omitted from the kit until named); Q39 filing entity; Renato Paulino's email; Double Diamond fee and date; P29 Factoring process owner; P34 Power of Attorney in hand; the five numbers in `model.md` now have premises, still need sources.

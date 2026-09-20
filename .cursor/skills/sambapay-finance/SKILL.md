@@ -11,6 +11,7 @@ disable-model-invocation: true
 - `company-os/finance/README.md` — model, objective 2 plan, cost book (board view), legacy balances with PaySecure.
 - `company-os/finance/model.md` — the five numbers, breakeven arithmetic, per-transaction template.
 - `references/unit-economics.md` — the waterfall with the real CLP example.
+- `references/business-committee.md` — thesis (cheap-market presence) and October arithmetic. The eight cannot be told that 1 October has no volume and that 31 October is breakeven.
 
 ## Before using any number
 
@@ -18,18 +19,18 @@ Ask four things and write them next to it: source, date, gross or net, currency.
 
 ## The model in four lines
 
-- Revenue = volume × margin. Margin is 1% (ICC++). Everything else (interchange, scheme, acquirer fee, FX) passes through at cost. A pass-through we fail to recover is our loss.
-- Rolling reserve 15% is held, not earned; it is released as it matures, net of refunds and chargebacks. Legacy books used 10%/9.58%.
+- Revenue = volume × take rate. Hansraj proposes the take rate so we cover the company's costs and hold a reserve. Until he proposes the number, working structure is 1% ICC++. Everything else (interchange, scheme, acquirer fee, FX) passes through at cost. A pass-through we fail to recover is our loss.
+- Rolling reserve: omit a going-forward percentage from the Welcome Kit until named. Do not write 15% as the rule. Legacy books used 10%/9.58%; that is history, not the going-forward rule.
 - Fixed costs are people and tools. Breakeven volume = fixed cost ÷ margin.
 - Cash is what pays the fixed costs while volume is not there; runway = cash ÷ monthly fixed cost.
 
 ## Breakeven (objective 2)
 
-Fill `model.md`. Compute breakeven volume. Compare with the volume PaySecure and Finnera can bring by the date. If short, Plan B lines: cost-book actions, legacy releases, Finnera. Write the plan in `finance/README.md`; review in every weekly pulse.
+1 October: DD2 accounts open, volume starts, day one of the month. 31 October: breakeven. The live book in September is zero. Do not write those as if 1 October were a day without volume. Fill `model.md`. Compute breakeven volume. Compare with the volume PaySecure and Finnera can bring by the date. If short, Plan B lines: cost-book actions, legacy releases, Finnera. Write the plan in `finance/README.md`; review in every weekly pulse. Thesis and October words: `references/business-committee.md`.
 
 ## Explaining to non-finance
 
-Use one transaction of 100 as the story (see `references/unit-economics.md`). Name who receives each piece. End with "our part is 1; the rest passes through". Then the reserve: "10 waits, then comes back".
+Use one transaction of 100 as the story (see `references/unit-economics.md`). Name who receives each piece. End with "our part is the take rate Hansraj proposes; until then the working structure is 1; the rest passes through". Do not teach a going-forward rolling reserve percentage.
 
 ## Legacy balances with PaySecure
 

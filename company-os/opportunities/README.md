@@ -6,7 +6,7 @@ Registers: `latam-map.md`.
 
 ## Focus (objective 5)
 
-Brazil, Mexico, Colombia. Corridors from the United States and Europe. Acceptance criterion for any rail: 3DS and 2D from US and Europe, international BINs.
+Brazil, Mexico, Colombia. Cardholders from the United States and Europe, identified by issuing BIN. Acceptance criterion for any rail: 3DS and 2D from US and Europe, international BINs. In each geography, local merchants on the Website Factory are another niche; we do not take our clients' merchants.
 
 ## Scoring (1–5 each; a rail below 15/30 waits)
 

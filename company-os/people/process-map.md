@@ -1,11 +1,11 @@
 # Process map
 
-Every process in the company, one owner, one backup, its cadence and where it is documented. A global counterpart can trace any activity to a person. Owners confirmed by André Silva on 19 Sep 2026; "Open" marks a process still without one. Titles: see `README.md`.
+Every process in the company, one owner, one backup, its cadence and where it is documented. A global counterpart can trace any activity to a person. Owners confirmed by André Silva on 19 Sep 2026; "Open" marks a process still without one. Titles: see `README.md`. Sheila Esmeralda is on leave and outside the project. Tactical work she owned runs through the backup until she returns.
 
 | # | Process | Owner | Backup | Cadence | Documented in |
 |---|---|---|---|---|---|
 | P1 | Daily reconciliation and the day's figure | Thiago Silva | Taina Chaves | Every business day, first job | ../operations/README.md |
-| P2 | Confirmation with PaySecure (Hansraj) and the SLA | Thiago Silva | André Silva | Daily | ../operations/README.md |
+| P2 | Confirmation with PaySecure (Hansraj). Reconciliation SLA: Hansraj works it together with the Brazilian acquirer processes | Thiago Silva (day's confirmation) | André Silva | Daily; SLA until written | ../operations/README.md |
 | P3 | Money out: payouts and remittances to PaySecure | Taina Chaves | Rafaela Brito | Daily, after P1–P2 |../operations/README.md |
 | P4 | Rolling reserve tracking and releases | Taina Chaves | Thiago Silva | Weekly; releases monthly | ../finance/README.md |
 | P5 | On-ramp: same-day PIX to the OTC desk, USDC into our attested wallet, USDC to PaySecure; cost tracked against PTAX | Taina Chaves | André Silva | Per remittance |../operations/operator-windows.md |
@@ -18,7 +18,7 @@ Every process in the company, one owner, one backup, its cadence and where it is
 | P12 | Merchant support | Clayton Lira | Thiago Silva | Continuous | README.md (support@) |
 | P13 | Payment engine: processors, authorisation, tokenisation, 3DS | Leandro Silva | Thiago Silva | Continuous | ../product-tech/README.md |
 | P14 | Acquirer integrations and MID creation | Leandro Silva | Clayton Lira | Per acquirer, per merchant | ../product-tech/integrations.md |
-| P15 | Website Factory build and templates | Leandro Silva | Open | Objective 3 |../product-tech/README.md |
+| P15 | Website Factory: orchestration swarm; local merchants in geographies where we have structure, and a client's Brazil store; each digitisation case from CNPJ through entity operations until payout | Leandro Silva | Open | Objective 3 |../product-tech/README.md |
 | P16 | Secrets, Key Vault, custody, identity | Thiago Silva | Leandro Silva | Continuous | ../product-tech/README.md |
 | P17 | Disputes: Chargeback API, Chargeblast, CAIDs | Thiago Silva | Sheila Esmeralda | Per merchant; alerts daily |../risk-compliance/README.md |
 | P18 | Incident response | Thiago Silva and Leandro Silva | André Silva (highest severity) | On event | ../product-tech/README.md |
@@ -33,10 +33,11 @@ Every process in the company, one owner, one backup, its cadence and where it is
 | P27 | Legal counsel Mexico and Colombia (objective 6) | André Silva | Sheila Esmeralda | Project | ../opportunities/latam-map.md |
 | P28 | Purchases and tools (five Android phones) | Rafaela Brito | — | On request | README.md |
 | P29 | Factoring: all volume anticipated at a competitive price | Open (internal process; no vendor) | — | Continuous | ../operations/README.md |
-| P30 | Brazilian / 2D acquirer restart | Open | — | Board goal 1 | ../governance/README.md |
-| P31 | Second Brazilian entity (DD2): Double Diamond checklist package, entity opening, indicative all-in about R$ 5,000 (lawyer, digitising including 2-step on mobile for bank/acquirer apps, CNPJ, three acquirer accounts; no contract signed), on-ramp desk account openings; the three acquirer signups run under P33 | André Silva | Sheila Esmeralda (documents), Taina Chaves (desks), Rafaela Brito (apps and access) | Objective 1, by 1 Oct 2026 | ../product-tech/integrations.md, ../operations/operator-windows.md |
+| P30 | Brazilian / 2D acquirer restart | André Silva | Open | Board goal 1 | ../governance/README.md |
+| P31 | Second Brazilian entity (DD2): Double Diamond checklist package, entity opening, indicative all-in about R$ 5,000 (lawyer, digitising including 2-step on mobile for bank/acquirer apps, CNPJ, three acquirer accounts; no contract signed), on-ramp desk account openings; the three acquirer signups run under P33 | André Silva | Sheila Esmeralda (documents), Taina Chaves (desks), Rafaela Brito (apps and access) | Objective 1: 1 Oct 2026 accounts open and October volume starts | ../product-tech/integrations.md, ../operations/operator-windows.md |
 | P32 | Licensing roadmap: sub-acquiring in our own name, then payment-institution authorisation. Agents design; André Silva decides | André Silva | Sheila Esmeralda (obligations file) | Whenever a Stage-1 gate moves | ../governance/licensing-roadmap.md |
-| P33 | Partner signup: SambaPay signed up and live on new acquirers directly connected to the central bank; requirements, document packs, contracts, credentials, MIDs, integration to production, first live transaction; the pipeline metrics | Abner Maioralli | Leandro Silva (integration build), Sheila Esmeralda (documents) | Per acquirer; metrics weekly in the pulse | ../product-tech/integrations.md (signup pipeline and metrics) |
+| P33 | Partner signup: SambaPay signed up and live on new acquirers directly connected to the central bank; requirements, document packs, contracts, production API keys delivered to the core team, MIDs, integration on PaySecure's white label, first live transaction; the pipeline metrics | Abner Maioralli | Leandro Silva (integration build), Sheila Esmeralda (documents) | Per acquirer; metrics weekly in the pulse | ../product-tech/integrations.md (signup pipeline and metrics) |
+| P34 | Power of Attorney for the FX contact and contract, so settlements can start. Sridhar (PaySecure) helps; André Silva owns | André Silva | Taina Chaves (money out after the contract exists) | Until the Power of Attorney is in hand and the contract is signed | ../operations/README.md |
 
 ## How to use this map
 

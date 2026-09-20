@@ -6,10 +6,9 @@ Registers: `decision-log.md`, `licensing-roadmap.md`, `ownership-brief.md` (boar
 
 ## Decision rights
 
-- André Silva: stop a merchant, hold funds, offboard, highest-severity incidents, acquirer and PaySecure relationships, PCI DSS accountability (requirement 12.1.4).
-- Process owners decide inside their process (see `../people/process-map.md`). Anyone may propose.
+- André Silva decides. The test: which option brings us closer to revenue from DD2, on the take rate Hansraj proposes, so we cover the company's costs. The team elaborates. Process owners execute (`../people/process-map.md`). They do not close a change of direction.
 - Clayton Lira (Merchant Operations Analyst) executes a merchant block only on André Silva's order.
-- Sheila Esmeralda (Compliance Officer) answers scheme, acquirer and regulator letters; she does not hold or offboard.
+- Sheila Esmeralda (Compliance Officer) is on leave and outside the project. Not in tactical work for now. Correspondence she owned runs through André Silva (P19 backup).
 - Leandro Silva (Head of Engineering and Product) opens merchant accounts.
 - Thiago Silva (Head of Operations) owns the day's figure; no money moves before it ties.
 - A Manager of the legal entity signs assignments of receivables titles.
@@ -23,16 +22,16 @@ Registers: `decision-log.md`, `licensing-roadmap.md`, `ownership-brief.md` (boar
 ## Board material
 
 - Board study 19 Aug 2026 and 16-slide deck: https://compliance.a55.tech/board/psx-19aug-9f2c7b1e/study.html
-- Board pack 30 Aug 2026, three goals: 1 Brazilian / 2D acquirer restart (US cards; how, who, feasibility undecided); 2 factoring pool (AmFi or another); 3 cheaper 3DS merchant IDs (depends on 1; commercial ownership unstaffed).
+- Board pack 30 Aug 2026, three goals: 1 Brazilian / 2D acquirer restart (US cards; owner André Silva; how and feasibility still Open); 2 factoring pool (AmFi or another); 3 cheaper 3DS merchant IDs (depends on 1; commercial ownership unstaffed).
 - Sixty-day plan 13 Sep 2026: live MoR book now; one-hop PIX settlement to PaySecure; Colombia and more acquirers next; then the 19 Aug plan.
 
 ## London
 
-- Counterparts: Hansraj (confirms reconciliation daily; led the eight discussion points), Govinda. Pulse and pack: **Sridhar (Sri Amit; same person), viktoria@paysecure.net, Hansraj**. Day: Friday 17:00 São Paulo / 5th business day. Open: Sridhar's email.
+- Counterparts: Hansraj (confirms reconciliation daily; led the eight discussion points; proposes the take rate so we cover the company's costs and hold a reserve), Govinda. Pulse and pack: **Sridhar (sri@paysecure.net), Viktoria, Hansraj**. Day and hour: Open.
 
 ## Licensing path
 
-Sub-acquiring in our own name first: accounts at Cielo, Asaas and EFI by 1 Oct 2026 (account-open, not volume go-live); first own-MID merchant when the slowest of those three is live. Payment-institution filing starts the day Stage 1 closes; the grant date is the Central Bank's. A committee of agents (not people) designs the path in `licensing-roadmap.md`. André Silva decides.
+Sub-acquiring in our own name first: accounts at Cielo, Asaas and EFI open on 1 Oct 2026, and October volume starts that day. 31 Oct is breakeven. Payment-institution filing starts the day Stage 1 closes; the grant date is the Central Bank's. A committee of agents (not people) designs the path in `licensing-roadmap.md`. André Silva decides.
 
 ## Open
 

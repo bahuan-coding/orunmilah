@@ -25,7 +25,7 @@ André Silva is running a company for the first time and asked to be taught grad
 9. Prioritisation by date: 1 Oct (rails) before 31 Oct (breakeven); why an objective without owner and date is not live.
 10. Pipeline and conversion: Finnera's USD 25 million a month is volume, not revenue, until it is live and reconciled; at 1% it is about USD 250,000 a month of margin, and zero until the first reconciled settlement.
 11. Plan B thinking: for every objective with a date, the second path written before the first fails.
-12. Hiring for open seats: 2D restart, Factoring process (internal), Website Factory commercial; hire or assign, never leave unowned past a date.
+12. Hiring for open seats: Factoring process (internal), Website Factory commercial; hire or assign, never leave unowned past a date. Brazilian / 2D acquirer restart is owned by André Silva.
 
 ## Rules
 

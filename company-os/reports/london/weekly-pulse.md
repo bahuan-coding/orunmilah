@@ -1,12 +1,12 @@
 # Weekly pulse — week ending [date]
 
-One page. Facts, numbers, dates, asks. Sent to **Sri Amit, viktoria@paysecure.net, Hansraj** every Friday 17:00 São Paulo. Copy on paysecure@sambapay.tech.
+One page. Facts, numbers, dates, asks. Sent to **Sridhar (sri@paysecure.net), Viktoria, Hansraj**. Day and hour: Open. Copy on paysecure@sambapay.tech.
 
 ## Numbers (week / month to date)
 
 - Volume processed: [BRL] / [BRL]
 - Approval rate: [%]
-- Revenue (take rate, Sridhar): [BRL]
+- Revenue (take rate, Hansraj): [BRL]
 - Cash position: [BRL, USD]
 - Reserve held / released this week: [BRL]
 - Reconciliation: [n] business days, [n] confirmed by Hansraj on the day, [n] differences open

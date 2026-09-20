@@ -12,7 +12,7 @@ Source of truth: `welcome-kit/*.md`. Output: `dist/` (ignored by git).
 
 1. Every `welcome-kit/NN-*.md` starts with `# NN · Title`, has a blank line 2 and `Status: Settled|In discussion|Open` on line 3.
 2. No line contains André Silva's name together with a rank word (the list is `TITLE_WORDS_KIT` inside the script). The same test runs over `company-os/` and `.cursor/skills/` with `TITLE_WORDS_OS`. The rule file `.cursor/rules/sambapay-voice.mdc` is excluded on purpose.
-3. Word count: 650 maximum; 1,800 for `04` and `09`. The glossary keeps every term in full; 06 keeps the eight titled roles in full. Do not cut facts to hit the old 600 / 1,600 caps.
+3. Word count: 650 maximum; 900 for `06`; 2,700 for `04` and `09`. The glossary keeps every term in full; 06 keeps the eight titled roles in full. Do not cut facts to hit a lower cap.
 4. No emojis, no exclamation marks.
 5. Portuguese leakage: none of the words " não ", " você ", " também ", " então ", " porque ", " para " appear (with spaces around them).
 6. Glossary coverage: every jargon term in the fixed list that appears in `01`–`08` has an entry in `09-glossary.md`.
@@ -21,6 +21,14 @@ Source of truth: `welcome-kit/*.md`. Output: `dist/` (ignored by git).
 ## Fixing failures
 
 - Status line missing → add line 3 exactly. Word count over the cap → raise the cap in `scripts/build-kit.mjs`, do not cut facts. Glossary → add the term to `09` in one sentence. Title near the name → remove the title, keep the name.
+
+## Status language
+
+Merchant of Record, payment facilitator, sub-acquirer and payment institution are four statuses. Follow `.cursor/skills/sambapay-governance/references/payfac-committee.md`. Do not write that we are a sub-acquirer until Stage 1 is closed.
+
+## October dates
+
+1 October: accounts open, volume starts, day one of the month (a partial). 31 October: breakeven. The live book in September is zero. Follow `.cursor/skills/sambapay-finance/references/business-committee.md`. Never write 1 October as a day without volume. Never split "account-open" from volume as if they were different things.
 
 ## PDF engine
 

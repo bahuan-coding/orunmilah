@@ -11,7 +11,7 @@
 
 ## Current rows (19 Sep 2026)
 
-- Brazil: entity live (A55 Payments Ltda); partner MoR live; cheapest product; DD2 in progress (secondary entity template from Double Diamond; three acquirers side by side, two OTC partners, by 1 Oct 2026). Scores Open.
+- Brazil: entity live (A55 Payments Ltda); partner MoR live; DD2 in progress (secondary entity template from Double Diamond; three acquirers side by side, two OTC partners; accounts open 1 Oct 2026 and October volume starts that day). Latin America is a cheap market: geographies that are very cost-efficient. Scores Open.
 - Colombia: A55 de Colombia S.A.S. owned; KYB kit ready; 16 counterparties mapped; Kushki in pipeline. Scores Open.
 - Mexico: bank account exists; entity and legal minimums Open. Scores Open.
 - Chile: legacy CLP book; decide whether it stays. Scores Open.

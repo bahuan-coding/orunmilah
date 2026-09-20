@@ -5,29 +5,41 @@ Status: Settled
 Every term used in this kit, one sentence each. If you meet a word that is not here, ask, and we add it.
 
 - **2D** — Card processing without 3DS; the shopper is not challenged; the merchant carries the fraud liability.
-- **2-step verification** — Signing in with a password plus a code from a phone; mandatory on every sambapay.tech account.
+- **2-step verification** — Signing in with a password plus a code from a phone; mandatory on Zoho Mail.
 - **3DS** — 3-D Secure, the card authentication step where the shopper's bank confirms it is the shopper; shifts fraud liability to the bank.
 - **Acquirer** — The licensed company that accepts card payments on behalf of merchants and settles the money to them.
 - **AML** — Anti-money-laundering; the rules and checks that stop criminal money from moving through payments.
 - **Anticipation** — Receiving card receivables before they fall due, for a fee; borrowing against future settlements.
 - **Approval rate** — The share of payment attempts the acquirer authorises; the higher, the more the merchant sells.
-- **BIN** — The first digits of a card number, identifying the issuing bank and country; "international BIN acceptance" means cards from abroad are accepted.
+- **Barrier to entry** — The cost of holding compliance and the full structure of a regulated institution in these markets; we do that work so the client gets a local commercial policy.
+- **BIN** — Bank Identification Number: the first digits of a card number, identifying the issuing bank and the country of issuance. International BIN acceptance means the rail authorises cards whose BINs were issued outside the acquiring country.
 - **Asaas** — One of the three Brazilian acquirers on the DD2 template, integrated side by side with Cielo and EFI.
+- **Aggregated volume** — The book of many merchants together; that book is why a local merchant gets a commercial policy it could not get alone.
+- **Always-on** — The culture of PaySecure's white label: it is not allowed to go down; traffic runs twenty-four hours a day, every day, from everywhere; years of history without unavailability. The number of nines is not a published SLA.
+- **Client** — A company with international traffic that uses our market enablement and orchestration: PaySecure first. We do not take its merchants and we do not dispute its accounts.
 - **Boleto** — A Brazilian bank slip paid at a bank or app; a cash-like local payment method.
-- **Break Even** — Internal tool that tracks the registration of A55 de Colombia with PSPs and acquirers; in objective 2 the word means the financial result.
+- **Break Even** — Internal tool that tracks the registration of A55 de Colombia with PSPs and acquirers.
+- **Breakeven** — Covering our costs. The date is 31 October 2026. 1 October is day one of that month's volume. Cruise working figure: USD 100,000 a day.
 - **CAID** — Card Acceptor ID, the merchant's identifier at the card schemes; needed to register the merchant for dispute alerts.
+- **Capture channel** — The path that takes a payment attempt: the checkout and the rails behind it. What a local merchant uses to collect.
+- **Card corridor** — The route from issuing BINs in a region to local acquiring. Ours are European and American cardholders, identified by those BINs, into Latin America. Distinct from Corridor, which is an FX route.
+- **Cardholder** — The person an issuer has issued a card to. Our priority volume is European and American cardholders, identified by those issuing BINs.
 - **Central Bank of Brazil** — The regulator of payments in Brazil; grants payment-institution and cross-border authorisations.
 - **Chargeback** — A card payment reversed by the shopper's bank after a dispute; costs the merchant the sale and a fee.
 - **Chargeblast** — The pre-dispute alerts service we use to resolve disputes before they become chargebacks.
 - **Cielo** — Brazilian acquirer. Live partner Merchant of Record today, and one of the three DD2 acquirers for our own merchant IDs, side by side with Asaas and EFI. The 19 September MDR table is Cielo's, sized for USD 100,000 daily volume.
 - **Checkout** — The page or component where the shopper enters payment details; ours embeds our integrated acquirers.
-- **Company OS** — The control room of the company in this repo: one page per area plus the registers.
-- **Corridor** — A currency route for moving money, for example BRL to USD; ours runs through the on-ramp desks.
+- **CNPJ** — Brazil's company tax number. The Website Factory operationalises it for the local merchant that wants a store in Brazil, and for a client's Brazil store. DD2 also needs a CNPJ to stand the entity up.
+- **Conflict of interest** — Taking a client's merchants or disputing a client's accounts. We do not. Local merchants on the Website Factory are another niche.
+- **Corridor** — A currency route for moving money, for example BRL to USD; ours runs through the on-ramp desks. Not a card corridor.
+- **Core team** — The team that integrates production API keys into PaySecure's white label.
 - **Cross-border** — Selling in a country other than the merchant's own.
 - **Cut-off** — The time of day after which an operator counts a transaction in the next settlement window.
 - **D+n** — Settlement n days after the transaction date; D+1 is next day.
-- **DD2** — Our secondary entity template in Brazil, built on Double Diamond's requirements: Cielo, Asaas and EFI side by side, Factoring covering all volume at a competitive price, and two on-ramp desks (MIPPO/GFS/OrbiFi and Transfero), accounts open by 1 October; the first vehicle of horizontal scaling.
+- **DD2** — Our secondary entity template in Brazil, built on Double Diamond's requirements: Cielo, Asaas and EFI side by side, Factoring covering all volume at a competitive price, and two on-ramp desks (MIPPO/GFS/OrbiFi and Transfero). Accounts open on 1 October and October volume starts that day: day one of the month that must reach breakeven on 31 October.
+- **Digitisation** — Standing a local merchant, or a client's Brazil store, up as a digital business, case by case, through the Website Factory: from the CNPJ through operational management with the local entities, until payout.
 - **Direct acquirer** — An acquirer that is itself a direct participant of its country's central bank settlement system; the partners Abner signs us up with, so no intermediary sits between our rail and settlement.
+- **Direct connection** — A live rail to a local acquirer in the country, through our own entity or a partner: the presence we offer so a business that does not have access to a cheap market can use the local commercial policy.
 - **Decision log** — One line per decision that changes direction: options, choice, reason, owner.
 - **Double Diamond** — The firm mapping the requirements to open an entity in Brazil; DD2 is its template. Its deliverable is the checklist package: all documents needed to open acquirer accounts.
 - **DPO** — Data protection officer, the LGPD contact; dpo@sambapay.tech.
@@ -38,51 +50,62 @@ Every term used in this kit, one sentence each. If you meet a word that is not h
 - **G2** — Merchant risk screening service; part of our KYB stack.
 - **AmFi** — Past factoring pools; A55 holds the junior quota; in close-out. Not the Factoring model going forward.
 - **Global Pass** — KYB software that screens a business and its owners, including PEP and sanctions lists.
+- **Hansraj** — PaySecure counterpart. Confirms daily reconciliation and works the reconciliation SLA with the Brazilian acquirer processes. Proposes the take rate so we cover the company's costs and hold a reserve.
 - **Horizontal scaling** — Growing volume by integrating several acquirers side by side in a market, so no single rail limits us or concentrates the risk.
-- **ICC++** — Interchange-cost plus plus: pricing where interchange, scheme and acquirer costs pass through at cost and our margin is the fixed percentage on top. Take rate defined by Sridhar; working structure until then is 1%.
+- **ICC++** — Interchange-cost plus plus: pricing where interchange, scheme and acquirer costs pass through at cost and our margin is the fixed percentage on top. Take rate proposed by Hansraj; working structure until then is 1%.
+- **Infrastructure** — Our business model: we provide the always-on payment system, the local rails, and the Website Factory.
 - **Interchange** — The fee the merchant's side pays to the shopper's card-issuing bank on every card payment.
 - **Jumio** — Identity verification service for people; part of our KYB stack.
-- **Key Vault** — The cloud service where the engine's secrets and keys are stored; nobody handles keys outside it.
+- **Key Vault** — The cloud service where secrets and production API keys are stored; nobody handles keys outside it.
 - **KYB** — Know your business: verifying a merchant company, its owners and its risk before onboarding.
 - **KYC** — Know your customer: verifying a person's identity.
 - **LGPD** — Brazil's personal-data protection law.
 - **Local commercial policy** — Local prices, local approval and local rules, as a local merchant would get them.
 - **Local entity** — An acquirer, bank, PIX rail or FX partner in a given country, or our own regulated company there.
-- **Market enabler** — Our role for PaySecure: we open and hold the local rails; PaySecure brings the volume.
+- **Local merchant** — A business in a geography where we have structure, digitised through the Website Factory. Entrepreneurs and service providers in the digital economy who want online payments. They use our capture channels as a local player. Not a client's merchant.
+- **Market enabler** — Our role for a client: we open and hold the local rails; the client brings the volume. Distinct from serving local merchants on the Website Factory.
 - **MCC** — Merchant category code, the code that tells the schemes what a merchant sells; must be honest.
 - **MDR** — Merchant discount rate, the total percentage an acquirer charges the merchant per transaction.
-- **Merchant** — A business that sells and gets paid through us.
+- **Merchant** — A business that sells and gets paid on our rails: a local merchant on the Website Factory, or a merchant who arrives through a client. We do not take a client's merchants.
 - **Merchant of Record** — The company that legally sells to the shopper and carries the merchant risk and the reserve; today an operating partner.
 - **MID** — Merchant ID, the merchant's account at an acquirer; one per acquirer.
 - **On-ramp** — The path money takes from our local bank into PaySecure; today either the partner's tokenized-PIX rail or an OTC desk that turns our reais into USDC.
+- **Orchestration** — Putting a client's volume on local rails and PaySecure's white label as one system, including across nationalities. Distinct from the Website Factory orchestration swarm.
+- **Orchestration swarm** — How the Website Factory works: AI and product managers specialised in each business, producing each digitisation case specifically.
 - **OTC** — Over the counter; a desk that takes our reais by same-day PIX and sells us USDC into our own wallet, the first hop of the remittance to PaySecure; we use two: MIPPO/GFS/OrbiFi and Transfero.
 - **PTAX** — The Central Bank of Brazil's official daily exchange rate; the benchmark we measure every on-ramp cost against.
-- **Payment facilitator** — A company that onboards merchants under its own acquirer agreement and handles their payments; what we operate as today.
-- **Payment institution** — A company authorised by the Central Bank of Brazil to provide payment services; our licence path.
-- **PaySecure** — paysecure.net, the global payments platform we are part of; brings the volume; we report to London.
+- **PayFac** — Informal English for payment facilitator. Visa's scheme name is Payment Facilitator; Mastercard's is Submerchant Aggregator. Not a synonym for sub-acquirer.
+- **Payment facilitator** — Visa's name for a company that onboards merchants under an acquirer agreement. What we operate as today, on the partner Merchant of Record. Distinct from sub-acquirer.
+- **Payment institution** — A company authorised by the Central Bank of Brazil to provide payment services. What we take after sub-acquiring is live. Grant date is the Central Bank's.
+- **PaySecure** — paysecure.net, the global payments platform we are part of; brings the volume; we report to London; we run its white label and inherit its PCI structure and its commercial policies in other markets.
 - **Partner signup** — Getting SambaPay signed up and live on a new acquirer or on-ramp desk, from first contact to first live transaction; Abner's process.
-- **Paytech** — A fintech specialised in payments; what SambaPay is.
-- **PCI DSS** — The card industry security standard; card data is handled only inside the engine, tokenised.
+- **Payout** — Paying what is due after reconciliation. Taina executes money out. The Website Factory runs until the local merchant or the client receives its payout.
+- **Paytech** — A fintech specialised in payments; what SambaPay is. Focused pay technology: a focused system is an efficient system, and the business model is infrastructure.
+- **PCI DSS** — The card industry security standard. Card data is handled only inside PaySecure's white label, tokenised. The PCI structure we operate under is PaySecure's.
 - **PEP** — Politically exposed person; a person in or near public office who requires extra checks.
+- **Power of Attorney** — Written authority Sridhar helps André Silva obtain, so the FX contact and contract can be re-established and settlements can start.
+- **Production API keys** — Live credentials an acquirer issues for production traffic. We obtain them and deliver them to the core team. They live in Key Vault.
 - **PIX** — Brazil's instant payment system, run by the Central Bank of Brazil; settles in seconds, all day.
 - **Rail** — Any connection through which a payment or a settlement moves: an acquirer, PIX, a bank, a remittance path.
 - **Reconciliation** — Tying the operator's file to our ledger, line by line, so the day's figure is right.
 - **Remittance** — Sending the reconciled money onward, from our local bank to PaySecure.
-- **Rolling reserve** — A percentage of the merchant's settlements held back for a period against refunds and chargebacks; we take 15% going forward.
+- **Rolling reserve** — A percentage of the merchant's settlements held back for a period against refunds and chargebacks.
 - **Sanctions** — Lists of people, companies and countries we are forbidden to do business with.
-- **SAQ-D** — The PCI DSS self-assessment questionnaire for service providers that store, process or transmit card data.
+- **SAQ-D** — The PCI DSS self-assessment questionnaire for service providers that store, process or transmit card data. PaySecure's PCI on the white label is the structure we operate under. SambaPay's own questionnaire remains Open. Not a description of Cielo's Merchant of Record role.
 - **Scheme** — A card network: Visa, Mastercard.
 - **Settlement** — The acquirer paying out the money from authorised transactions, on its window.
-- **SimilarWeb** — A web traffic analytics company. Website Factory storefronts are engineered so SimilarWeb and online page validators read them as genuine, high-quality pages ("top A"): traffic profile, authenticity, organic competitiveness.
-- **Storefront** — The merchant's online store, built from a Website Factory template with our checkout.
-- **Sridhar** — PaySecure counterpart (also called Sri Amit); defines the take rate; receives the weekly pulse and monthly pack with viktoria@paysecure.net and Hansraj.
-- **Sub-acquirer** — A company that acquires card transactions under an acquirer's licence rather than under its own payment-institution authorisation; our path for now.
-- **Take rate** — Our revenue as a percentage of the volume processed. Defined by Sridhar (Sri Amit).
+- **SimilarWeb** — A web traffic analytics company. Website Factory live sites are engineered so SimilarWeb and online page validators read them as genuine, high-quality pages ("top A"): traffic profile, authenticity, organic competitiveness.
+- **Sridhar** — PaySecure counterpart. sri@paysecure.net. Helps André Silva obtain the Power of Attorney for the FX contract. Receives the weekly pulse and monthly pack with Viktoria and Hansraj.
+- **Sub-acquirer** — Central Bank of Brazil term (Circular BCB 3.886/2018; Portuguese: sub-credenciador). A company that acquires card transactions under an acquirer's licence, with its own merchant IDs, rather than under its own payment-institution authorisation. What we will be. Distinct from payment facilitator.
+- **Take rate** — Our revenue as a percentage of the volume processed. Proposed by Hansraj so we cover the company's costs and hold a reserve. Number Open.
 - **The Map** — Document 00, the whole company on one page with the status of each part.
 - **Transfero** — Licensed Brazilian payment institution; the second on-ramp desk (BRL to USDC into our wallet). PSAV protocol and delivery to an A55 wallet required.
 - **Tokenisation** — Replacing a card number with a token so the number never travels or sits in our systems.
 - **Tokenized-PIX rail** — Cielo's partner rail through which local PIX collections reach PaySecure in one hop.
 - **USDC** — A dollar stablecoin; the asset our on-ramp desks sell us, which we hold in our own wallet and send on to PaySecure.
+- **Viktoria** — PaySecure counterpart. Receives the weekly pulse and monthly pack with Sridhar and Hansraj.
 - **Wallet** — Our own attested crypto wallet where the USDC lands before we send it to PaySecure; never the merchant's, never PaySecure's directly.
-- **Website Factory** — Our template-based builder of merchant storefronts with our checkout embedded.
-- **Welcome Kit** — These ten documents.
+- **Website Factory** — An orchestration swarm of AI and product managers specialised in each business. Digitises local merchants in geographies where we have structure, and a client's Brazil store, from the CNPJ through operational management with the local entities, until payout.
+- **White label** — PaySecure's payment system, deployed for a client under that client's name. We deliver production API keys to the core team, and we configure and reconcile on that instance.
+- **Welcome Kit** — These ten documents. They exist so every person has the same picture of the company; Open is written Open; the job is to organise what we already know, because the deadline is short.
+- **Zoho Mail** — The mail we use.

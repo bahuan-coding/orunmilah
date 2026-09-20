@@ -8,10 +8,11 @@ description: Company context and routing for SambaPay (sambapay.tech), the rebra
 ## Company in six lines
 
 - SambaPay is the rebrand of A55 Payments Ltda, part of PaySecure (paysecure.net). Reports to London. Eight people.
-- Role: PaySecure's market enabler in Latin America. PaySecure brings volume; SambaPay opens and holds local rails at local prices.
-- One service, three parts: Rails (local acquiring, local commercial policy, several acquirers side by side so volume scales horizontally; DD2 is the Brazilian entity template from Double Diamond), Storefront (Website Factory), Settlement (local PIX → partner tokenized-PIX rail → PaySecure balance).
-- Today an operating partner is Merchant of Record; path to our own payment-institution licence.
-- Obsession: respond fastest to every interface need between clients and local entities. Only this, nothing beyond this.
+- Role: PaySecure's market enabler in Latin America. We offer a local connection as a presence for businesses that do not have access to cheap markets. Negotiation points in geographies that are very cost-efficient. Priority: European and American cardholders, identified by those issuing BINs, into a local commercial policy.
+- One service, three parts: Rails (always-on infrastructure; in-country structure or partners; a direct connection to local acquirers as a presence in a cheap market; production API keys from those acquirers go to the core team and are deployed on PaySecure's white label, where we configure and reconcile; several acquirers side by side so volume scales horizontally; DD2 is the Brazilian entity template from Double Diamond), Website Factory (orchestration swarm; digitises local merchants in geographies where we have structure, and a client's Brazil store, from the CNPJ through operational management with the local entities until payout), Settlement (local PIX → partner tokenized-PIX rail → PaySecure balance).
+- Today an operating partner is Merchant of Record and we operate as payment facilitator. We run on PaySecure's white label and inherit its PCI structure and its commercial policies in other markets. We will be a sub-acquirer. Payment institution follows.
+- Obsessions: the engine is not allowed to go down. Availability is the product. We have a strong relationship with our partners, and with our acquirers above all: that relationship is our greatest focus, and our obsession. Two niches: we do not take our clients' merchants; the Website Factory serves local merchants in geographies where we have structure. We do not compete with our clients. Only this.
+- The Welcome Kit exists so every person has the same picture; Open stays Open; organise what we already know, because the deadline is short.
 - André Silva is a name, never a title. Everyone else carries a clear title and owns named processes (`company-os/people/`).
 
 ## Where things live (read before answering)
@@ -22,6 +23,10 @@ description: Company context and routing for SambaPay (sambapay.tech), the rebra
 - `welcome-kit/09-glossary.md` — the only vocabulary allowed.
 - `company-os/<area>/README.md` — the ledger per area; registers next to each README.
 - `company-os/governance/decision-log.md` — every decision that changed direction.
+- `.cursor/skills/sambapay-ceo/references/culture-committee.md` — Welcome Kit doctrine and tests.
+- `.cursor/skills/sambapay-ceo/references/payments-marketing-committee.md` — commercial English and the client argument.
+- `.cursor/skills/sambapay-finance/references/business-committee.md` — thesis (cheap-market presence) and October arithmetic (1 October is day one of volume; 31 October is breakeven).
+- `.cursor/skills/sambapay-governance/references/payfac-committee.md` — the four statuses: Merchant of Record, payment facilitator, sub-acquirer, payment institution. Never collapsed.
 
 ## Routing
 
@@ -41,8 +46,8 @@ description: Company context and routing for SambaPay (sambapay.tech), the rebra
 3. **André Silva asks what to do.** Use `references/coaching.md`: frame the decision (context, options, trade-offs, recommendation, what to watch), teach one concept, propose the decision-log line.
 4. **A decision is made.** Append one line to `company-os/governance/decision-log.md` (newest on top) and update the file that the decision changes the same day. Update `00-the-map.md` if a status changed.
 5. **Something is for London.** Use the governance skill and `company-os/reports/london/` templates. Facts, numbers, dates, asks. Signed with the name only.
-6. **Building the kit.** Follow `references/kit-build.md`.
+6. **Building the kit.** Follow `references/kit-build.md`. Doctrine: `references/culture-committee.md`. Commercial English: `references/payments-marketing-committee.md`. Status language: `../sambapay-governance/references/payfac-committee.md`. Thesis and October dates: `../sambapay-finance/references/business-committee.md`.
 
 ## Never
 
-- Never write a title next to André Silva. Never introduce another person without the title from `company-os/people/README.md`. Never invent a fact. Never use a term outside the glossary without adding it. Never put board-view amounts (payroll, legacy balances) into `welcome-kit/`.
+- Never write a title next to André Silva. Never introduce another person without the title from `company-os/people/README.md`. Never invent a fact. Never use a term outside the glossary without adding it. Never put board-view amounts (payroll, legacy balances) into `welcome-kit/`. Never write that we are a sub-acquirer until Stage 1 is closed. Never use payment facilitator and sub-acquirer as the same word. Never write 1 October as a day without volume. Never roast "most solutions" in a thesis that also describes us. Never write that we take a client's merchants. Local merchants on the Website Factory are another niche.

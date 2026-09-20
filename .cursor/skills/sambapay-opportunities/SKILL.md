@@ -16,7 +16,7 @@ disable-model-invocation: true
 
 ## Acceptance criterion for any rail (objective 5)
 
-Processes 3DS and 2D card traffic originated in Europe and the United States; accepts international BINs; documented settlement window; passes the acquirer's KYB and PCI requirements. A rail that fails one of these is not scored; it is declined.
+Processes 3DS and 2D traffic from European and American cardholders, identified by those issuing BINs; accepts international BINs; documented settlement window; passes the acquirer's KYB and PCI requirements. A rail that fails one of these is not scored; it is declined.
 
 ## Scoring (1–5 each, total of 30; below 15 waits)
 
@@ -24,7 +24,7 @@ Market size for our clients; share of local methods; regulatory cost and time to
 
 ## Evaluating a prospect's volume (Finnera and others)
 
-Volume is not revenue. Ask: currency, monthly volume, methods, 3DS or 2D share, average ticket, refund and chargeback history, countries of the shoppers, when it can start. Revenue estimate = volume × 1%. Put the row in `pipeline.md` with stage and next step.
+Volume is not revenue. Ask: currency, monthly volume, methods, 3DS or 2D share, average ticket, refund and chargeback history, countries of the shoppers, when it can start. Revenue estimate = volume × take rate (Hansraj proposes; working structure 1% until then). Put the row in `pipeline.md` with stage and next step.
 
 ## Evaluating an acquirer or OTC partner
 
@@ -32,7 +32,7 @@ Use the questionnaire in `references/latam-market-map.md`. Every answer goes to 
 
 ## Current focus
 
-Brazil (DD2 by 1 Oct 2026: the secondary entity template built on Double Diamond's requirements, three acquirers side by side plus two OTC partners), then Colombia (entity owned; registrations via the Break Even tool), then Mexico (legal minimums, objective 6).
+Brazil (DD2 accounts open 1 Oct 2026 and October volume starts that day: the secondary entity template built on Double Diamond's requirements, three acquirers side by side plus two OTC partners), then Colombia (entity owned; registrations via the Break Even tool), then Mexico (legal minimums, objective 6). In each geography, local merchants on the Website Factory are another niche. We do not take our clients' merchants.
 
 ## The pattern for every market (horizontal scaling)
 

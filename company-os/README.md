@@ -31,7 +31,7 @@ flowchart LR
 
 ## Cadence
 
-- Every day: reconciliation first. Hansraj (PaySecure) confirms. SLA: Open.
+- Every day: reconciliation first. Hansraj (PaySecure) confirms. He works the SLA together with the Brazilian acquirer processes. The hour is Open.
 - Every week: weekly pulse to London. Day: Open.
 - Every month: monthly pack to London. Day: Open.
 - Every objective in `welcome-kit/04-where-we-are-going.md` has an owner and a date here before it is called live.

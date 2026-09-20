@@ -14,8 +14,9 @@ const CHROME = process.env.CHROME || "/usr/bin/google-chrome";
 const TITLE_WORDS_KIT = /\b(CEO|Chief|Founder|Director|Head|Manager|Owner|President)\b/;
 const TITLE_WORDS_OS = /\b(CEO|Chief|Founder|Director|Head|Manager|President)\b/;
 const NAME = /André Silva/;
-const WORD_LIMIT_DEFAULT = 650; // 06 holds eight titled roles; the plan literal is 607
-const WORD_LIMIT_LONG = 1800; // 04 and 09; 09 is the full glossary (plan literal 1698)
+const WORD_LIMIT_DEFAULT = 650; // 06 holds eight titled roles plus named processes; raised separately
+const WORD_LIMIT_ROLES = 900; // 06: eight roles, named processes, and how André Silva participates
+const WORD_LIMIT_LONG = 2700; // 04 and 09; 09 is the full glossary — do not cut entries to fit
 const PT_LEAK = [" não ", " você ", " também ", " então ", " porque ", " para "];
 // Board view that must never appear in the Welcome Kit.
 const BOARD_ONLY = [/\bSPA\b/, /Side Letter/i, /Exhibit E/, /\bUnits\b/, /Group Holdings/, /180,680/, /1,905,924/, /1\.70M/, /680[–-]710K/];
@@ -24,29 +25,31 @@ const BOARD_ONLY = [/\bSPA\b/, /Side Letter/i, /Exhibit E/, /\bUnits\b/, /Group 
 const JARGON = [
   ["2D", /\b2D\b/], ["3DS", /\b3DS\b/], ["2-step verification", /\b2-step verification\b/i],
   ["acquirer", /\bacquirers?\b/i], ["AML", /\bAML\b/], ["anticipation", /\banticipation\b/i],
-  ["approval rate", /\bapproval rate\b/i], ["Asaas", /\bAsaas\b/], ["BIN", /\bBINs?\b/], ["boleto", /\bboletos?\b/i],
-  ["Break Even", /\bBreak Even\b/i], ["CAID", /\bCAIDs?\b/], ["Central Bank of Brazil", /\bCentral Bank of Brazil\b/],
-  ["chargeback", /\bchargebacks?\b/i], ["Chargeblast", /\bChargeblast\b/], ["checkout", /\bcheckout\b/i],
-  ["Cielo", /\bCielo\b/], ["Company OS", /\bCompany OS\b/], ["corridor", /\bcorridors?\b/i], ["cross-border", /\bcross-border\b/i],
+  ["always-on", /\balways-on\b/i], ["aggregated volume", /\baggregated volume\b/i], ["approval rate", /\bapproval rate\b/i], ["Asaas", /\bAsaas\b/], ["barrier to entry", /\bbarrier to entry\b/i], ["BIN", /\bBINs?\b/], ["boleto", /\bboletos?\b/i],
+  ["Break Even", /\bBreak Even\b/i], ["breakeven", /\bbreakeven\b/i], ["CAID", /\bCAIDs?\b/], ["capture channel", /\bcapture channels?\b/i], ["card corridor", /\bcard corridors?\b/i], ["cardholder", /\bcardholders?\b/i], ["Central Bank of Brazil", /\bCentral Bank of Brazil\b/],
+  ["chargeback", /\bchargebacks?\b/i], ["Chargeblast", /\bChargeblast\b/],   ["checkout", /\bcheckout\b/i], ["Cielo", /\bCielo\b/], ["client", /\bclients?\b/i], ["CNPJ", /\bCNPJ\b/], ["conflict of interest", /\bconflict of interest\b/i], ["core team", /\bcore team\b/i], ["corridor", /\bcorridors?\b/i], ["cross-border", /\bcross-border\b/i],
   ["cut-off", /\bcut-off\b/i], ["D+n", /\bD\+n\b/], ["DD2", /\bDD2\b/], ["decision log", /\bdecision log\b/i],
+  ["direct connection", /\bdirect connections?\b/i], ["digitisation", /\bdigitisation\b/i],
   ["Double Diamond", /\bDouble Diamond\b/], ["DPO", /\bDPO\b|dpo@/], ["EFI", /\bEFI\b/], ["factoring", /\bfactoring\b/i],
   ["Finnera", /\bFinnera\b/], ["FX", /\bFX\b/], ["G2", /\bG2\b/],
-  ["Global Pass", /\bGlobal Pass\b/], ["ICC++", /ICC\+\+/], ["interchange", /\binterchange\b/i],
+  ["Global Pass", /\bGlobal Pass\b/], ["Hansraj", /\bHansraj\b/],
+  ["infrastructure", /\binfrastructure\b/i], ["ICC++", /ICC\+\+/], ["interchange", /\binterchange\b/i],
   ["Jumio", /\bJumio\b/], ["Key Vault", /\bKey Vault\b/], ["KYB", /\bKYB\b/], ["KYC", /\bKYC\b/],
   ["LGPD", /\bLGPD\b/], ["local commercial policy", /\blocal commercial policy\b/i],
-  ["local entity", /\blocal entit(y|ies)\b/i], ["market enabler", /\bmarket enabler\b/i],
+  ["local entity", /\blocal entit(y|ies)\b/i], ["local merchant", /\blocal merchants?\b/i], ["market enabler", /\bmarket enabler\b/i],
   ["MCC", /\bMCC\b|merchant category code/i], ["MDR", /\bMDR\b/], ["merchant", /\bmerchants?\b/i],
   ["Merchant of Record", /\bMerchant of Record\b/], ["MID", /\bMIDs?\b/], ["on-ramp", /\bon-ramp\b/i],
-  ["OTC", /\bOTC\b/], ["payment facilitator", /\bpayment facilitator\b/i],
+  ["OTC", /\bOTC\b/], ["orchestration", /\borchestration\b/i], ["orchestration swarm", /\borchestration swarm\b/i], ["PayFac", /\bPayFac\b/], ["payment facilitator", /\bpayment facilitator\b/i],
   ["payment institution", /\bpayment[- ]institution\b/i], ["PaySecure", /\bPaySecure\b/],
-  ["paytech", /\bpaytech\b/i], ["PCI DSS", /\bPCI DSS\b|\bPCI\b/], ["PEP", /\bPEP\b/], ["PIX", /\bPIX\b/],
+  ["paytech", /\bpaytech\b/i], ["payout", /\bpayouts?\b/i], ["PCI DSS", /\bPCI DSS\b|\bPCI\b/], ["PEP", /\bPEP\b/], ["PIX", /\bPIX\b/],
+  ["Power of Attorney", /\bPower of Attorney\b/], ["production API keys", /\bproduction API keys\b/i],
   ["rail", /\brails?\b/i], ["reconciliation", /\breconciliation\b/i], ["remittance", /\bremittances?\b/i],
   ["rolling reserve", /\brolling reserve\b/i], ["sanctions", /\bsanction(s|ed)\b/i], ["SAQ-D", /\bSAQ-D\b/],
   ["scheme", /\bschemes?\b/i], ["settlement", /\bsettlements?\b/i], ["SimilarWeb", /\bSimilarWeb\b/],
-  ["storefront", /\bstorefronts?\b/i], ["sub-acquirer", /\bsub-acquir/i], ["Sridhar", /\bSridhar\b/],
+  ["sub-acquirer", /\bsub-acquir/i], ["Sridhar", /\bSridhar\b/],
   ["take rate", /\btake rate\b/i], ["The Map", /\bThe Map\b/], ["Transfero", /\bTransfero\b/],
   ["tokenisation", /\btokenis(ed|ation)\b/i], ["tokenized-PIX rail", /\btokenized-PIX rail\b/i],
-  ["USDC", /\bUSDC\b/], ["Website Factory", /\bWebsite Factory\b/], ["Welcome Kit", /\bWelcome Kit\b/],
+  ["USDC", /\bUSDC\b/], ["Viktoria", /\bViktoria\b/], ["Website Factory", /\bWebsite Factory\b/], ["Welcome Kit", /\bWelcome Kit\b/], ["white label", /\bwhite[- ]label\b/i], ["Zoho Mail", /\bZoho Mail\b/],
   ["PTAX", /\bPTAX\b/], ["wallet", /\bwallets?\b/i], ["horizontal scaling", /\bhorizontal(ly)? scal/i],
   ["payment institution", /\bpayment[- ]institution\b/i],
 ];
@@ -101,7 +104,7 @@ function check() {
     lines.forEach((line, i) => {
       if (NAME.test(line) && TITLE_WORDS_KIT.test(line)) fail(`${f}:${i + 1}: title word next to André Silva`);
     });
-    const limit = num === "04" || num === "09" ? WORD_LIMIT_LONG : WORD_LIMIT_DEFAULT;
+    const limit = num === "04" || num === "09" ? WORD_LIMIT_LONG : num === "06" ? WORD_LIMIT_ROLES : WORD_LIMIT_DEFAULT;
     const w = words(text);
     if (w > limit) fail(`${f}: ${w} words, limit ${limit}`);
     if (/\p{Extended_Pictographic}/u.test(text)) fail(`${f}: emoji found`);

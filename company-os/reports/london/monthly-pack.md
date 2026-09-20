@@ -1,6 +1,6 @@
 # Monthly pack — [month year]
 
-Sent by the 5th business day to Sridhar (Sri Amit), viktoria@paysecure.net and Hansraj. Board view; numbers with source and date.
+Sent to Sridhar (sri@paysecure.net), Viktoria and Hansraj. Day: Open. Board view; numbers with source and date.
 
 ## 1. Result
 

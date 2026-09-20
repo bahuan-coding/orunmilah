@@ -7,15 +7,17 @@ Registers: `integrations.md`.
 
 ## What we run
 
-- Payment engine in code: processors, authorisation, tokenisation, 3DS, acquirer performance, Chargeback API.
-- Merchant portal: onboarding, KYB, proposals (Clayton operates).
+- Payment engine in operation: PaySecure's white label. Always-on culture; processors, authorisation, tokenisation, 3DS, acquirer performance, Chargeback API. We obtain production API keys from acquirers and deliver them to the core team; we configure and reconcile on that instance. The engine is not allowed to go down. Traffic is twenty-four hours, every day, from everywhere. Years of history without unavailability. Same architecture throughout; more than R$ 3 billion already processed on this premise. New technology has been absorbed as it arrived. The live book today is a separate number (the live book in September is zero; October volume starts on 1 October).
+- Merchant portal: onboarding, KYB, proposals (Clayton operates). Local merchants through the Website Factory, and merchants who arrive through clients.
 - Operating desk: queues, credit, identity, custody, Key Vault.
 - Stack named in internal PCI documentation (verify what is live for SambaPay): Azure Container Apps, PostgreSQL Flexible Server, Redis, Key Vault; Cloudflare WAF; Netlify-hosted checkout page; AWS Cognito SSO; CyberSource tokenisation; Braspag 3DS.
 
 ## Website Factory (objective 3)
 
-- Template-based storefronts for cross-border merchants and online-service players; our checkout embedded; merchant runs fulfilment (post office for now).
-- Build owner: Leandro (D4). Commercial owner: Open. Success: SimilarWeb and online page validators read every storefront as genuine, high-quality ("top A").
+- An orchestration swarm of AI and product managers specialised in each business. Each digitisation case is produced specifically.
+- In each geography where we have structure: local merchants who want to digitise, from the CNPJ through operational management with the local entities, until payout. They use capture channels as a local player. A client's Brazil store uses the same factory.
+- Build of the swarm: Leandro (D4). Commercial owner: Open. Named product managers in the swarm: Open.
+- Success of the live site: SimilarWeb and online page validators read it as genuine, high-quality ("top A").
 
 ## Acceptance criterion for any new rail (objective 5)
 
@@ -27,4 +29,4 @@ Volume grows by integrating several acquirers per market side by side, never by 
 
 ## Open
 
-Partner MoR is Cielo; Double Diamond fee and date; which stack components are live; Website Factory commercial owner; Factoring process owner (internal, P29).
+Partner MoR is Cielo; Double Diamond fee and date; which stack components are live; Website Factory commercial owner; Factoring process owner (internal, P29). Brazilian / 2D acquirer restart is André Silva (P30).

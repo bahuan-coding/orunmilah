@@ -17,17 +17,17 @@ disable-model-invocation: true
 - `references/london-reporting.md` — how to fill and send them.
 - `references/regulatory-map.md` — instruments and what they mean for us; all "verify with counsel".
 - `references/licensing-committee.md` — how the specialist committee runs and what it produces.
+- `references/payfac-committee.md` — linguistic and business precision of the four statuses. Payment facilitator is not sub-acquirer.
 
 ## Licensing path
 
-Read `company-os/governance/licensing-roadmap.md` before answering anything about sub-acquiring, the payment-institution licence, capital, modality or dates. Dates are brutally honest: 1 Oct is account-open, not volume go-live; do not promise a BCB filing or grant date. Never quote a threshold, a capital figure or a regulator deadline as fact; write "verify" and name the instrument. The committee is agents, not people. To prepare a pass, follow `references/licensing-committee.md`.
+Read `company-os/governance/licensing-roadmap.md` before answering anything about sub-acquiring, the payment-institution licence, capital, modality or dates. Dates are brutally honest: 1 Oct accounts open and October volume starts that day; 31 Oct is breakeven; do not promise a BCB filing or grant date. Never quote a threshold, a capital figure or a regulator deadline as fact; write "verify" and name the instrument. The path committee is agents, not people: `references/licensing-committee.md`. The words for today, next and then are written by the PayFac committee: `references/payfac-committee.md`. October volume words are written by the business committee: `../sambapay-finance/references/business-committee.md`. Today we operate as payment facilitator under a partner Merchant of Record. We will be a sub-acquirer. Payment institution follows. Do not skip the middle status. Do not write that Stage 1 is done. Do not write 1 October as a day without volume.
 
 ## Decision rights (from the 30 Aug 2026 chart, adjusted)
 
-- André Silva: stop a merchant, hold funds, offboard, highest-severity incidents, acquirer and PaySecure relationships, PCI DSS accountability (12.1.4).
-- Process owners decide inside their process (`company-os/people/process-map.md`).
+- André Silva decides. The test: which option brings us closer to revenue from DD2, on the take rate Hansraj proposes, so we cover the company's costs. The team elaborates. Process owners execute (`company-os/people/process-map.md`). They do not close a change of direction. Kit words: `welcome-kit/05-how-we-work.md`.
 - Clayton Lira (Merchant Operations Analyst) executes blocks on André Silva's order.
-- Sheila Esmeralda (Compliance Officer) answers letters, does not hold or offboard.
+- Sheila Esmeralda (Compliance Officer) is on leave and outside the project. Not in tactical work for now. Correspondence she owned runs through André Silva.
 - Leandro Silva (Head of Engineering and Product) opens merchant accounts.
 - Thiago Silva (Head of Operations) owns the day's figure.
 
@@ -47,7 +47,7 @@ Every obligation in `obligations.md` has an owner and a next-due date. Review mo
 
 - SPA A55 LLC → PaySecure not signed as of 19 Sep 2026; ask London for status weekly until signed. When André Silva asks about the transaction, his risks or what to decide, read `company-os/governance/ownership-brief.md` and answer with its facts, its nine stakes, D23–D29 and section 7.6 (plain language of Q23–Q28); never add a term that is not in the paper. Never put any of this in the Welcome Kit.
 - PaySecure legacy balances (finance README) until remitted and released.
-- Payment-institution authorisation path: counsel plan, dates, owner André Silva.
+- Sub-acquirer then payment-institution path: counsel plan, dates, owner André Silva. Language of the statuses: `references/payfac-committee.md`.
 
 ## Depth
 
