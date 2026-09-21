@@ -11,12 +11,12 @@ Registers: `model.md`.
 - Rolling reserve going forward: omitted from the Welcome Kit until named. Legacy books (history, not the going-forward rule): 10% of gross (BRL) or 9.58% of net (CLP).
 - Operational cash reserve: zero.
 - Latin America is a cheap market: geographies that are very cost-efficient. That is why the company is here. Priority: European and American cardholders, identified by those issuing BINs, into a local commercial policy.
-- Volume premises (19 Sep 2026): the live book in September is **zero**; from **1 October** volume is on (day one of the month); **31 October** is breakeven; cruise **USD 100,000 per day** (confirmed). History of the same engine: more than R$ 3 billion already processed on this premise; do not conflate that history with the September live book. Sources for the live book: PaySecure flow; Finnera (about USD 25 million a month; Renato Paulino follows up); local merchants on the Website Factory.
+- Volume premises (21 Sep 2026): the live book in September is **zero** until DD1 Cielo carries production volume; we go to production with **DD1 Cielo** for volumes; **DD2** opens in parallel and does not gate volume; from **1 October** volume is on, on DD1 Cielo (day one of the month); **31 October** is breakeven; cruise **USD 100,000 per day** (confirmed). History of the same engine: more than R$ 3 billion already processed on this premise; do not conflate that history with the September live book. Sources for the live book: PaySecure flow on DD1 Cielo; Finnera (about USD 25 million a month; Renato Paulino follows up); local merchants on the Website Factory.
 - DD2 entity stand-up: about R$ 5,000 indicative all-in for one entity (lawyer; digitising including 2-step on mobile for bank and acquirer apps; CNPJ; three acquirer accounts). No entity opened, no contract signed. One-off in `model.md`, marked indicative.
 
 ## Objective 2: breakeven by 31 Oct 2026
 
-Plan A: DD2 accounts at Cielo, Asaas, EFI open on 1 Oct and October volume starts that day; PaySecure flow on the rails; Finnera offer sent; cruise volume across the month; breakeven 31 Oct. Plan B: cost-book actions, PaySecure legacy releases (below), Finnera volume. Owner: André Silva. Reviewed in the weekly pulse.
+Plan A: production volume on DD1 Cielo; PaySecure flow on that rail; DD2 opens in parallel; Finnera offer sent; cruise volume across the month; breakeven 31 Oct. Plan B: cost-book actions, PaySecure legacy releases (below), Finnera volume. Owner: André Silva. Reviewed in the weekly pulse.
 
 ## Cost book (board view; never in the Welcome Kit)
 

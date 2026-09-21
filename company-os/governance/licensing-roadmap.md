@@ -5,8 +5,8 @@ Design: a committee of **agents**, not people (D19): sambapay-ceo plus `sambapay
 
 ## Where we stand
 
-- Stage 0, today (September): an operating partner is the Merchant of Record and carries merchant risk and the rolling reserve. A55 Payments operates as the payment facilitator. The live book in September is zero. Remittance to PaySecure by the partner PIX path or the OTC on-ramp (reais → same-day PIX to a desk → USDC into our own wallet → PaySecure).
-- Goal A (ASAP): we will be a **sub-acquirer**, serving cross-border businesses at the lowest possible fees. Own MIDs at Cielo, Asaas and EFI. Stage 1 is not closed. Payment facilitator (scheme) and sub-acquirer (BCB) are not the same word.
+- Stage 0, today (September): an operating partner is the Merchant of Record and carries merchant risk and the rolling reserve. A55 Payments operates as the payment facilitator. Production volume: DD1 Cielo. The live book in September is zero until that rail carries volume. DD2 opens in parallel. Remittance to PaySecure by the partner PIX path or the OTC on-ramp (reais → same-day PIX to a desk → USDC into our own wallet → PaySecure).
+- Goal A (ASAP): we will be a **sub-acquirer**, serving cross-border businesses at the lowest possible fees. Own MIDs at Cielo, Asaas and EFI on DD2. Stage 1 is not closed. Payment facilitator (scheme) and sub-acquirer (BCB) are not the same word. DD2 is not the volume gate.
 - Goal B (after Goal A is live): payment institution authorised by the Central Bank of Brazil. Filing starts the day Goal A closes. Grant date is the Central Bank's.
 
 ## The committee (agents)
@@ -31,7 +31,7 @@ Rules: the agents design; André Silva decides. Status language (Merchant of Rec
 | Stage | Window | Done when | Depends on |
 |---|---|---|---|
 | 0 Today | Sep 2026 | — | — |
-| 1 Sub-acquiring in our own name | From now. Accounts open **1 Oct 2026** at Cielo, Asaas, EFI. October volume starts that day: day one of the month. 31 Oct is breakeven | Each of Cielo, Asaas, EFI has an account we can transact on; Stage-1 obligations evidenced | Objective 1 (DD2), KYB stack (D7), Chargeblast (D8), PCI scope |
+| 1 Sub-acquiring in our own name | From now. DD2 accounts at Cielo, Asaas, EFI open in parallel with DD1 Cielo production volume. Date those accounts are open: Open. 1 Oct is day one of October volume on DD1 Cielo. 31 Oct is breakeven | Each of Cielo, Asaas, EFI has an account we can transact on; Stage-1 obligations evidenced | Objective 1 (DD1 production; DD2 parallel), KYB stack (D7), Chargeblast (D8), PCI scope |
 | 2 Authorisation readiness | Starts the day Stage 1 closes. No promised filing date | Request filed with the Central Bank of Brazil | SPA signed; capital paid in (premise: the minimum); Stage-1 evidence |
 | 3 Regulator's analysis | Starts the day we file. Length is the Central Bank's | Authorisation granted | Filing quality; fast answers |
 | 4 Payment institution live | After grant, within the start-of-operations deadline the regulator sets | First month reported to London under the new status | Stage 3 |
@@ -40,7 +40,7 @@ Rules: the agents design; André Silva decides. Status language (Merchant of Rec
 
 ## Stage 1 checklist (sub-acquiring in our own name)
 
-- [ ] DD2 entity opened on Double Diamond's requirements; accounts at **Cielo, Asaas and EFI** (P31, P33)
+- [ ] DD2 entity opened on Double Diamond's requirements, in parallel with DD1 Cielo production; accounts at **Cielo, Asaas and EFI** (P31, P33)
 - [ ] Entity stand-up: indicative all-in about R$ 5,000 (lawyer; digitising including 2-step on mobile for bank and acquirer apps; CNPJ; three acquirer accounts; no contract signed)
 - [ ] Factoring in force on the volumes we run: all volume anticipated at a competitive price; nobody sells this as a vendor
 - [ ] Scheme registration with Visa (Payment Facilitator) and Mastercard (Submerchant Aggregator) through each of Cielo, Asaas and EFI. This is scheme English, not BCB sub-acquirer status; verify with counsel
@@ -68,7 +68,7 @@ Lei 12.865/2013; Resolução BCB 80/2021 (payment-institution constitution and a
 
 ## Risks tracked
 
-Regulator timing; foreign-controller documentation waiting on the SPA; 1 Oct accounts must open and October volume must start that day; dependence on the partner MoR until Stage 1 closes; scheme registration clocks per acquirer; desks losing their PIX rail after 30 Oct 2026 without a protocol; eight people carrying implementation as a second job.
+Regulator timing; foreign-controller documentation waiting on the SPA; production volume on DD1 Cielo must post; DD2 accounts open in parallel and must not be written as the volume gate; dependence on the partner MoR until Stage 1 closes; scheme registration clocks per acquirer; desks losing their PIX rail after 30 Oct 2026 without a protocol; eight people carrying implementation as a second job.
 
 ## Decisions taken
 

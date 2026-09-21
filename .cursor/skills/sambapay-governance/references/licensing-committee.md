@@ -16,7 +16,7 @@ The agents read the whole roadmap, cut the path into slices, each with a "done w
 ## Preparing a pass (the model does this)
 
 1. Read `licensing-roadmap.md`, `obligations.md` and `decision-log.md`.
-2. List every deadline in the next 30 days with owner and status. 1 Oct accounts open and October volume starts: that is the first.
+2. List every deadline in the next 30 days with owner and status. First: DD1 Cielo production volume. DD2 accounts in parallel, not the volume gate. 1 Oct is day one of October volume on DD1 Cielo.
 3. List every "verify" item still unconfirmed by a lawyer; group by instrument.
 4. Draft: decisions needed (with options and a recommendation), deadlines at risk, verify items, next slice.
 5. After André Silva decides: update the roadmap the same day; one line per decision in the decision log; blockers into the next weekly pulse.
@@ -25,7 +25,7 @@ The agents read the whole roadmap, cut the path into slices, each with a "done w
 
 - Follow `references/payfac-committee.md` for Merchant of Record, payment facilitator, sub-acquirer and payment institution. They are four statuses, not one.
 - Never quote a threshold, capital figure or regulator deadline as fact until a lawyer confirms it in writing; write "verify" and name the instrument.
-- Do not promise a BCB filing date or a BCB grant date. 1 Oct accounts open and October volume starts. Do not write that date as a day without volume.
+- Do not promise a BCB filing date or a BCB grant date. Production volume on DD1 Cielo. DD2 opens in parallel. 1 Oct is day one of October volume on DD1 Cielo. Do not write that date as a day without volume. Do not write that volume waits for DD2.
 - Titles for everyone; André Silva by name only, never on the same line as a title word.
 - English. Facts, numbers, dates, asks.
 

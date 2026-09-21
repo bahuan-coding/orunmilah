@@ -4,7 +4,7 @@ Fill the blanks; each number needs a source and a date. Board view.
 
 | Number | Value | As of | Source | Owner |
 |---|---|---|---|---|
-| Monthly processed volume (BRL) | Premises: today zero; cruise USD 100,000/day (confirmed) | 19 Sep 2026 | André Silva | André Silva |
+| Monthly processed volume (BRL) | Premises: today zero until DD1 Cielo carries production volume; cruise USD 100,000/day (confirmed) | 21 Sep 2026 | André Silva | André Silva |
 | Realised take rate (%) | Open (Hansraj proposes so we cover costs and hold a reserve; working structure 1% ICC++) | 19 Sep 2026 | André Silva | Hansraj / André Silva |
 | Fixed cost base per month (BRL) | Open (PJ run-rate R$ 180,680 on 13 Sep 2026; CLT Open) | | Sixty-day pack | André Silva |
 | Cash position (BRL, USD) | Operational cash reserve: zero (premise) | 19 Sep 2026 | André Silva | Taina |

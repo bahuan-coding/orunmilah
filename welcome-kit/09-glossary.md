@@ -19,7 +19,7 @@ Every term used in this kit, one sentence each. If you meet a word that is not h
 - **Client** — A company with international traffic that uses our market enablement and orchestration: PaySecure first. We do not take its merchants and we do not dispute its accounts.
 - **Boleto** — A Brazilian bank slip paid at a bank or app; a cash-like local payment method.
 - **Break Even** — Internal tool that tracks the registration of A55 de Colombia with PSPs and acquirers.
-- **Breakeven** — Covering our costs. The date is 31 October 2026. 1 October is day one of that month's volume. Cruise working figure: USD 100,000 a day.
+- **Breakeven** — Covering our costs. The date is 31 October 2026. 1 October is day one of that month's volume, on DD1 Cielo. Cruise working figure: USD 100,000 a day.
 - **CAID** — Card Acceptor ID, the merchant's identifier at the card schemes; needed to register the merchant for dispute alerts.
 - **Capture channel** — The path that takes a payment attempt: the checkout and the rails behind it. What a local merchant uses to collect.
 - **Card corridor** — The route from issuing BINs in a region to local acquiring. Ours are European and American cardholders, identified by those BINs, into Latin America. Distinct from Corridor, which is an FX route.
@@ -27,7 +27,7 @@ Every term used in this kit, one sentence each. If you meet a word that is not h
 - **Central Bank of Brazil** — The regulator of payments in Brazil; grants payment-institution and cross-border authorisations.
 - **Chargeback** — A card payment reversed by the shopper's bank after a dispute; costs the merchant the sale and a fee.
 - **Chargeblast** — The pre-dispute alerts service we use to resolve disputes before they become chargebacks.
-- **Cielo** — Brazilian acquirer. Live partner Merchant of Record today, and one of the three DD2 acquirers for our own merchant IDs, side by side with Asaas and EFI. The 19 September MDR table is Cielo's, sized for USD 100,000 daily volume.
+- **Cielo** — Brazilian acquirer. Live partner Merchant of Record today. The production rail for volume is DD1 Cielo. Also one of the three DD2 acquirers for our own merchant IDs, side by side with Asaas and EFI. The 19 September MDR table is Cielo's, sized for USD 100,000 daily volume.
 - **Checkout** — The page or component where the shopper enters payment details; ours embeds our integrated acquirers.
 - **CNPJ** — Brazil's company tax number. The Website Factory operationalises it for the local merchant that wants a store in Brazil, and for a client's Brazil store. DD2 also needs a CNPJ to stand the entity up.
 - **Conflict of interest** — Taking a client's merchants or disputing a client's accounts. We do not. Local merchants on the Website Factory are another niche.
@@ -36,12 +36,13 @@ Every term used in this kit, one sentence each. If you meet a word that is not h
 - **Cross-border** — Selling in a country other than the merchant's own.
 - **Cut-off** — The time of day after which an operator counts a transaction in the next settlement window.
 - **D+n** — Settlement n days after the transaction date; D+1 is next day.
-- **DD2** — Our secondary entity template in Brazil, built on Double Diamond's requirements: Cielo, Asaas and EFI side by side, Factoring covering all volume at a competitive price, and two on-ramp desks (MIPPO/GFS/OrbiFi and Transfero). Accounts open on 1 October and October volume starts that day: day one of the month that must reach breakeven on 31 October.
+- **DD1** — The first Brazilian entity path with Cielo. We go to production with DD1 Cielo for volumes. Distinct from DD2, which we open in parallel.
+- **DD2** — Our secondary entity template in Brazil, built on Double Diamond's requirements: Cielo, Asaas and EFI side by side, Factoring covering all volume at a competitive price, and two on-ramp desks (MIPPO/GFS/OrbiFi and Transfero). We open it in parallel with DD1 Cielo production volume. It does not gate that volume. Date the accounts open: Open.
 - **Digitisation** — Standing a local merchant, or a client's Brazil store, up as a digital business, case by case, through the Website Factory: from the CNPJ through operational management with the local entities, until payout.
 - **Direct acquirer** — An acquirer that is itself a direct participant of its country's central bank settlement system; the partners Abner signs us up with, so no intermediary sits between our rail and settlement.
 - **Direct connection** — A live rail to a local acquirer in the country, through our own entity or a partner: the presence we offer so a business that does not have access to a cheap market can use the local commercial policy.
 - **Decision log** — One line per decision that changes direction: options, choice, reason, owner.
-- **Double Diamond** — The firm mapping the requirements to open an entity in Brazil; DD2 is its template. Its deliverable is the checklist package: all documents needed to open acquirer accounts.
+- **Double Diamond** — The firm mapping the requirements to open an entity in Brazil. DD1 is the Cielo production path. DD2 is its secondary template. Its deliverable is the checklist package: all documents needed to open acquirer accounts.
 - **DPO** — Data protection officer, the LGPD contact; dpo@sambapay.tech.
 - **EFI** — One of the three Brazilian acquirers on the DD2 template (Efi Bank, formerly Gerencianet), integrated side by side with Cielo and Asaas.
 - **Factoring** — Our model going forward: all volumes anticipated, even where Brazilian credit would take D+30, at a competitive price. Nobody sells this to us as a vendor. Distinct from the closed AmFi pools.

@@ -28,7 +28,7 @@ const JARGON = [
   ["always-on", /\balways-on\b/i], ["aggregated volume", /\baggregated volume\b/i], ["approval rate", /\bapproval rate\b/i], ["Asaas", /\bAsaas\b/], ["barrier to entry", /\bbarrier to entry\b/i], ["BIN", /\bBINs?\b/], ["boleto", /\bboletos?\b/i],
   ["Break Even", /\bBreak Even\b/i], ["breakeven", /\bbreakeven\b/i], ["CAID", /\bCAIDs?\b/], ["capture channel", /\bcapture channels?\b/i], ["card corridor", /\bcard corridors?\b/i], ["cardholder", /\bcardholders?\b/i], ["Central Bank of Brazil", /\bCentral Bank of Brazil\b/],
   ["chargeback", /\bchargebacks?\b/i], ["Chargeblast", /\bChargeblast\b/],   ["checkout", /\bcheckout\b/i], ["Cielo", /\bCielo\b/], ["client", /\bclients?\b/i], ["CNPJ", /\bCNPJ\b/], ["conflict of interest", /\bconflict of interest\b/i], ["core team", /\bcore team\b/i], ["corridor", /\bcorridors?\b/i], ["cross-border", /\bcross-border\b/i],
-  ["cut-off", /\bcut-off\b/i], ["D+n", /\bD\+n\b/], ["DD2", /\bDD2\b/], ["decision log", /\bdecision log\b/i],
+  ["cut-off", /\bcut-off\b/i], ["D+n", /\bD\+n\b/], ["DD1", /\bDD1\b/], ["DD2", /\bDD2\b/], ["decision log", /\bdecision log\b/i],
   ["direct connection", /\bdirect connections?\b/i], ["digitisation", /\bdigitisation\b/i],
   ["Double Diamond", /\bDouble Diamond\b/], ["DPO", /\bDPO\b|dpo@/], ["EFI", /\bEFI\b/], ["factoring", /\bfactoring\b/i],
   ["Finnera", /\bFinnera\b/], ["FX", /\bFX\b/], ["G2", /\bG2\b/],

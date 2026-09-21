@@ -6,7 +6,7 @@ Registers: `decision-log.md`, `licensing-roadmap.md`, `ownership-brief.md` (boar
 
 ## Decision rights
 
-- André Silva decides. The test: which option brings us closer to revenue from DD2, on the take rate Hansraj proposes, so we cover the company's costs. The team elaborates. Process owners execute (`../people/process-map.md`). They do not close a change of direction.
+- André Silva decides. The test: which option brings us closer to revenue from DD1 Cielo production volume, on the take rate Hansraj proposes, so we cover the company's costs. The team elaborates. Process owners execute (`../people/process-map.md`). They do not close a change of direction.
 - Clayton Lira (Merchant Operations Analyst) executes a merchant block only on André Silva's order.
 - Sheila Esmeralda (Compliance Officer) is on leave and outside the project. Not in tactical work for now. Correspondence she owned runs through André Silva (P19 backup).
 - Leandro Silva (Head of Engineering and Product) opens merchant accounts.
@@ -31,7 +31,7 @@ Registers: `decision-log.md`, `licensing-roadmap.md`, `ownership-brief.md` (boar
 
 ## Licensing path
 
-Sub-acquiring in our own name first: accounts at Cielo, Asaas and EFI open on 1 Oct 2026, and October volume starts that day. 31 Oct is breakeven. Payment-institution filing starts the day Stage 1 closes; the grant date is the Central Bank's. A committee of agents (not people) designs the path in `licensing-roadmap.md`. André Silva decides.
+Production volume runs on DD1 Cielo. DD2 opens in parallel (own accounts at Cielo, Asaas and EFI); it does not gate volume. 1 October is day one of October volume, on DD1 Cielo. 31 Oct is breakeven. Sub-acquiring in our own name is the DD2 path. Payment-institution filing starts the day Stage 1 closes; the grant date is the Central Bank's. A committee of agents (not people) designs the path in `licensing-roadmap.md`. André Silva decides.
 
 ## Open
 

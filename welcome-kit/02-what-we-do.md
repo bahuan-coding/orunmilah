@@ -20,6 +20,6 @@ We do not take our clients' merchants. We do not dispute their accounts. We do n
 
 ## Why the client stays
 
-Availability is the product. The client counts on the quality of this system. It stays up. That is why the relationship lasts.
+Availability is the product. The client counts on the quality of this system. It stays up. That is why the relationship lasts. PaySecure is the proof: years as a client, several cycles of growth, because the system is stable.
 
-PaySecure is the proof. It has been our client for years. We have already been through several cycles of growth together, because the system is stable.
+We have a strong relationship with our partners, and with our acquirers above all. That relationship is our greatest focus, and our obsession.

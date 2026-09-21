@@ -26,7 +26,7 @@ We offer a local connection as a presence for businesses that do not have access
 
 ## Always-on pay technology
 
-We are a paytech: a fintech specialised in payments. A focused system is an efficient system. The business model is to provide infrastructure. The culture is obsessively online: the engine is not allowed to go down. It has years of history without unavailability, carrying traffic twenty-four hours a day, every day, from everywhere. The service is consumed as a URL: a data-centre-level delivery for the payments segment, on PaySecure's white label. More than R$ 3 billion has already been processed on this premise. New technology has been absorbed as it arrived. The live book in September is zero. October volume starts on 1 October, when the DD2 accounts open.
+We are a paytech: a fintech specialised in payments. A focused system is an efficient system. The business model is to provide infrastructure. The culture is obsessively online: the engine is not allowed to go down. It has years of history without unavailability, carrying traffic twenty-four hours a day, every day, from everywhere. The service is consumed as a URL: a data-centre-level delivery for the payments segment, on PaySecure's white label. More than R$ 3 billion has already been processed on this premise. The live book in September is zero. We go to production with DD1 Cielo for volumes. We open DD2 in parallel. 1 October is day one of October volume.
 
 ## Why it matters
 

@@ -59,6 +59,10 @@ Local merchants sit in each geography where we have structure. The Website Facto
 
 Never write "we do not sell to merchants" as a blanket. Never write "marketing enablement": the glossary term is market enablement.
 
-## This pass (20 Sep 2026, acquirers)
+## This pass (19 Sep 2026, acquirers)
 
 Cut "Being integrated means getting on with many people at the same time." That English is wrong. He meant: we have a strong relationship with our partners, and with our acquirers above all. That relationship is our greatest focus, and our obsession. One idea per sentence. No "getting on". No "integrated" as a riddle.
+
+## This pass (21 Sep 2026, PaySecure counterparts)
+
+Do not name Govinda. Pulse and pack: Sridhar (sri@paysecure.net), Viktoria, Hansraj. Write the acquirer sentences in `02`, `03` and `05`, not only in `06`.

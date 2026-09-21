@@ -30,7 +30,7 @@ Shoppers' and merchants' personal data is used only for the payment and kept onl
 
 ## 7. Card scheme rules
 
-Visa and Mastercard rules bind us through the acquirers. Merchant category codes are honest; high-risk volume runs on the partner's production rail so ordinary rails stay clean. Disputes are managed early through Chargeblast with each merchant's CAID. A letter from Visa, Mastercard or an acquirer is the moment that tells whether this business works. We are responsive and we are coherent. The facts reach André Silva as soon as they exist, so partners can use that speed in our defence and in any risk we have to mitigate. Payments carry every kind of risk.
+Visa and Mastercard rules bind us through the acquirers. Merchant category codes are honest; high-risk volume runs on the partner's production rail so ordinary rails stay clean. Disputes are managed early through Chargeblast with each merchant's CAID. We have a strong relationship with our partners, and with our acquirers above all. That relationship is our greatest focus, and our obsession. A letter from Visa, Mastercard or an acquirer is the moment that tells whether this business works. We are responsive and we are coherent. The facts reach André Silva as soon as they exist, so partners can use that speed in our defence and in any risk we have to mitigate. Payments carry every kind of risk.
 
 ## 8. Money moves only when the book ties
 

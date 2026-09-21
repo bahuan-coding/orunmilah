@@ -32,7 +32,7 @@ Use the questionnaire in `references/latam-market-map.md`. Every answer goes to 
 
 ## Current focus
 
-Brazil (DD2 accounts open 1 Oct 2026 and October volume starts that day: the secondary entity template built on Double Diamond's requirements, three acquirers side by side plus two OTC partners), then Colombia (entity owned; registrations via the Break Even tool), then Mexico (legal minimums, objective 6). In each geography, local merchants on the Website Factory are another niche. We do not take our clients' merchants.
+Brazil (production volume on DD1 Cielo; DD2 opens in parallel: the secondary entity template built on Double Diamond's requirements, three acquirers side by side plus two OTC partners), then Colombia (entity owned; registrations via the Break Even tool), then Mexico (legal minimums, objective 6). In each geography, local merchants on the Website Factory are another niche. We do not take our clients' merchants.
 
 ## The pattern for every market (horizontal scaling)
 

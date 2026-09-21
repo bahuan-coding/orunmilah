@@ -18,7 +18,7 @@ Registers: `merchant-onboarding.md`, `operator-windows.md`.
 - Reconciliation-to-remittance process is designed after the FX contract is signed (P34).
 - Operator windows: define every cut-off, the daily calculation, from where and at what time funds start being sent onward.
 - Factoring: cover all volumes with 100% anticipation, even where Brazilian credit would take D+30; nothing more; the price must be competitive. Nobody sells this to us as a vendor.
-- DD2 entity structuring: options to discuss with Double Diamond, the firm mapping the requirements to open an entity in Brazil. Open: options and decision date.
+- DD2 entity structuring: options to discuss with Double Diamond, the firm mapping the requirements to open an entity in Brazil. Opened in parallel with DD1 Cielo production. Open: options and decision date.
 
 ## Open
 

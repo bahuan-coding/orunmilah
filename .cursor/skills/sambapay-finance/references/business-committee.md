@@ -22,11 +22,17 @@ Never write "we do not sell to merchants" as if the Website Factory did not exis
 
 | Date | What it is | What it is not |
 |---|---|---|
-| The live book in September | Zero. That is now | A forecast that October has no volume |
-| 1 October 2026 | DD2 accounts open at Cielo, Asaas and EFI. Volume starts. Day one of a 31-day month. A partial of October | A day without volume. A thing called "account-open, not volume go-live". Go-live without volume, or volume without go-live |
+| The live book in September | Zero until DD1 Cielo carries production volume | A forecast that October has no volume |
+| Production volume | DD1 Cielo. We go to production on that rail | Volume that waits for DD2 |
+| DD2 | Secondary entity template (Cielo, Asaas, EFI). Opened in parallel. Date the accounts open: Open | The gate for volume |
+| 1 October 2026 | Day one of a 31-day month. A partial of October. Volume on DD1 Cielo | A day without volume. A thing called "account-open, not volume go-live". Go-live without volume, or volume without go-live |
 | 31 October 2026 | Breakeven. We cover our costs. Cruise working figure: USD 100,000 a day | A surprise after a month of zero |
 
-If the accounts are open, volume can run. If volume runs, that day is live. Do not split those words. Do not invent the 1 October daily figure as a share of cruise; that share stays Open until named.
+If volume runs on DD1 Cielo, that day is live. Do not write that October has no volume until DD2's three accounts exist. Do not invent the 1 October daily figure as a share of cruise; that share stays Open until named.
+
+## This pass (21 Sep 2026)
+
+Production volume on DD1 Cielo. DD2 opens in parallel. Rewrite `01`, `03`, `04`, `05`, `07`, the glossary, finance, the licensing roadmap and the PayFac committee. Volume and the three DD2 accounts are not the same event.
 
 ## Take rate
 
@@ -44,7 +50,7 @@ Merchant "go-live" (checklist, CAID) is a merchant gate in `08` and `06`. It is 
 |---|---|---|
 | Chair (decides) | André Silva | — |
 | Thesis | `sambapay-ceo` plus `sambapay-opportunities` | A vague competitor. A critique of payment facilitators that also names us. A thesis that is not about cheap-market presence. "We do not sell to merchants" as if local merchants on the Website Factory did not exist |
-| October arithmetic | `sambapay-finance` | September zero written as if it were 1 October. 1 October written as a day without volume. 31 October breakeven with no volume in between |
+| October arithmetic | `sambapay-finance` | September zero written as if it were 1 October. 1 October written as a day without volume. Volume written as waiting for DD2. 31 October breakeven with no volume in between |
 | Swap test | payments-marketing committee | Generic "we are local". The sentence must be our geographies and our cardholders |
 
 ## This pass (19 Sep 2026)

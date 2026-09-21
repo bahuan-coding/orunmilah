@@ -26,7 +26,7 @@ Ask four things and write them next to it: source, date, gross or net, currency.
 
 ## Breakeven (objective 2)
 
-1 October: DD2 accounts open, volume starts, day one of the month. 31 October: breakeven. The live book in September is zero. Do not write those as if 1 October were a day without volume. Fill `model.md`. Compute breakeven volume. Compare with the volume PaySecure and Finnera can bring by the date. If short, Plan B lines: cost-book actions, legacy releases, Finnera. Write the plan in `finance/README.md`; review in every weekly pulse. Thesis and October words: `references/business-committee.md`.
+1 October: day one of the month; volume on DD1 Cielo. 31 October: breakeven. The live book in September is zero until DD1 Cielo carries production volume. DD2 opens in parallel; it does not gate volume. Do not write those as if 1 October were a day without volume. Do not write that October has no volume until DD2's three accounts exist. Fill `model.md`. Compute breakeven volume. Compare with the volume PaySecure and Finnera can bring by the date. If short, Plan B lines: cost-book actions, legacy releases, Finnera. Write the plan in `finance/README.md`; review in every weekly pulse. Thesis and October words: `references/business-committee.md`.
 
 ## Explaining to non-finance
 

@@ -25,7 +25,7 @@ Volume times margin rules everything. Our clients run on thin margins and high v
 
 ## Who carries the risk today
 
-**Cielo** acts as Merchant of Record: it carries the merchant risk and the rolling reserve, and is connected to a growing set of local acquirers. We operate as payment facilitator on that rail. We take production API keys from the acquirers, deliver them to the core team, and configure and reconcile on PaySecure's white label. We bring the rails and the relationships. PaySecure brings the flow. We will be a sub-acquirer, with own merchant IDs. The payment-institution licence follows.
+**Cielo** acts as Merchant of Record: it carries the merchant risk and the rolling reserve, and is connected to a growing set of local acquirers. We operate as payment facilitator on that rail. We go to production with DD1 Cielo for volumes. We open DD2 in parallel. We take production API keys from the acquirers, deliver them to the core team, and configure and reconcile on PaySecure's white label. We bring the rails and the relationships. PaySecure brings the flow. We will be a sub-acquirer, with own merchant IDs on DD2. The payment-institution licence follows.
 
 ## Money in motion, every day
 
@@ -33,4 +33,4 @@ Reconciliation is the first job of every business day. Then money moves: refunds
 
 ## How a merchant is created
 
-1 Document validation: KYB screening (Global Pass, Jumio, G2) and the checklist of all three DD2 acquirers. 2 Website Factory digitisation, from the CNPJ through operational management with the local entities. 3 MID creation at the acquirers, and the merchant's CAID. 4 Go live, only after the CAID is registered with Chargeblast; the merchant joins the daily reconciliation; payout follows.
+1 Document validation: KYB screening (Global Pass, Jumio, G2) and the checklist of the rail in use (Cielo on DD1; all three acquirers when the merchant sits on DD2). 2 Website Factory digitisation, from the CNPJ through operational management with the local entities. 3 MID creation at the acquirers, and the merchant's CAID. 4 Go live, only after the CAID is registered with Chargeblast; the merchant joins the daily reconciliation; payout follows.

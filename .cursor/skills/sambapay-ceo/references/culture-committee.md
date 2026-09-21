@@ -18,7 +18,7 @@ We are PaySecure's market enabler in Latin America. We provide always-on payment
 | PaySecure relationship | `sambapay-governance` | Any page where the reader cannot tell who brings the flow, who opens the rails, and that we run PaySecure's white label (PCI and commercial policies inherited). This premise was the requirement of the system from day one |
 | Rate, approval, volume truth | `sambapay-finance` plus business committee | Any page that forgets the scoreboard (approval times margin) or that conflates more than R$ 3 billion already processed with the live book in September (zero). Any page that writes 1 October as a day without volume |
 | Always-on engine | personal payment-security skill plus `company-os/product-tech` | Any claim of an SLA percentage, a year count, or a stack we have not named. Years without unavailability is the fact; the number of nines is not |
-| Local entity and licence truth | personal PCI / AML / legal skills plus PayFac committee | Any claim of a licence, a PCI status or an entity we do not hold today. Cielo is the Merchant of Record now; we operate as payment facilitator; we will be a sub-acquirer; DD2 is not open yet. Payment facilitator is not sub-acquirer. Platform PCI is PaySecure's, on the white label, not Cielo's Merchant of Record role, and not SambaPay's own SAQ until that scope is closed |
+| Local entity and licence truth | personal PCI / AML / legal skills plus PayFac committee | Any claim of a licence, a PCI status or an entity we do not hold today. Cielo is the Merchant of Record now; we operate as payment facilitator; production volume is DD1 Cielo; we will be a sub-acquirer; DD2 opens in parallel and is not the volume gate. Payment facilitator is not sub-acquirer. Platform PCI is PaySecure's, on the white label, not Cielo's Merchant of Record role, and not SambaPay's own SAQ until that scope is closed |
 | Clarity for eight people | `sambapay-ceo` | Any sentence that Rafaela and Leandro would read differently, and any word not in `09 Glossary` |
 
 ## Tests every Welcome Kit page must pass
@@ -48,7 +48,7 @@ We do not take our clients' merchants. In each geography where we have structure
 
 ## This pass (20 Sep 2026, how André Silva decides)
 
-André Silva decides. The team elaborated the solution. The deadline is short. He decides by one test: which option brings us closer to revenue from DD2, on the take rate Hansraj proposes, so we cover the company's costs. Write the chain. Do not write that process owners close direction. Do not write command language. The eight must see how he thinks, not a rank.
+André Silva decides. The team elaborated the solution. The deadline is short. He decides by one test: which option brings us closer to revenue from DD1 Cielo production volume, on the take rate Hansraj proposes, so we cover the company's costs. Write the chain. DD2 opens in parallel; it does not gate volume. Do not write that process owners close direction. Do not write command language. The eight must see how he thinks, not a rank.
 
 ## This pass (20 Sep 2026, Zoho Mail and Sheila)
 
@@ -65,6 +65,14 @@ Pulse and pack: Sridhar (sri@paysecure.net), Viktoria, Hansraj. Do not write "Sr
 ## This pass (20 Sep 2026, kit for the team)
 
 The Welcome Kit is what the team reads. It never names Company OS. That ledger is the cockpit. Cut from `08`: sharing a password or turning off 2-step verification; speaking for the company without him. Those lines do not go in the email.
+
+## This pass (21 Sep 2026, PaySecure counterparts)
+
+Govinda is not at PaySecure. Do not name him. Pulse and pack: Sridhar (sri@paysecure.net), Viktoria, Hansraj. Write that relationship, and the acquirer obsession, through `00`, `02`, `03`, `05`, `06` and `08`.
+
+## This pass (21 Sep 2026, DD1 Cielo)
+
+Production volume on DD1 Cielo. DD2 opens in parallel. It does not gate volume. Do not write that October has no volume until the three DD2 accounts exist.
 
 ## Method
 

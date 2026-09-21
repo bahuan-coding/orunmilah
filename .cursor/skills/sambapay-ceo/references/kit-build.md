@@ -28,7 +28,7 @@ Merchant of Record, payment facilitator, sub-acquirer and payment institution ar
 
 ## October dates
 
-1 October: accounts open, volume starts, day one of the month (a partial). 31 October: breakeven. The live book in September is zero. Follow `.cursor/skills/sambapay-finance/references/business-committee.md`. Never write 1 October as a day without volume. Never split "account-open" from volume as if they were different things.
+Production volume: DD1 Cielo. DD2 opens in parallel and does not gate volume. 1 October: day one of the month (a partial), volume on DD1 Cielo. 31 October: breakeven. The live book in September is zero until DD1 Cielo carries production volume. Follow `.cursor/skills/sambapay-finance/references/business-committee.md`. Never write 1 October as a day without volume. Never write that October volume waits for the three DD2 accounts.
 
 ## PDF engine
 

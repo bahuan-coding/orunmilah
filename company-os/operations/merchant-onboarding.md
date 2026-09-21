@@ -4,7 +4,7 @@ Owner: Clayton. Technical steps: Leandro.
 
 | Step | What happens | Gate to pass | Tooling | Owner |
 |---|---|---|---|---|
-| 1 Document validation | Collect documents; screen the company, owners, PEP and sanctions; cross-check against the requirements of all three DD2 acquirers (objective 7) | Checklist complete for all three acquirers; screening clear | Global Pass, Jumio, G2; merchant portal | Clayton; policy André Silva while Sheila Esmeralda is on leave |
+| 1 Document validation | Collect documents; screen the company, owners, PEP and sanctions; cross-check against the checklist of the rail in use (Cielo on DD1; all three acquirers on DD2) | Checklist complete for that rail; screening clear | Global Pass, Jumio, G2; merchant portal | Clayton; policy André Silva while Sheila Esmeralda is on leave |
 | 2 Website Factory | Digitisation of the local merchant, or a client's Brazil store: CNPJ through operational management with the local entities | Digitisation case live in test; CNPJ operational | Website Factory (orchestration swarm) | Leandro |
 | 3 MID creation | Merchant IDs opened at the acquirers; CAID obtained | MIDs active in test; CAID known | Acquirer portals | Leandro |
 | 4 Go live | CAID registered at Chargeblast (objective 8); merchant added to daily reconciliation | Chargeblast confirms CAID; first settlement reconciled | Chargeblast; ledger | Clayton; Thiago |
