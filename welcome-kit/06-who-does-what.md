@@ -53,4 +53,4 @@ Factoring (all volume anticipated at a competitive price; nobody sells it). Webs
 
 ## Outside the eight
 
-Hansraj (PaySecure) confirms our reconciliation every day, works the reconciliation SLA together with the Brazilian acquirer processes, and proposes the take rate so we cover the company's costs and hold a reserve. Govinda (PaySecure) is on the same thread. The weekly pulse and monthly pack go to Sridhar (sri@paysecure.net), Viktoria and Hansraj. Sridhar helps André Silva obtain the Power of Attorney for the FX contract. Open: day and hour of the pulse and of the pack.
+Hansraj (PaySecure) confirms our reconciliation every day, works the reconciliation SLA together with the Brazilian acquirer processes, and proposes the take rate so we cover the company's costs and hold a reserve. The weekly pulse and monthly pack go to Sridhar (sri@paysecure.net), Viktoria and Hansraj. Sridhar helps André Silva obtain the Power of Attorney for the FX contract. Open: day and hour of the pulse and of the pack.

@@ -27,7 +27,7 @@ Registers: `decision-log.md`, `licensing-roadmap.md`, `ownership-brief.md` (boar
 
 ## London
 
-- Counterparts: Hansraj (confirms reconciliation daily; led the eight discussion points; proposes the take rate so we cover the company's costs and hold a reserve), Govinda. Pulse and pack: **Sridhar (sri@paysecure.net), Viktoria, Hansraj**. Day and hour: Open.
+- Counterparts: Hansraj (confirms reconciliation daily; led the eight discussion points; proposes the take rate so we cover the company's costs and hold a reserve). Pulse and pack: **Sridhar (sri@paysecure.net), Viktoria, Hansraj**. Day and hour: Open.
 
 ## Licensing path
 
