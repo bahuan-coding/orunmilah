@@ -3,7 +3,7 @@
 Purpose: how the money works, breakeven, cash, and the numbers London sees.
 Owner: André Silva. Money out, remittances, FX: Taina. Collections, payables: Rafaela.
 Cadence: reconciliation daily; cash weekly in the pulse; P&L monthly in the pack.
-Registers: `model.md`.
+Registers: `model.md`, `payroll-run.md` (labour), `pay-request.md` (USDT instruction: salaries and expenses), `history/2026-09/` (September 2026 payroll register: PDF, print HTML, ledger.json).
 
 ## Business model
 
@@ -20,9 +20,9 @@ Plan A: production volume on DD1 Cielo; PaySecure flow on that rail; DD2 opens i
 
 ## Cost book (board view; never in the Welcome Kit)
 
-- CLT payroll on the Payments CNPJ from 1 Sep 2026 (Execcon, 11 Sep 2026). PJ contracts migrating to Payments by month-end.
-- Seven PJ contracts, monthly run-rate R$ 180,680 (13 Sep 2026; per-person detail stays in Relação PJs.xlsx). Consultoria retains a single pró-labore.
-- Open: cost after Daniella's exit and with Abner (Head of Partner Enablement) on the team.
+- CLT: Taina is on this SambaPay / Payments instruction. Clayton Lira stays on the SCD (Consultoria Execcon) until he leaves the SCD. Cost book of 11 Sep said all CLT to Payments from 1 Sep; André Silva overrode that for Clayton on 22 Sep.
+- Seven PJ contracts, monthly run-rate R$ 180,680 (13 Sep 2026). Relação PJs.xlsx is not in this repo. Reconstruct from HR Ativo (1 Sep 2026) that sums to R$ 180,679.83: André Silva 44,500; Danielle Rocco 25,200; Thiago Silva 25,000; Leandro Silva 23,000; Sheila Esmeralda 23,000; Renato Paulino 22,979.83; Daniella Souza 17,000. Consultoria retains a single pró-labore.
+- SambaPay.tech payroll (nine accounts, 22 Sep 2026): labour in `payroll-run.md`; USDT instruction in `pay-request.md`. Send now R$ 179,701.96 / 35,155.02 USDT. Salaries R$ 175,279.99 / 34,289.96 USDT. Expenses R$ 4,421.97 / 865.06 USDT, grouped. André Silva this send is the signed contract R$ 49,500.00, not the Jackpot NFS-e of 44,500.00. Leandro Silva is the signed contract R$ 25,000.00 from March 2022 (ClickSign 7be4795e), not the HR cell of 23,000.00. Sheila Esmeralda, Lince CNPJ 63.306.290/0001-16, is the signed clause 2.1 R$ 24,225.26 (ClickSign 2082b1e3), not the September NFS-e sum of 24,411.87. Thiago Silvestre da Silva is on the team (R$ 25,000.00). Thiago Alexandre de Carvalho is not. Abner Maioralli R$ 25,000.00 and Renato Paulino R$ 22,979.83 are on the salary block. Paulino’s contract of 26 Sep 2025 is R$ 22,979.83 (CNPJ 36.131.256/0001-85). The Drive file named Renato Paulino at R$ 10,500.00 is Renato Gomes Almeida da Silva, ended 31 Aug 2026. Taina Chaves this send R$ 4,630.09 / 905.78 USDT (gross 3,500.00 + home office 74.90 + seguro de saúde 1,055.19). Clayton Lira is SCD, not this file. Rafaela Brito is not a payee of this file. Abner card expenses R$ 783.86 (unstruck lines only). André Silva expenses R$ 2,202.09, of which Netlify R$ 291.37 and Neon R$ 532.79 have not left the card. Zoho Mail: no invoice, hold.
 
 ## Legacy balances with PaySecure (per the eight-point response email, undated; owner: D1)
 
@@ -38,4 +38,4 @@ Open: what has been remitted or released since the email.
 
 ## Open
 
-Q37 Website Factory commercial; Q38 going-forward rolling reserve (omitted from the kit until named); Q39 filing entity; Renato Paulino's email; Double Diamond fee and date; P29 Factoring process owner; P34 Power of Attorney in hand; the five numbers in `model.md` now have premises, still need sources.
+Q37 Website Factory commercial; Q38 going-forward rolling reserve (omitted from the kit until named); Q39 filing entity; Double Diamond fee and date; P29 Factoring process owner; P34 Power of Attorney in hand; the five numbers in `model.md` now have premises, still need sources. Renato Paulino's SambaPay mail is renato.paulino@sambapay.tech (never signed in as of 22 Sep 2026).

@@ -1,0 +1,859 @@
+{
+  "register": "SP-PAY-2026-09",
+  "company": "SambaPay",
+  "competencia": "September 2026",
+  "issued": "22 September 2026",
+  "status": "Open",
+  "status_note": "Further expense receipts may land. Send now stays locked until a new paper is added to pay-request.md.",
+  "rail": "USDT",
+  "rail_note": "1 USDT = 1 USD for this conversion only. USDT is not USDC.",
+  "fx": {
+    "rate": "5.1117",
+    "quote": "BRL per USD",
+    "side": "PTAX venda",
+    "when": "21 Sep 2026 13:06:51 BRT",
+    "source": "BCB Olinda, PTAX venda",
+    "rounding": "each line BRL ÷ 5.1117, two decimals, half-up; then sum"
+  },
+  "money_out": {
+    "name": "Hansraj",
+    "role": "our operator"
+  },
+  "locks": {
+    "name": "André Silva"
+  },
+  "instruction": "company-os/finance/pay-request.md",
+  "labour": "company-os/finance/payroll-run.md",
+  "not_this_file": [
+    {
+      "person": "Thiago Alexandre de Carvalho",
+      "title": "",
+      "why": "Not on the team. Contract terminated 31 Oct 2025, CNPJ 39.803.563/0001-53. Do not pay."
+    },
+    {
+      "person": "Clayton Lira",
+      "title": "Merchant Operations Analyst",
+      "why": "Employee of the SCD. Stays on Consultoria Execcon until he leaves the SCD. Gross 4,000.00 + home office 74.90 + SulAmérica 766.63 stay on that rail."
+    },
+    {
+      "person": "Rafaela Brito",
+      "title": "Finance Operations Analyst",
+      "why": "Not a payee of this file. Maternity 1–22 Sep then férias 23 Sep–22 Oct on Execcon."
+    },
+    {
+      "person": "Renato Gomes Almeida da Silva",
+      "title": "",
+      "why": "Ended 31 Aug 2026. Contract R$ 10,500.00, CNPJ 52.357.369/0001-50. A Drive file is misnamed Renato Paulino. He is not Renato Paulino and he is not this file."
+    }
+  ],
+  "hold": [
+    "Zoho Mail (sambapay.tech mailboxes): account exists, zero invoice, do not invent a price",
+    "Taina September holerite net still Open; this file pays gross + home office + health so she is not short",
+    "September SulAmérica fatura: portal mail 21 Sep, amount not in the HTML, ND 09 not issued"
+  ],
+  "totals": {
+    "salaries_brl": "175279.99",
+    "salaries_usdt": "34289.96",
+    "expenses_brl": "4421.97",
+    "expenses_usdt": "865.06",
+    "send_brl": "179701.96",
+    "send_usdt": "35155.02"
+  },
+  "by_person": [
+    {
+      "person": "André Silva",
+      "title": "",
+      "activity": "Direction; PaySecure and London; acquirer and desk relationships",
+      "brl": "51702.09",
+      "usdt": "10114.47",
+      "line_ids": [
+        "S-01",
+        "E-06",
+        "E-07",
+        "E-08",
+        "E-09",
+        "E-10",
+        "E-11",
+        "E-12",
+        "E-13",
+        "E-14",
+        "E-34",
+        "E-35",
+        "E-36",
+        "E-37",
+        "E-38",
+        "E-39",
+        "E-40",
+        "E-41",
+        "E-42",
+        "E-43",
+        "E-44"
+      ]
+    },
+    {
+      "person": "Thiago Silvestre da Silva",
+      "title": "Head of Operations",
+      "activity": "Daily reconciliation; queues; Key Vault; disputes",
+      "brl": "25242.87",
+      "usdt": "4938.25",
+      "line_ids": [
+        "S-02",
+        "E-01",
+        "E-02",
+        "E-03"
+      ]
+    },
+    {
+      "person": "Leandro Silva",
+      "title": "Head of Engineering and Product",
+      "activity": "Payment engine; white-label integrations; Website Factory",
+      "brl": "25137.96",
+      "usdt": "4917.73",
+      "line_ids": [
+        "S-03",
+        "E-04",
+        "E-05"
+      ]
+    },
+    {
+      "person": "Sheila Esmeralda",
+      "title": "Compliance Officer",
+      "activity": "On leave. Contract in force. Leave is not exclusion",
+      "brl": "24225.26",
+      "usdt": "4739.18",
+      "line_ids": [
+        "S-04"
+      ]
+    },
+    {
+      "person": "Taina Chaves",
+      "title": "Treasury Analyst",
+      "activity": "Payouts, remittances, rolling reserve, on-ramp",
+      "brl": "4630.09",
+      "usdt": "905.78",
+      "line_ids": [
+        "S-05",
+        "S-06",
+        "E-45"
+      ]
+    },
+    {
+      "person": "Abner Maioralli",
+      "title": "Head of Partner Enablement",
+      "activity": "Partner signup on acquirers. Working this month",
+      "brl": "25783.86",
+      "usdt": "5044.07",
+      "line_ids": [
+        "S-07",
+        "E-16",
+        "E-17",
+        "E-18",
+        "E-19",
+        "E-20",
+        "E-21",
+        "E-22",
+        "E-23",
+        "E-24",
+        "E-25",
+        "E-26",
+        "E-27",
+        "E-28",
+        "E-29",
+        "E-30",
+        "E-31",
+        "E-32"
+      ]
+    },
+    {
+      "person": "Renato Paulino",
+      "title": "",
+      "activity": "Follows Finnera. No September NF. Contract price",
+      "brl": "22979.83",
+      "usdt": "4495.54",
+      "line_ids": [
+        "S-08"
+      ]
+    }
+  ],
+  "salaries": [
+    {
+      "id": "S-01",
+      "person": "André Silva",
+      "title": "",
+      "rail": "USDT · PJ",
+      "what": "Monthly PJ",
+      "brl": "49500.00",
+      "status": "Pay",
+      "source": "Quarto Aditivo, 1 Jul 2022, ClickSign 48cffc4a. CNPJ 22.774.002/0001-70. Fixed monthly R$ 49,500.00. HR sheet later notes a May 2023 figure of 44,550 and the Jackpot NFS-e was 44,500.00 (CNPJ 53.854.987/0001-78). No signed reduction was in Drive. This send pays the signed contract.",
+      "usdt": "9683.67"
+    },
+    {
+      "id": "S-02",
+      "person": "Thiago Silvestre da Silva",
+      "title": "Head of Operations",
+      "rail": "USDT · PJ",
+      "what": "Monthly PJ",
+      "brl": "25000.00",
+      "status": "Pay",
+      "source": "On the team. Not Thiago Alexandre de Carvalho. HR Ativo; NFS-e SP exact 25,000.00, CNPJ 43.376.279/0001-15",
+      "usdt": "4890.74"
+    },
+    {
+      "id": "S-03",
+      "person": "Leandro Silva",
+      "title": "Head of Engineering and Product",
+      "rail": "USDT · PJ",
+      "what": "Monthly PJ",
+      "brl": "25000.00",
+      "status": "Pay",
+      "source": "Signed contract, 14 Feb 2022, ClickSign 7be4795e. CNPJ 45.162.235/0001-18. Clause 5.1: February 2022 R$ 14,166.66, then from March 2022 a fixed monthly R$ 25,000.00. HR sheet and earlier NFS-e notes used 23,000.00. This send pays the signed contract.",
+      "usdt": "4890.74"
+    },
+    {
+      "id": "S-04",
+      "person": "Sheila Esmeralda",
+      "title": "Compliance Officer",
+      "rail": "USDT · PJ",
+      "what": "Monthly PJ",
+      "brl": "24225.26",
+      "status": "Pay",
+      "source": "Lince Assessoria, CNPJ 63.306.290/0001-16. Signed contract 23 Oct 2025, ClickSign 2082b1e3, clause 2.1, monthly R$ 24,225.26. Clause 2.7: taxes are inside that figure. NFS-e 2 of 28 Nov 2025 is the same 24,225.26. Later NFS-e, including September 12+13 (12,205.94 + 12,205.93 = 24,411.87), add 186.61. Do not pay 24,411.87. The unsigned draft of 31 Oct 2025 said 23,000.00. This send pays the signed contract.",
+      "usdt": "4739.18"
+    },
+    {
+      "id": "S-05",
+      "person": "Taina Chaves",
+      "title": "Treasury Analyst",
+      "rail": "USDT · CLT",
+      "what": "Gross salary",
+      "brl": "3500.00",
+      "status": "Pay",
+      "source": "Do not use Aug líquido 1,866.32. September holerite Open. Convert this line alone.",
+      "usdt": "684.70"
+    },
+    {
+      "id": "S-06",
+      "person": "Taina Chaves",
+      "title": "Treasury Analyst",
+      "rail": "USDT · CLT",
+      "what": "Ajuda de custo home office",
+      "brl": "74.90",
+      "status": "Pay",
+      "source": "Last paper: Execcon Aug 2026. Convert this line alone. Do not convert 3,574.90 as one.",
+      "usdt": "14.65"
+    },
+    {
+      "id": "S-07",
+      "person": "Abner Maioralli",
+      "title": "Head of Partner Enablement",
+      "rail": "USDT · PJ",
+      "what": "Monthly PJ",
+      "brl": "25000.00",
+      "status": "Pay",
+      "source": "No September NF. Last full month: Double Diamond NFS-e 27, 17 Jul 2026, R$ 25,000.00. Aug NFS-e 28 R$ 16,129.03 is an A55 distrato remainder. Do not use it.",
+      "usdt": "4890.74"
+    },
+    {
+      "id": "S-08",
+      "person": "Renato Paulino",
+      "title": "",
+      "rail": "USDT · PJ",
+      "what": "Monthly PJ",
+      "brl": "22979.83",
+      "status": "Pay",
+      "source": "Contract of 26 Sep 2025, CNPJ 36.131.256/0001-85, clause 2.1, monthly R$ 22,979.83. HR Ativo, same figure. NFS-e 11 of 27 Aug 2026 matches. The Drive file named Renato Paulino at R$ 10,500.00 is Renato Gomes Almeida da Silva, CNPJ 52.357.369/0001-50, ended 31 Aug 2026. Do not pay 10,500.00 here.",
+      "usdt": "4495.54"
+    }
+  ],
+  "expenses": [
+    {
+      "id": "E-01",
+      "person": "Thiago Silvestre da Silva",
+      "when": "15 Sep 2026, 11:05",
+      "what": "Uber",
+      "paid": "Apple Pay",
+      "brl": "65.99",
+      "fx": "ptax",
+      "receipt": "Receipt_15set.2026_145310.pdf",
+      "usdt": "12.91"
+    },
+    {
+      "id": "E-02",
+      "person": "Thiago Silvestre da Silva",
+      "when": "16 Sep 2026, 12:49",
+      "what": "Uber",
+      "paid": "Apple Pay",
+      "brl": "62.94",
+      "fx": "ptax",
+      "receipt": "Receipt_16set.2026_165238.pdf",
+      "usdt": "12.31"
+    },
+    {
+      "id": "E-03",
+      "person": "Thiago Silvestre da Silva",
+      "when": "16 Sep 2026, 17:08",
+      "what": "Uber",
+      "paid": "Apple Pay",
+      "brl": "113.94",
+      "fx": "ptax",
+      "receipt": "Receipt_16set.2026_215653.pdf",
+      "usdt": "22.29"
+    },
+    {
+      "id": "E-04",
+      "person": "Leandro Silva",
+      "when": "16 Sep 2026, 10:19",
+      "what": "Uber",
+      "paid": "Apple Pay",
+      "brl": "72.98",
+      "fx": "ptax",
+      "receipt": "Receipt_16Sep2026_143205.pdf",
+      "usdt": "14.28"
+    },
+    {
+      "id": "E-05",
+      "person": "Leandro Silva",
+      "when": "16 Sep 2026, 18:07",
+      "what": "Uber",
+      "paid": "Apple Pay",
+      "brl": "64.98",
+      "fx": "ptax",
+      "receipt": "Receipt_16Sep2026_221824.pdf",
+      "usdt": "12.71"
+    },
+    {
+      "id": "E-06",
+      "person": "André Silva",
+      "when": "15 Sep 2026",
+      "what": "Uber",
+      "paid": "Nubank OFX",
+      "brl": "92.99",
+      "fx": "ptax",
+      "receipt": "alsilva86 OFX. No PDF. Paper is the card line",
+      "usdt": "18.19"
+    },
+    {
+      "id": "E-07",
+      "person": "André Silva",
+      "when": "15 Sep 2026",
+      "what": "Uber",
+      "paid": "Nubank OFX",
+      "brl": "53.97",
+      "fx": "ptax",
+      "receipt": "alsilva86 OFX",
+      "usdt": "10.56"
+    },
+    {
+      "id": "E-08",
+      "person": "André Silva",
+      "when": "16 Sep 2026",
+      "what": "Uber",
+      "paid": "Nubank OFX",
+      "brl": "93.98",
+      "fx": "ptax",
+      "receipt": "alsilva86 OFX",
+      "usdt": "18.39"
+    },
+    {
+      "id": "E-09",
+      "person": "André Silva",
+      "when": "16 Sep 2026",
+      "what": "Uber",
+      "paid": "Nubank OFX",
+      "brl": "48.99",
+      "fx": "ptax",
+      "receipt": "alsilva86 OFX",
+      "usdt": "9.58"
+    },
+    {
+      "id": "E-10",
+      "person": "André Silva",
+      "when": "17 Sep 2026",
+      "what": "Uber",
+      "paid": "Nubank OFX",
+      "brl": "45.97",
+      "fx": "ptax",
+      "receipt": "alsilva86 OFX",
+      "usdt": "8.99"
+    },
+    {
+      "id": "E-11",
+      "person": "André Silva",
+      "when": "18 Sep 2026",
+      "what": "Uber",
+      "paid": "Nubank OFX",
+      "brl": "43.97",
+      "fx": "ptax",
+      "receipt": "alsilva86 OFX",
+      "usdt": "8.60"
+    },
+    {
+      "id": "E-12",
+      "person": "André Silva",
+      "when": "18 Sep 2026",
+      "what": "Uber",
+      "paid": "Nubank OFX",
+      "brl": "24.20",
+      "fx": "ptax",
+      "receipt": "alsilva86 OFX",
+      "usdt": "4.73"
+    },
+    {
+      "id": "E-13",
+      "person": "André Silva",
+      "when": "19 Sep 2026",
+      "what": "Uber",
+      "paid": "Nubank OFX NuPay",
+      "brl": "40.99",
+      "fx": "ptax",
+      "receipt": "alsilva86 OFX",
+      "usdt": "8.02"
+    },
+    {
+      "id": "E-14",
+      "person": "André Silva",
+      "when": "21 Sep 2026",
+      "what": "Uber",
+      "paid": "Nubank OFX",
+      "brl": "31.37",
+      "fx": "ptax",
+      "receipt": "alsilva86 OFX",
+      "usdt": "6.14"
+    },
+    {
+      "id": "E-16",
+      "person": "Abner Maioralli",
+      "when": "15 Sep 2026, 22:54",
+      "what": "Uber",
+      "paid": "Nubank",
+      "brl": "50.96",
+      "fx": "ptax",
+      "receipt": "Screenshot 22 Sep. Unstruck lines only",
+      "usdt": "9.97"
+    },
+    {
+      "id": "E-17",
+      "person": "Abner Maioralli",
+      "when": "15 Sep 2026, 22:42",
+      "what": "Bar e Lanches Estado de Israel",
+      "paid": "Nubank",
+      "brl": "18.00",
+      "fx": "ptax",
+      "receipt": "Screenshot 22 Sep",
+      "usdt": "3.52"
+    },
+    {
+      "id": "E-18",
+      "person": "Abner Maioralli",
+      "when": "15 Sep 2026, 17:01",
+      "what": "Pep Comércio",
+      "paid": "Nubank",
+      "brl": "6.30",
+      "fx": "ptax",
+      "receipt": "Screenshot 22 Sep",
+      "usdt": "1.23"
+    },
+    {
+      "id": "E-19",
+      "person": "Abner Maioralli",
+      "when": "15 Sep 2026, 15:27",
+      "what": "Uber",
+      "paid": "Nubank",
+      "brl": "81.97",
+      "fx": "ptax",
+      "receipt": "Screenshot 22 Sep",
+      "usdt": "16.04"
+    },
+    {
+      "id": "E-20",
+      "person": "Abner Maioralli",
+      "when": "16 Sep 2026, 20:36",
+      "what": "Uber",
+      "paid": "Nubank",
+      "brl": "51.96",
+      "fx": "ptax",
+      "receipt": "Screenshot 22 Sep",
+      "usdt": "10.16"
+    },
+    {
+      "id": "E-21",
+      "person": "Abner Maioralli",
+      "when": "16 Sep 2026, 08:36",
+      "what": "Uber",
+      "paid": "Nubank",
+      "brl": "103.98",
+      "fx": "ptax",
+      "receipt": "Screenshot 22 Sep",
+      "usdt": "20.34"
+    },
+    {
+      "id": "E-22",
+      "person": "Abner Maioralli",
+      "when": "17 Sep 2026, 22:37",
+      "what": "Uber",
+      "paid": "Nubank",
+      "brl": "65.98",
+      "fx": "ptax",
+      "receipt": "Screenshot 22 Sep",
+      "usdt": "12.91"
+    },
+    {
+      "id": "E-23",
+      "person": "Abner Maioralli",
+      "when": "17 Sep 2026, 18:52",
+      "what": "Beco 74 Gourmet",
+      "paid": "Nubank",
+      "brl": "46.00",
+      "fx": "ptax",
+      "receipt": "Screenshot 22 Sep",
+      "usdt": "9.00"
+    },
+    {
+      "id": "E-24",
+      "person": "Abner Maioralli",
+      "when": "17 Sep 2026, 18:17",
+      "what": "Beco 74 Gourmet",
+      "paid": "Nubank",
+      "brl": "36.00",
+      "fx": "ptax",
+      "receipt": "Screenshot 22 Sep",
+      "usdt": "7.04"
+    },
+    {
+      "id": "E-25",
+      "person": "Abner Maioralli",
+      "when": "17 Sep 2026, 10:23",
+      "what": "Uber",
+      "paid": "Nubank",
+      "brl": "57.94",
+      "fx": "ptax",
+      "receipt": "Screenshot 22 Sep",
+      "usdt": "11.33"
+    },
+    {
+      "id": "E-26",
+      "person": "Abner Maioralli",
+      "when": "19 Sep 2026, 16:10",
+      "what": "Park e Vem Estacionamentos",
+      "paid": "Nubank",
+      "brl": "135.00",
+      "fx": "ptax",
+      "receipt": "Screenshot 22 Sep",
+      "usdt": "26.41"
+    },
+    {
+      "id": "E-27",
+      "person": "Abner Maioralli",
+      "when": "19 Sep 2026, 13:46",
+      "what": "Claudineiasantana",
+      "paid": "Nubank",
+      "brl": "39.00",
+      "fx": "ptax",
+      "receipt": "Screenshot 22 Sep",
+      "usdt": "7.63"
+    },
+    {
+      "id": "E-28",
+      "person": "Abner Maioralli",
+      "when": "19 Sep 2026, 11:14",
+      "what": "OXXO",
+      "paid": "Nubank",
+      "brl": "51.47",
+      "fx": "ptax",
+      "receipt": "Screenshot 22 Sep",
+      "usdt": "10.07"
+    },
+    {
+      "id": "E-29",
+      "person": "Abner Maioralli",
+      "when": "21 Sep 2026, 18:37",
+      "what": "Rede Automan posto",
+      "paid": "Nubank",
+      "brl": "8.40",
+      "fx": "ptax",
+      "receipt": "Screenshot 22 Sep",
+      "usdt": "1.64"
+    },
+    {
+      "id": "E-30",
+      "person": "Abner Maioralli",
+      "when": "21 Sep 2026, 17:56",
+      "what": "Autopass Tmob",
+      "paid": "Nubank débito",
+      "brl": "5.40",
+      "fx": "ptax",
+      "receipt": "Screenshot 22 Sep",
+      "usdt": "1.06"
+    },
+    {
+      "id": "E-31",
+      "person": "Abner Maioralli",
+      "when": "21 Sep 2026, 17:36",
+      "what": "Mp Digitalsantac",
+      "paid": "Nubank",
+      "brl": "3.50",
+      "fx": "ptax",
+      "receipt": "Screenshot 22 Sep",
+      "usdt": "0.68"
+    },
+    {
+      "id": "E-32",
+      "person": "Abner Maioralli",
+      "when": "21 Sep 2026, 10:27",
+      "what": "Epar Estacionamentos",
+      "paid": "Nubank",
+      "brl": "22.00",
+      "fx": "ptax",
+      "receipt": "Screenshot 22 Sep",
+      "usdt": "4.30"
+    },
+    {
+      "id": "E-34",
+      "person": "André Silva",
+      "when": "18 Sep 2026",
+      "what": "GoDaddy · sambapay.tech 1 year",
+      "paid": "GoDaddy order 4187560192",
+      "brl": "52.25",
+      "fx": "ptax",
+      "receipt": "Receipt to andrebahuann@gmail.com. Tax R$ 0.00. Auto-renew 18/09/2027 at R$ 502.51 is next year, not this send",
+      "usdt": "10.22"
+    },
+    {
+      "id": "E-35",
+      "person": "André Silva",
+      "when": "18 Sep 2026",
+      "what": "GoDaddy · sambapay.co 1 year",
+      "paid": "GoDaddy order 4172849253",
+      "brl": "99.99",
+      "fx": "ptax",
+      "receipt": "Receipt to andrebahuann@gmail.com. Tax R$ 0.00",
+      "usdt": "19.56"
+    },
+    {
+      "id": "E-36",
+      "person": "André Silva",
+      "when": "18 Sep 2026",
+      "what": "Airbnb Hm9y4rs29a",
+      "paid": "Nubank",
+      "brl": "174.70",
+      "fx": "ptax",
+      "receipt": "Posted 18 Sep. Hansraj stay. OFX alsilva86",
+      "usdt": "34.18"
+    },
+    {
+      "id": "E-37",
+      "person": "André Silva",
+      "when": "7 Sep 2026",
+      "what": "OpenCode · AI",
+      "paid": "Stripe MC 3724",
+      "brl": "57.43",
+      "fx": "charged_brl",
+      "receipt": "Receipt 2997-7038, invoice 5VB97UEZ-0002. Charged R$ 57.43 at 5.3326. USDT from charged BRL, not the USD list price",
+      "usdt": "11.24"
+    },
+    {
+      "id": "E-38",
+      "person": "André Silva",
+      "when": "9 Sep 2026",
+      "what": "OpenCode · AI",
+      "paid": "Stripe MC 9369",
+      "brl": "84.91",
+      "fx": "charged_brl",
+      "receipt": "Receipt 2505-8302, invoice 5VB97UEZ-0003. Charged R$ 84.91 at 5.3067",
+      "usdt": "16.61"
+    },
+    {
+      "id": "E-39",
+      "person": "André Silva",
+      "when": "10 Sep 2026",
+      "what": "OpenCode · AI",
+      "paid": "Nubank memo Opencode",
+      "brl": "87.85",
+      "fx": "charged_brl",
+      "receipt": "OFX alsilva86. IOF 3.07 posted and reversed. Third cash-out",
+      "usdt": "17.19"
+    },
+    {
+      "id": "E-40",
+      "person": "André Silva",
+      "when": "1 Sep 2026",
+      "what": "Railway · Website Factory",
+      "paid": "Stripe MC 3724",
+      "usd": "7.37",
+      "fx": "usd_1to1",
+      "receipt": "Receipt 2401-5497, invoice 0BZKAFCA-0003. Paid $7.37. BRL = USD × PTAX",
+      "brl": "37.67",
+      "usdt": "7.37"
+    },
+    {
+      "id": "E-41",
+      "person": "André Silva",
+      "when": "16 Sep 2026",
+      "what": "Railway · Website Factory",
+      "paid": "Stripe MC 3724",
+      "usd": "20.00",
+      "fx": "usd_1to1",
+      "receipt": "Receipt 2258-4724, invoice 0BZKAFCA-0004. Paid $20.00",
+      "brl": "102.23",
+      "usdt": "20.00"
+    },
+    {
+      "id": "E-42",
+      "person": "André Silva",
+      "when": "17 Sep 2026",
+      "what": "Vercel · Website Factory",
+      "paid": "Stripe MC 3724",
+      "usd": "40.00",
+      "fx": "usd_1to1",
+      "receipt": "Receipt 2595-4913, invoice UN5DFCHZ-0010. Paid $40.00 (Pro + seat)",
+      "brl": "204.47",
+      "usdt": "40.00"
+    },
+    {
+      "id": "E-43",
+      "person": "André Silva",
+      "when": "13 Sep 2026 due",
+      "what": "Netlify · Website Factory",
+      "paid": "Invoice GRUZTS-00021",
+      "usd": "57.00",
+      "fx": "usd_1to1",
+      "receipt": "Payment failed 22 Sep. $57.00. Cash has not left the card. On this send so the vendor is paid from USDT",
+      "brl": "291.37",
+      "usdt": "57.00"
+    },
+    {
+      "id": "E-44",
+      "person": "André Silva",
+      "when": "1 Sep 2026 due",
+      "what": "Neon · Website Factory",
+      "paid": "Invoice ADLQXA-00009",
+      "usd": "104.23",
+      "fx": "usd_1to1",
+      "receipt": "Payment failed. $104.23 Launch Plan. Bill to JACKPOT B D P LTDA. On this send because it is company",
+      "brl": "532.79",
+      "usdt": "104.23"
+    },
+    {
+      "id": "E-45",
+      "person": "Taina Chaves",
+      "when": "Aug 2026 competência (last paper)",
+      "what": "Seguro de saúde · SulAmérica Clássico",
+      "paid": "Keep Lives / Consultoria 8NWBW",
+      "brl": "1055.19",
+      "fx": "ptax",
+      "receipt": "Titular only. Carteirinha 88888495862880014. Espelho 08/2026 R$ 1,055.19. Company pays; August holerite has no health discount. September fatura Open — use last paper so the month is not short",
+      "usdt": "206.43"
+    }
+  ],
+  "health": [
+    {
+      "person": "André Silva",
+      "plan": "Yes. 8NWVA Especial 100. 4 lives",
+      "premium": "5049.09",
+      "nd": "0.00",
+      "remuneration": "49500.00",
+      "all_in": "54549.09",
+      "this_send": "49500.00",
+      "on_file": true,
+      "how": "No ND. Company paid the premium on the grouped boleto. Do not add 5,049.09 to USDT. Salary on this send is the signed contract, 49,500.00"
+    },
+    {
+      "person": "Thiago Silvestre da Silva",
+      "plan": "Yes. 8QOFP Especial 100. Titular. CNPJ 43.376.279/0001-15",
+      "premium": "1512.80",
+      "nd": "203.09",
+      "remuneration": "25000.00",
+      "all_in": "26309.71",
+      "this_send": "25000.00",
+      "on_file": true,
+      "how": "On the team. ND 203.09 is a discount from PIX. Company net 1,309.71. Do not add the premium to USDT. Not Thiago Alexandre de Carvalho"
+    },
+    {
+      "person": "Leandro Silva",
+      "plan": "Yes. 8TU63 Clássico. Titular",
+      "premium": "1129.06",
+      "nd": "0.00",
+      "remuneration": "25000.00",
+      "all_in": "26129.06",
+      "this_send": "25000.00",
+      "on_file": true,
+      "how": "No ND. Do not add 1,129.06 to USDT. Salary on this send is the signed contract, 25,000.00"
+    },
+    {
+      "person": "Sheila Esmeralda",
+      "plan": "Yes. 8NWBW Especial 100. 3 lives",
+      "premium": "3283.83",
+      "nd": "1974.13",
+      "remuneration": "24225.26",
+      "all_in": "24225.26",
+      "this_send": "24225.26",
+      "on_file": true,
+      "how": "Salary is the signed contract, 24,225.26. Taxes are inside that figure. Do not pay the NFS-e sum 24,411.87. Do not add 3,283.83. ND 1,974.13 is a PIX discount only after Taina issues the September ND"
+    },
+    {
+      "person": "Taina Chaves",
+      "plan": "Yes. 8NWBW Clássico. Titular. Carteirinha 88888495862880014",
+      "premium": "1055.19",
+      "nd": "0.00",
+      "remuneration": "3574.90",
+      "all_in": "4630.09",
+      "this_send": "4630.09",
+      "on_file": true,
+      "how": "Company pays. No holerite discount. Pay the three lines on this send so the month is not short"
+    },
+    {
+      "person": "Clayton Lira",
+      "plan": "Yes. 8NWBW Clássico. Titular. SCD",
+      "premium": "766.63",
+      "nd": "0.00",
+      "remuneration": "4074.90",
+      "all_in": "4841.53",
+      "this_send": "0.00",
+      "on_file": false,
+      "how": "Employee of the SCD. Consultoria Execcon. Not this USDT file"
+    },
+    {
+      "person": "Rafaela Brito",
+      "plan": "Yes. 8NWBW Clássico. Titular",
+      "premium": "1055.19",
+      "nd": "0.00",
+      "remuneration": "5576.00",
+      "all_in": null,
+      "this_send": "0.00",
+      "on_file": false,
+      "how": "Not a payee of this file. Maternity then férias on Execcon"
+    },
+    {
+      "person": "Abner Maioralli",
+      "plan": "No",
+      "premium": null,
+      "nd": null,
+      "remuneration": "25000.00",
+      "all_in": "25000.00",
+      "this_send": "25000.00",
+      "on_file": true,
+      "how": "Not on the August mirror. Salary is on this send. Do not add a premium"
+    },
+    {
+      "person": "Renato Paulino",
+      "plan": "No. The Renato on the mirror is Renato Gomes Almeida da Silva",
+      "premium": null,
+      "nd": null,
+      "remuneration": "22979.83",
+      "all_in": "22979.83",
+      "this_send": "22979.83",
+      "on_file": true,
+      "how": "Salary is the Sep 2025 contract, R$ 22,979.83. Gomes at R$ 10,500.00 ended 31 Aug 2026 and is not this file"
+    }
+  ],
+  "grouped_health_boleto": {
+    "brl": "33588.06",
+    "paid_on": "8 Sep 2026",
+    "who_paid": "Consultoria",
+    "paper": "Pagamentos Set.xlsx + Keep Lives fatura unificada 08/2026",
+    "note": "Already left Consultoria. Do not send the same premium again as USDT except Taina."
+  },
+  "ledger_sha256": "0c9aa2b05c7a213dd92e053c1c312aa98be272d835cd6f90f4aa8345c40228aa",
+  "ledger_sha256_short": "0c9aa2b05c7a",
+  "built_at": "2026-09-22T21:01:41Z"
+}

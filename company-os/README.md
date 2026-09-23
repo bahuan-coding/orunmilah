@@ -20,7 +20,7 @@ flowchart LR
 | Area | Purpose | Registers |
 |---|---|---|
 | [governance](governance/README.md) | Who decides what, what was decided, what London gets and when, the licensing roadmap, the ownership brief (board view) | `decision-log.md`, `licensing-roadmap.md`, `ownership-brief.md` |
-| [finance](finance/README.md) | How the money works, breakeven, cash, the numbers London sees | `model.md` |
+| [finance](finance/README.md) | How the money works, breakeven, cash, the numbers London sees | `model.md`, `payroll-run.md`, `pay-request.md` |
 | [risk-compliance](risk-compliance/README.md) | Regulation, obligations, KYB stack, disputes | `obligations.md` |
 | [product-tech](product-tech/README.md) | Payment engine, acquirer integrations, Website Factory | `integrations.md` |
 | [commercial](commercial/README.md) | Pricing, pipeline, partners | `pipeline.md` |

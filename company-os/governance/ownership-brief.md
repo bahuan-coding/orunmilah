@@ -6,7 +6,7 @@ Board view. Not for the team, not for the Welcome Kit, not for counterparties. B
 
 - Instrument: SPA selling a55 LLC to PaySecure Group Holdings Pte. Ltd. Clean final 23–24 Jul 2026; circulated 28 Jul 2026; not signed as of 19 Sep 2026. Signing does not transfer Units (clause 2.3). Exhibit E blank. Side Letter is a separate instrument, not seen.
 - Buyer's stated destination: PaySecure Group Holdings Pte. Ltd. becomes the owner of A55 Payments.
-- Already moved: CLT payroll to the Payments CNPJ from 1 Sep 2026; PJ contracts migrating to Payments (seven, R$ 180,680 a month); rebrand to SambaPay; sambapay.tech Workspace; reporting to London.
+- Already moved: PJ contracts migrating to Payments (seven, R$ 180,680 a month); rebrand to SambaPay; sambapay.tech Workspace; reporting to London. CLT: Taina Chaves is on the SambaPay pay file; Clayton Lira stays employee of the SCD until he leaves it (André Silva, 22 Sep). Cost book of 11 Sep had said all CLT to Payments from 1 Sep.
 - Substrate: a55 LLC; A55 Payments Ltda (CNPJ 54.792.038/0001-73); A55 de Colombia S.A.S. (100% of A55 Payments; share assignment signed; control-registry update pending). Perimeter of the sale: Open.
 - Money between the parties: PaySecure claimed USD 1.70M over eight points; a55 recognised about USD 680–710K actionable plus release of matured reserve (BRL R$ 1,905,924.44; CLP net USD 93,400 through Dec 2025). Same counterparty as the SPA.
 - Signatory for A55 Payments Ltda: André Silva.
@@ -49,7 +49,8 @@ See 7.6 in the kickoff plan for plain language. Price and payment terms. Conditi
 |---|---|---|
 | 23–24 Jul 2026 | SPA clean final | Sixty-day pack |
 | 28 Jul 2026 | SPA circulated | Sixty-day pack |
-| 1 Sep 2026 | CLT payroll on Payments CNPJ | Sixty-day pack (Execcon, 11 Sep) |
+| 1 Sep 2026 | Cost book: CLT payroll on Payments CNPJ | Sixty-day pack (Execcon, 11 Sep) |
+| 22 Sep 2026 | André Silva: SCD is Clayton only; Taina is ours on the pay file | This file |
 | 13 Sep 2026 | Not signed; Exhibit E blank | Sixty-day pack |
 | 19 Sep 2026 | Still not signed (André Silva) | This file |
 | 19 Sep 2026 | Brief opened; D23–D29 pending; Q23–Q28 stay out of the Welcome Kit | This file |

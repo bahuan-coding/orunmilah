@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>SambaPay · Payroll · September 2026 · SP-PAY-2026-09</title>
+  <style>@page { size: A4; margin: 0; }
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+html {
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+  color-adjust: exact;
+}
+body {
+  font-family: Inter, "Liberation Sans", Helvetica, Arial, sans-serif;
+  font-size: 9px;
+  line-height: 1.35;
+  color: #161310;
+  background: #fff;
+  font-feature-settings: "tnum" 1, "ss01" 1, "kern" 1;
+}
+
+@font-face { font-family: Inter; src: url("fonts/Inter-Regular.otf") format("opentype"); font-weight: 400; font-style: normal; }
+@font-face { font-family: Inter; src: url("fonts/Inter-Italic.otf") format("opentype"); font-weight: 400; font-style: italic; }
+@font-face { font-family: Inter; src: url("fonts/Inter-Medium.otf") format("opentype"); font-weight: 500; font-style: normal; }
+@font-face { font-family: Inter; src: url("fonts/Inter-SemiBold.otf") format("opentype"); font-weight: 600; font-style: normal; }
+@font-face { font-family: Inter; src: url("fonts/Inter-Bold.otf") format("opentype"); font-weight: 700; font-style: normal; }
+@font-face { font-family: Inter Display; src: url("fonts/InterDisplay-Medium.otf") format("opentype"); font-weight: 500; font-style: normal; }
+@font-face { font-family: Inter Display; src: url("fonts/InterDisplay-SemiBold.otf") format("opentype"); font-weight: 600; font-style: normal; }
+@font-face { font-family: Inter Display; src: url("fonts/InterDisplay-Bold.otf") format("opentype"); font-weight: 700; font-style: normal; }
+
+/* ——— Cover ——— */
+.cover {
+  position: relative;
+  width: 210mm;
+  height: 297mm;
+  overflow: hidden;
+  page-break-after: always;
+  background:
+    radial-gradient(ellipse 90% 55% at 88% 8%, rgba(232, 176, 110, 0.22), transparent 58%),
+    radial-gradient(ellipse 70% 50% at 6% 92%, rgba(196, 73, 29, 0.38), transparent 52%),
+    radial-gradient(ellipse 50% 40% at 70% 78%, rgba(26, 107, 102, 0.28), transparent 60%),
+    linear-gradient(168deg, #07131c 0%, #102333 46%, #12332f 100%);
+  color: #f6efe4;
+}
+.cover-bar {
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 7mm;
+  background: linear-gradient(180deg, #e07a3d 0%, #c4491d 48%, #8f2e12 100%);
+}
+.cover-gold {
+  position: absolute;
+  left: 7mm; top: 0; bottom: 0;
+  width: 0.45mm;
+  background: #e8c89a;
+}
+.cover-inner {
+  position: relative;
+  height: 100%;
+  padding: 22mm 20mm 20mm 24mm;
+  display: flex;
+  flex-direction: column;
+}
+.cover-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.wordmark {
+  font-family: Inter Display, Inter, sans-serif;
+  font-weight: 500;
+  font-size: 11.5px;
+  letter-spacing: 0.46em;
+  color: #e8c89a;
+}
+.reg {
+  font-size: 8px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(246, 239, 228, 0.55);
+}
+.cover-mid { margin-top: 28mm; }
+.kicker {
+  margin: 0 0 6px;
+  font-size: 9px;
+  letter-spacing: 0.38em;
+  text-transform: uppercase;
+  color: #e07a3d;
+  font-weight: 600;
+}
+.cover h1 {
+  margin: 0;
+  font-family: Inter Display, Inter, sans-serif;
+  font-weight: 600;
+  font-size: 42px;
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+  color: #faf6ef;
+}
+.cover-sub {
+  margin: 10px 0 0;
+  max-width: 130mm;
+  font-size: 12px;
+  line-height: 1.45;
+  color: rgba(246, 239, 228, 0.78);
+  font-weight: 400;
+}
+.hero { margin-top: auto; padding-top: 18mm; }
+.hero-label {
+  font-size: 8.5px;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: #e8c89a;
+  margin-bottom: 4px;
+}
+.hero-usdt {
+  font-family: Inter Display, Inter, sans-serif;
+  font-weight: 700;
+  font-size: 58px;
+  letter-spacing: -0.04em;
+  line-height: 0.95;
+  color: #faf6ef;
+  font-variant-numeric: tabular-nums;
+}
+.hero-unit {
+  margin-top: 4px;
+  font-size: 13px;
+  letter-spacing: 0.42em;
+  text-transform: uppercase;
+  color: #e07a3d;
+  font-weight: 600;
+}
+.hero-brl {
+  margin-top: 8px;
+  font-family: Inter Display, Inter, sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  color: #e8c89a;
+  font-variant-numeric: tabular-nums;
+}
+.cover-meta {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  margin-top: 16mm;
+  padding-top: 8mm;
+  border-top: 1px solid rgba(232, 200, 154, 0.28);
+}
+.cover-meta div span {
+  display: block;
+  font-size: 7.5px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(246, 239, 228, 0.5);
+  margin-bottom: 3px;
+}
+.cover-meta div strong {
+  display: block;
+  font-weight: 500;
+  font-size: 10px;
+  color: #f6efe4;
+}
+.watermark {
+  position: absolute;
+  right: -6mm;
+  bottom: -8mm;
+  font-family: Inter Display, Inter, sans-serif;
+  font-weight: 700;
+  font-size: 180px;
+  color: rgba(232, 200, 154, 0.07);
+  letter-spacing: -0.08em;
+  line-height: 1;
+  pointer-events: none;
+}
+
+/* ——— Interior sheets ——— */
+.sheet {
+  width: 210mm;
+  min-height: 297mm;
+  padding: 14mm 16mm 16mm;
+  background: #faf6ef;
+  color: #161310;
+  page-break-after: always;
+  break-after: page;
+  position: relative;
+}
+.sheet:last-child { page-break-after: auto; }
+.running {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-bottom: 7px;
+  margin-bottom: 11px;
+  border-bottom: 2px solid #102333;
+}
+.running .left {
+  font-family: Inter Display, Inter, sans-serif;
+  font-weight: 600;
+  font-size: 9px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #102333;
+}
+.running .right {
+  font-size: 8px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #6e665c;
+}
+.gold-rule {
+  height: 0.4mm;
+  background: linear-gradient(90deg, #c4491d, #e8c89a 40%, transparent);
+  margin: -11px 0 12px;
+}
+
+h2 {
+  font-family: Inter Display, Inter, sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  margin: 0 0 3px;
+  color: #102333;
+}
+.lede {
+  margin: 0 0 11px;
+  font-size: 9.5px;
+  color: #5c564e;
+  max-width: 170mm;
+}
+
+.kpis {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 6px;
+  margin: 0 0 13px;
+}
+.kpi {
+  background: #fffdf8;
+  border: 1px solid #e4d5c3;
+  border-top: 3px solid #c4491d;
+  padding: 8px 9px 7px;
+}
+.kpi.teal { border-top-color: #1a6b66; }
+.kpi.navy { border-top-color: #102333; }
+.kpi.gold { border-top-color: #c9a066; }
+.kpi .l {
+  font-size: 7px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #6e665c;
+  margin-bottom: 3px;
+}
+.kpi .v {
+  font-family: Inter Display, Inter, sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: -0.02em;
+  font-variant-numeric: tabular-nums;
+  color: #102333;
+}
+.kpi .s { font-size: 7.5px; color: #6e665c; margin-top: 2px; }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fffdf8;
+}
+thead { display: table-header-group; }
+th {
+  background: #102333;
+  color: #f6efe4;
+  font-size: 7px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  text-align: left;
+  padding: 5.5px 6px;
+}
+th.num, td.num { text-align: right; font-variant-numeric: tabular-nums; }
+td {
+  padding: 4.5px 6px;
+  border-bottom: 1px solid #eadfce;
+  vertical-align: top;
+  font-size: 8.2px;
+  hyphens: none;
+  -webkit-hyphens: none;
+  overflow-wrap: break-word;
+}
+tr { break-inside: avoid; page-break-inside: avoid; }
+tr:last-child td { border-bottom: none; }
+.usdt { color: #1a6b66; font-weight: 600; }
+.muted { color: #6e665c; }
+.person { font-weight: 600; color: #102333; }
+.title { color: #6e665c; font-size: 7.6px; }
+.tick {
+  display: inline-block;
+  width: 8px; height: 8px;
+  border: 1.2px solid #c4491d;
+  border-radius: 1px;
+  vertical-align: -1px;
+  margin-right: 4px;
+}
+tr.group td {
+  background: #efe4d4;
+  font-weight: 600;
+  font-size: 8px;
+  letter-spacing: 0.04em;
+  color: #102333;
+  border-bottom: 1px solid #c9a066;
+  padding-top: 6px;
+  padding-bottom: 5px;
+}
+tr.total td {
+  background: #102333;
+  color: #f6efe4;
+  font-weight: 600;
+  border-bottom: none;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+tr.total td.usdt { color: #e8c89a; }
+tr.subtotal td {
+  background: #f3e6d4;
+  font-weight: 600;
+  border-bottom: 1px solid #d4b896;
+}
+.note {
+  font-size: 7.6px;
+  color: #5c564e;
+  line-height: 1.4;
+}
+.chip {
+  display: inline-block;
+  font-size: 7px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 1.5px 5px;
+  border-radius: 2px;
+  background: #1a6b66;
+  color: #f6efe4;
+}
+.chip.wait { background: #8a5a2b; }
+.chip.out { background: #6e665c; }
+.chip.pay { background: #c4491d; }
+
+.two {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-top: 10px;
+}
+.card {
+  background: #fffdf8;
+  border: 1px solid #e4d5c3;
+  padding: 9px 10px 8px;
+}
+.card h3 {
+  margin: 0 0 5px;
+  font-size: 8px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #c4491d;
+  font-weight: 600;
+}
+.card p { margin: 0; font-size: 8.2px; color: #3d3832; line-height: 1.45; }
+.card.out { border-left: 3px solid #6e665c; }
+.card.in { border-left: 3px solid #1a6b66; }
+
+.foot {
+  position: absolute;
+  left: 16mm; right: 16mm; bottom: 9mm;
+  display: flex;
+  justify-content: space-between;
+  font-size: 7px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #8a8378;
+  border-top: 1px solid #e4d5c3;
+  padding-top: 4px;
+}
+
+.sigs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18mm;
+  margin-top: 16mm;
+}
+.sig {
+  border-top: 1.5px solid #102333;
+  padding-top: 6px;
+}
+.sig .name {
+  font-family: Inter Display, Inter, sans-serif;
+  font-weight: 600;
+  font-size: 11px;
+  color: #102333;
+}
+.sig .role { font-size: 8px; color: #6e665c; margin-top: 1px; }
+
+.banner {
+  background: #102333;
+  color: #f6efe4;
+  padding: 10px 12px;
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.banner .big {
+  font-family: Inter Display, Inter, sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: -0.02em;
+  font-variant-numeric: tabular-nums;
+}
+.banner .dim { color: #e8c89a; font-size: 9px; letter-spacing: 0.12em; text-transform: uppercase; }
+
+.health-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+  margin-top: 8px;
+}
+.health {
+  background: #fffdf8;
+  border: 1px solid #e4d5c3;
+  padding: 8px 9px;
+}
+.health .who { font-weight: 600; font-size: 9px; color: #102333; }
+.health .meta { font-size: 7.5px; color: #6e665c; margin: 2px 0 5px; }
+.health dl { display: grid; grid-template-columns: 1fr auto; gap: 2px 8px; margin: 0; font-size: 8px; }
+.health dt { color: #6e665c; }
+.health dd { margin: 0; text-align: right; font-variant-numeric: tabular-nums; font-weight: 500; }
+.health.out { opacity: 0.78; border-left: 3px solid #6e665c; }
+.health.in { border-left: 3px solid #c4491d; }
+
+.comp-table { margin-top: 12px; }
+.control {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 6px;
+  margin-top: 12px;
+}
+.control dl { margin: 0; }
+.control dt {
+  font-size: 7px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #6e665c;
+}
+.control dd {
+  margin: 0 0 6px;
+  font-size: 8.5px;
+  font-weight: 500;
+  color: #102333;
+  font-variant-numeric: tabular-nums;
+  word-break: break-word;
+}
+
+.hold {
+  margin-top: 8px;
+  padding: 8px 10px;
+  background: #f3e6d4;
+  border-left: 3px solid #c9a066;
+  font-size: 8px;
+  color: #3d3832;
+}
+
+.sheet.dense td { padding: 3.4px 6px; }
+.sheet.dense .note { font-size: 7.2px; }
+.section-space { margin-top: 11px; }
+h2.section-space { font-size: 13px; }
+.tiny { font-size: 7.4px; color: #6e665c; line-height: 1.4; margin: 6px 0 0; }
+</style>
+</head>
+<body>
+
+<section class="cover">
+  <div class="cover-bar"></div>
+  <div class="cover-gold"></div>
+  <div class="watermark">09</div>
+  <div class="cover-inner">
+    <div class="cover-top">
+      <div class="wordmark">SAMBAPAY</div>
+      <div class="reg">SP-PAY-2026-09 · 0c9aa2b05c7a</div>
+    </div>
+    <div class="cover-mid">
+      <p class="kicker">Payroll</p>
+      <h1>September 2026</h1>
+      <p class="cover-sub">USDT instruction for Hansraj, our operator, to send. Locked by André Silva. This file is the historical register of the month’s payroll: salaries, grouped expenses, the rate, and who is not on this remittance.</p>
+    </div>
+    <div class="hero">
+      <div class="hero-label">Send now</div>
+      <div class="hero-usdt">35,155.02</div>
+      <div class="hero-unit">USDT</div>
+      <div class="hero-brl">R$ 179,701.96</div>
+    </div>
+    <div class="cover-meta">
+      <div><span>FX</span><strong>PTAX 5.1117</strong>21 Sep 2026 · BCB Olinda</div>
+      <div><span>Payees</span><strong>Seven people</strong>Clayton and Rafaela wait</div>
+      <div><span>Status</span><strong>Open</strong>Further receipts may land</div>
+    </div>
+  </div>
+</section>
+
+<section class="sheet">
+  <div class="running">
+      <div class="left">SambaPay · Payroll</div>
+      <div class="right">This remittance · SP-PAY-2026-09 · 0c9aa2b05c7a</div>
+    </div>
+    <div class="gold-rule"></div>
+  <h2>Who receives this send</h2>
+  <p class="lede">Salary is the contract. Expenses sit in their own column. The total is the sum. Convert each underlying line at PTAX 5.1117, two decimals, half-up, then sum.</p>
+  <div class="kpis">
+    <div class="kpi navy"><div class="l">Send now</div><div class="v">35,155.02 USDT</div><div class="s">R$ 179,701.96</div></div>
+    <div class="kpi"><div class="l">Salaries</div><div class="v">34,289.96 USDT</div><div class="s">R$ 175,279.99 · six PJ + Taina</div></div>
+    <div class="kpi teal"><div class="l">Expenses</div><div class="v">865.06 USDT</div><div class="s">R$ 4,421.97 · grouped · includes Taina health</div></div>
+    <div class="kpi gold"><div class="l">Taina this send</div><div class="v">905.78 USDT</div><div class="s">R$ 4,630.09 · salary + home office + health</div></div>
+  </div>
+  <table>
+    <thead>
+      <tr>
+        <th style="width:8mm">#</th>
+        <th>Person</th>
+        <th class="num" style="width:28mm">Salary</th>
+        <th class="num" style="width:28mm">Expenses</th>
+        <th class="num" style="width:28mm">Total BRL</th>
+        <th class="num" style="width:26mm">USDT</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+          <td class="muted">01</td>
+          <td><div class="person">André Silva</div><div class="title">—</div></td>
+          <td class="num">49,500.00</td>
+          <td class="num">2,202.09</td>
+          <td class="num">51,702.09</td>
+          <td class="num usdt">10,114.47</td>
+        </tr><tr>
+          <td class="muted">02</td>
+          <td><div class="person">Thiago Silvestre da Silva</div><div class="title">Head of Operations</div></td>
+          <td class="num">25,000.00</td>
+          <td class="num">242.87</td>
+          <td class="num">25,242.87</td>
+          <td class="num usdt">4,938.25</td>
+        </tr><tr>
+          <td class="muted">03</td>
+          <td><div class="person">Leandro Silva</div><div class="title">Head of Engineering and Product</div></td>
+          <td class="num">25,000.00</td>
+          <td class="num">137.96</td>
+          <td class="num">25,137.96</td>
+          <td class="num usdt">4,917.73</td>
+        </tr><tr>
+          <td class="muted">04</td>
+          <td><div class="person">Sheila Esmeralda</div><div class="title">Compliance Officer</div></td>
+          <td class="num">24,225.26</td>
+          <td class="num">0.00</td>
+          <td class="num">24,225.26</td>
+          <td class="num usdt">4,739.18</td>
+        </tr><tr>
+          <td class="muted">05</td>
+          <td><div class="person">Taina Chaves</div><div class="title">Treasury Analyst</div></td>
+          <td class="num">3,574.90</td>
+          <td class="num">1,055.19</td>
+          <td class="num">4,630.09</td>
+          <td class="num usdt">905.78</td>
+        </tr><tr>
+          <td class="muted">06</td>
+          <td><div class="person">Abner Maioralli</div><div class="title">Head of Partner Enablement</div></td>
+          <td class="num">25,000.00</td>
+          <td class="num">783.86</td>
+          <td class="num">25,783.86</td>
+          <td class="num usdt">5,044.07</td>
+        </tr><tr>
+          <td class="muted">07</td>
+          <td><div class="person">Renato Paulino</div><div class="title">Open</div></td>
+          <td class="num">22,979.83</td>
+          <td class="num">0.00</td>
+          <td class="num">22,979.83</td>
+          <td class="num usdt">4,495.54</td>
+        </tr><tr class="total">
+          <td></td><td>Send now · seven payees</td>
+          <td class="num">175,279.99</td>
+          <td class="num">4,421.97</td>
+          <td class="num">179,701.96</td>
+          <td class="num usdt">35,155.02</td>
+        </tr>
+    </tbody>
+  </table>
+  <div class="two">
+    <div class="card in">
+      <h3>How to send</h3>
+      <p>USDT to the person who is owed. PJ against this month’s figure. Taina at gross so salary is not short. Abner Maioralli and Renato Paulino are on the salary block. Their September NF has not arrived. Do not pay either of them again in expenses.</p>
+    </div>
+    <div class="card out">
+      <h3>Not this remittance</h3>
+      <p><strong>Clayton Lira</strong>, Merchant Operations Analyst — employee of the SCD, Consultoria Execcon, until he leaves the SCD.<br><strong>Rafaela Brito</strong>, Finance Operations Analyst — not a payee of this file. Thiago Alexandre de Carvalho is not on the team.</p>
+    </div>
+  </div>
+  <div class="foot">
+      <span>Board view · never in the Welcome Kit</span>
+      <span>Roster · September 2026</span>
+    </div>
+</section>
+
+<section class="sheet">
+  <div class="running">
+      <div class="left">SambaPay · Payroll</div>
+      <div class="right">Salaries · SP-PAY-2026-09 · 0c9aa2b05c7a</div>
+    </div>
+    <div class="gold-rule"></div>
+  <h2>Salary ledger</h2>
+  <p class="lede">Six PJ plus Taina’s September proventos. Tick the box when the USDT has left. André Silva is the signed contract, R$ 49,500.00. Leandro Silva is the signed contract, R$ 25,000.00 from March 2022. Sheila Esmeralda, Lince, is the signed contract, R$ 24,225.26. Renato Paulino is his own contract, R$ 22,979.83. Thiago Silvestre da Silva is on the team.</p>
+  <table>
+    <thead>
+      <tr>
+        <th style="width:14mm">Id</th>
+        <th style="width:46mm">Person</th>
+        <th>Line</th>
+        <th class="num" style="width:28mm">BRL</th>
+        <th class="num" style="width:26mm">USDT</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+          <td class="muted">S-01</td>
+          <td><span class="tick"></span>André Silva<div class="title">— · USDT · PJ</div></td>
+          <td>Monthly PJ<div class="note">Signed contract, 1 Jul 2022 · CNPJ 22.774.002/0001-70</div></td>
+          <td class="num">49,500.00</td>
+          <td class="num usdt">9,683.67</td>
+        </tr><tr>
+          <td class="muted">S-02</td>
+          <td><span class="tick"></span>Thiago Silvestre da Silva<div class="title">Head of Operations · USDT · PJ</div></td>
+          <td>Monthly PJ<div class="note">On the team · CNPJ 43.376.279/0001-15</div></td>
+          <td class="num">25,000.00</td>
+          <td class="num usdt">4,890.74</td>
+        </tr><tr>
+          <td class="muted">S-03</td>
+          <td><span class="tick"></span>Leandro Silva<div class="title">Head of Engineering and Product · USDT · PJ</div></td>
+          <td>Monthly PJ<div class="note">Signed contract, from Mar 2022 · CNPJ 45.162.235/0001-18</div></td>
+          <td class="num">25,000.00</td>
+          <td class="num usdt">4,890.74</td>
+        </tr><tr>
+          <td class="muted">S-04</td>
+          <td><span class="tick"></span>Sheila Esmeralda<div class="title">Compliance Officer · USDT · PJ</div></td>
+          <td>Monthly PJ<div class="note">Lince · clause 2.1 · CNPJ 63.306.290/0001-16</div></td>
+          <td class="num">24,225.26</td>
+          <td class="num usdt">4,739.18</td>
+        </tr><tr>
+          <td class="muted">S-05</td>
+          <td><span class="tick"></span>Taina Chaves<div class="title">Treasury Analyst · USDT · CLT</div></td>
+          <td>Gross salary<div class="note">Gross. September holerite still open</div></td>
+          <td class="num">3,500.00</td>
+          <td class="num usdt">684.70</td>
+        </tr><tr>
+          <td class="muted">S-06</td>
+          <td><span class="tick"></span>Taina Chaves<div class="title">Treasury Analyst · USDT · CLT</div></td>
+          <td>Ajuda de custo home office<div class="note">Home office · last paper Aug 2026</div></td>
+          <td class="num">74.90</td>
+          <td class="num usdt">14.65</td>
+        </tr><tr>
+          <td class="muted">S-07</td>
+          <td><span class="tick"></span>Abner Maioralli<div class="title">Head of Partner Enablement · USDT · PJ</div></td>
+          <td>Monthly PJ<div class="note">No September NF · last full month Jul 2026</div></td>
+          <td class="num">25,000.00</td>
+          <td class="num usdt">4,890.74</td>
+        </tr><tr>
+          <td class="muted">S-08</td>
+          <td><span class="tick"></span>Renato Paulino<div class="title">— · USDT · PJ</div></td>
+          <td>Monthly PJ<div class="note">Contract 26 Sep 2025 · CNPJ 36.131.256/0001-85</div></td>
+          <td class="num">22,979.83</td>
+          <td class="num usdt">4,495.54</td>
+        </tr><tr class="total">
+          <td></td><td colspan="2">Salaries on this remittance</td>
+          <td class="num">175,279.99</td>
+          <td class="num usdt">34,289.96</td>
+        </tr>
+    </tbody>
+  </table>
+  <div class="hold">Hold. Zoho Mail for sambapay.tech mailboxes: the account exists, there is zero invoice, do not invent a mailbox price. Clayton Lira 4,000.00 stays on SCD / Execcon. Rafaela Brito is not a payee here.</div>
+  <div class="control">
+    <div class="card in">
+      <h3>Register</h3>
+      <dl>
+        <dt>Id</dt><dd>SP-PAY-2026-09</dd>
+        <dt>Issued</dt><dd>22 September 2026</dd>
+        <dt>Competência</dt><dd>September 2026</dd>
+        <dt>Status</dt><dd>Open · further receipts may land</dd>
+      </dl>
+    </div>
+    <div class="card in">
+      <h3>FX</h3>
+      <dl>
+        <dt>Rate</dt><dd>5.1117 BRL per USD</dd>
+        <dt>Side</dt><dd>PTAX venda · BCB Olinda</dd>
+        <dt>When</dt><dd>21 Sep 2026 13:06:51 BRT</dd>
+        <dt>Rounding</dt><dd>Each line ÷ 5.1117, two decimals, half-up, then sum</dd>
+      </dl>
+    </div>
+    <div class="card in">
+      <h3>Archive</h3>
+      <dl>
+        <dt>Ledger SHA-256</dt><dd>0c9aa2b05c7a · full digest in ledger.json</dd>
+        <dt>Instruction</dt><dd>company-os/finance/pay-request.md</dd>
+        <dt>Labour</dt><dd>company-os/finance/payroll-run.md</dd>
+        <dt>This file</dt><dd>history/2026-09/</dd>
+      </dl>
+    </div>
+  </div>
+  <div class="foot">
+      <span>Board view · never in the Welcome Kit</span>
+      <span>Salaries · September 2026</span>
+    </div>
+</section>
+
+<section class="sheet">
+  <div class="running">
+      <div class="left">SambaPay · Payroll</div>
+      <div class="right">Expenses · SP-PAY-2026-09 · 0c9aa2b05c7a</div>
+    </div>
+    <div class="gold-rule"></div>
+  <h2>Expenses</h2>
+  <p class="lede">Grouped for the send. Each USDT figure is the sum of the underlying lines, each converted on its own. Receipt detail stays in the ledger. Netlify and Neon have not left the card; they stay here so Hansraj pays the vendor.</p>
+  <table>
+    <thead>
+      <tr>
+        <th style="width:52mm">Person</th>
+        <th>What</th>
+        <th class="num" style="width:28mm">BRL</th>
+        <th class="num" style="width:26mm">USDT</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="group"><td colspan="4">Transport</td></tr><tr>
+              <td>André Silva</td>
+              <td>Uber · 9 trips · 15–21 Sep</td>
+              <td class="num">476.43</td>
+              <td class="num usdt">93.20</td>
+            </tr><tr>
+              <td>Thiago Silvestre da Silva</td>
+              <td>Uber · 3 trips · 15–16 Sep</td>
+              <td class="num">242.87</td>
+              <td class="num usdt">47.51</td>
+            </tr><tr>
+              <td>Leandro Silva</td>
+              <td>Uber · 2 trips · 16 Sep</td>
+              <td class="num">137.96</td>
+              <td class="num usdt">26.99</td>
+            </tr><tr>
+              <td>Abner Maioralli</td>
+              <td>Uber · 6 trips · 15–17 Sep</td>
+              <td class="num">412.79</td>
+              <td class="num usdt">80.75</td>
+            </tr><tr class="group"><td colspan="4">Card</td></tr><tr>
+              <td>Abner Maioralli</td>
+              <td>Meals, parking and local spend · unstruck</td>
+              <td class="num">371.07</td>
+              <td class="num usdt">72.58</td>
+            </tr><tr class="group"><td colspan="4">Domains</td></tr><tr>
+              <td>André Silva</td>
+              <td>sambapay.tech and sambapay.co · 18 Sep</td>
+              <td class="num">152.24</td>
+              <td class="num usdt">29.78</td>
+            </tr><tr class="group"><td colspan="4">Lodging</td></tr><tr>
+              <td>André Silva</td>
+              <td>Airbnb · Hansraj · instalment 1 of 6</td>
+              <td class="num">174.70</td>
+              <td class="num usdt">34.18</td>
+            </tr><tr class="group"><td colspan="4">AI</td></tr><tr>
+              <td>André Silva</td>
+              <td>OpenCode · three September charges</td>
+              <td class="num">230.19</td>
+              <td class="num usdt">45.04</td>
+            </tr><tr class="group"><td colspan="4">Hosting</td></tr><tr>
+              <td>André Silva</td>
+              <td>Railway · two invoices, paid</td>
+              <td class="num">139.90</td>
+              <td class="num usdt">27.37</td>
+            </tr><tr>
+              <td>André Silva</td>
+              <td>Vercel · paid</td>
+              <td class="num">204.47</td>
+              <td class="num usdt">40.00</td>
+            </tr><tr>
+              <td>André Silva</td>
+              <td>Netlify · invoice unpaid</td>
+              <td class="num">291.37</td>
+              <td class="num usdt">57.00</td>
+            </tr><tr>
+              <td>André Silva</td>
+              <td>Neon · invoice unpaid</td>
+              <td class="num">532.79</td>
+              <td class="num usdt">104.23</td>
+            </tr><tr class="group"><td colspan="4">Health</td></tr><tr>
+              <td>Taina Chaves</td>
+              <td>SulAmérica Clássico · last paper Aug 2026</td>
+              <td class="num">1,055.19</td>
+              <td class="num usdt">206.43</td>
+            </tr><tr class="subtotal">
+          <td colspan="2">André Silva · expenses on this send</td>
+          <td class="num">2,202.09</td>
+          <td class="num usdt">430.80</td>
+        </tr><tr class="total">
+          <td colspan="2">Expenses on this remittance</td>
+          <td class="num">4,421.97</td>
+          <td class="num usdt">865.06</td>
+        </tr>
+    </tbody>
+  </table>
+  <div class="hold">André Silva expenses are R$ 2,202.09 / 430.80 USDT. Uber on his card is R$ 476.43. Hosting is R$ 1,168.53, of which Netlify R$ 291.37 and Neon R$ 532.79 are unpaid invoices. Grocery, pharmacy, restaurants, Rd Saúde parcels, and the August tool invoices are not in this figure.</div>
+  <div class="foot">
+      <span>Board view · never in the Welcome Kit</span>
+      <span>Expenses · September 2026</span>
+    </div>
+</section>
+
+<section class="sheet">
+  <div class="running">
+      <div class="left">SambaPay · Payroll</div>
+      <div class="right">Health · all-in · SP-PAY-2026-09 · 0c9aa2b05c7a</div>
+    </div>
+    <div class="gold-rule"></div>
+  <h2>Seguro de saúde</h2>
+  <p class="lede">Not everyone on sambapay.tech has SulAmérica. Locked from Keep Lives fatura unificada 08/2026 and the grouped boleto R$ 33,588.06 paid 8 Sep 2026 by Consultoria. That cash already left. Do not send the same premium again as USDT to the person, except Taina, whose line is so her month is not short.</p>
+  <div class="banner">
+    <div>
+      <div class="dim">Grouped boleto already paid · 8 Sep 2026</div>
+      <div class="big">R$ 33,588.06</div>
+    </div>
+    <div class="dim">Keep Lives · competência Aug · Consultoria</div>
+  </div>
+  <div class="health-grid">
+    <div class="health in">
+          <div class="who">André Silva</div>
+          <div class="meta">Yes. 8NWVA Especial 100. 4 lives</div>
+          <dl>
+            <dt>Premium (prêmio + IOF)</dt><dd>5,049.09</dd>
+            <dt>ND (PIX discount)</dt><dd>0.00</dd>
+            <dt>All-in company</dt><dd>54,549.09</dd>
+            <dt>This USDT send</dt><dd>49,500.00</dd>
+          </dl>
+          <p class="tiny">No ND. Company paid the premium on the grouped boleto. Do not add 5,049.09 to USDT. Salary on this send is the signed contract, 49,500.00</p>
+        </div><div class="health in">
+          <div class="who">Thiago Silvestre da Silva</div>
+          <div class="meta">Yes. 8QOFP Especial 100. Titular. CNPJ 43.376.279/0001-15</div>
+          <dl>
+            <dt>Premium (prêmio + IOF)</dt><dd>1,512.80</dd>
+            <dt>ND (PIX discount)</dt><dd>203.09</dd>
+            <dt>All-in company</dt><dd>26,309.71</dd>
+            <dt>This USDT send</dt><dd>25,000.00</dd>
+          </dl>
+          <p class="tiny">On the team. ND 203.09 is a discount from PIX. Company net 1,309.71. Do not add the premium to USDT. Not Thiago Alexandre de Carvalho</p>
+        </div><div class="health in">
+          <div class="who">Leandro Silva</div>
+          <div class="meta">Yes. 8TU63 Clássico. Titular</div>
+          <dl>
+            <dt>Premium (prêmio + IOF)</dt><dd>1,129.06</dd>
+            <dt>ND (PIX discount)</dt><dd>0.00</dd>
+            <dt>All-in company</dt><dd>26,129.06</dd>
+            <dt>This USDT send</dt><dd>25,000.00</dd>
+          </dl>
+          <p class="tiny">No ND. Do not add 1,129.06 to USDT. Salary on this send is the signed contract, 25,000.00</p>
+        </div><div class="health in">
+          <div class="who">Sheila Esmeralda</div>
+          <div class="meta">Yes. 8NWBW Especial 100. 3 lives</div>
+          <dl>
+            <dt>Premium (prêmio + IOF)</dt><dd>3,283.83</dd>
+            <dt>ND (PIX discount)</dt><dd>1,974.13</dd>
+            <dt>All-in company</dt><dd>24,225.26</dd>
+            <dt>This USDT send</dt><dd>24,225.26</dd>
+          </dl>
+          <p class="tiny">Salary is the signed contract, 24,225.26. Taxes are inside that figure. Do not pay the NFS&#8209;e sum 24,411.87. Do not add 3,283.83. ND 1,974.13 is a PIX discount only after Taina issues the September ND</p>
+        </div><div class="health in">
+          <div class="who">Taina Chaves</div>
+          <div class="meta">Yes. 8NWBW Clássico. Titular. Carteirinha 88888495862880014</div>
+          <dl>
+            <dt>Premium (prêmio + IOF)</dt><dd>1,055.19</dd>
+            <dt>ND (PIX discount)</dt><dd>0.00</dd>
+            <dt>All-in company</dt><dd>4,630.09</dd>
+            <dt>This USDT send</dt><dd>4,630.09</dd>
+          </dl>
+          <p class="tiny">Company pays. No holerite discount. Pay the three lines on this send so the month is not short</p>
+        </div><div class="health out">
+          <div class="who">Clayton Lira</div>
+          <div class="meta">Yes. 8NWBW Clássico. Titular. SCD</div>
+          <dl>
+            <dt>Premium (prêmio + IOF)</dt><dd>766.63</dd>
+            <dt>ND (PIX discount)</dt><dd>0.00</dd>
+            <dt>All-in company</dt><dd>4,841.53</dd>
+            <dt>This USDT send</dt><dd>—</dd>
+          </dl>
+          <p class="tiny">Employee of the SCD. Consultoria Execcon. Not this USDT file</p>
+        </div><div class="health out">
+          <div class="who">Rafaela Brito</div>
+          <div class="meta">Yes. 8NWBW Clássico. Titular</div>
+          <dl>
+            <dt>Premium (prêmio + IOF)</dt><dd>1,055.19</dd>
+            <dt>ND (PIX discount)</dt><dd>0.00</dd>
+            <dt>All-in company</dt><dd>Open</dd>
+            <dt>This USDT send</dt><dd>—</dd>
+          </dl>
+          <p class="tiny">Not a payee of this file. Maternity then férias on Execcon</p>
+        </div><div class="health in">
+          <div class="who">Abner Maioralli</div>
+          <div class="meta">No</div>
+          <dl>
+            <dt>Premium (prêmio + IOF)</dt><dd>—</dd>
+            <dt>ND (PIX discount)</dt><dd>—</dd>
+            <dt>All-in company</dt><dd>25,000.00</dd>
+            <dt>This USDT send</dt><dd>25,000.00</dd>
+          </dl>
+          <p class="tiny">Not on the August mirror. Salary is on this send. Do not add a premium</p>
+        </div><div class="health in">
+          <div class="who">Renato Paulino</div>
+          <div class="meta">No. The Renato on the mirror is Renato Gomes Almeida da Silva</div>
+          <dl>
+            <dt>Premium (prêmio + IOF)</dt><dd>—</dd>
+            <dt>ND (PIX discount)</dt><dd>—</dd>
+            <dt>All-in company</dt><dd>22,979.83</dd>
+            <dt>This USDT send</dt><dd>22,979.83</dd>
+          </dl>
+          <p class="tiny">Salary is the Sep 2025 contract, R$ 22,979.83. Gomes at R$ 10,500.00 ended 31 Aug 2026 and is not this file</p>
+        </div>
+  </div>
+  <div class="foot">
+      <span>Board view · never in the Welcome Kit</span>
+      <span>Health · September 2026</span>
+    </div>
+</section>
+
+<section class="sheet">
+  <div class="running">
+      <div class="left">SambaPay · Payroll</div>
+      <div class="right">Outside this remittance · SP-PAY-2026-09 · 0c9aa2b05c7a</div>
+    </div>
+    <div class="gold-rule"></div>
+  <h2>Outside this remittance, and the close</h2>
+  <p class="lede">These names belong to SambaPay. They are not payees of this USDT file. Recording them here is the history: so a later reader does not think they were forgotten.</p>
+  <div class="two">
+    <div class="card out">
+      <h3>Thiago Alexandre de Carvalho</h3>
+      <p>Not on the team. Contract terminated 31 Oct 2025, CNPJ 39.803.563/0001-53. Do not pay. Thiago Silvestre da Silva is on this send.</p>
+    </div>
+    <div class="card out">
+      <h3>Taina Fraga Chaves · papers</h3>
+      <p>CLT from 15 Jun 2026. Analista Financeiro. Gross R$ 3,500.00. Drive folder Taina Fraga Chaves holds CTPS, PIS, CNH, proof of address, voter card, schooling declaration, marriage certificate, ASO, and medical declarations of 5 Aug and 27 Aug 2026. Signed employment contract and the September holerite were not in that folder.</p>
+    </div>
+  </div>
+  <div class="two section-space">
+    <div class="card out">
+      <h3>Clayton Lira</h3>
+      <p>Merchant Operations Analyst. Employee of the SCD. Stays on Consultoria Execcon until he leaves the SCD. Gross R$ 4,000.00 + home office R$ 74.90 + SulAmérica Clássico R$ 766.63 stay on that rail. André Silva locked this on 22 Sep 2026.</p>
+    </div>
+    <div class="card out">
+      <h3>Rafaela Brito</h3>
+      <p>Finance Operations Analyst. Not a payee of this file. Maternity 1–22 Sep 2026 then férias 23 Sep–22 Oct 2026 (Execcon recibo 21 Sep; ClickSign closed 22 Sep). SulAmérica Clássico R$ 1,055.19 is on the grouped boleto, not on this USDT.</p>
+    </div>
+  </div>
+  <div class="hold section-space">Not company on this send: Abner struck card lines (Google, iFood, Claro, Apple, Sonda, sushi, pizza, Jurema, one Uber). André grocery, farmácia, restaurants. C6 Carbon closed 25 Aug (R$ 3,095.22). GoDaddy paycubed.co. Zoho Mail. August OpenCode / Anomaly. August Vercel / Railway / Netlify. Rd Saúde parcels.</div>
+  <p class="tiny">Cessão Consultoria (CNPJ 22.153.470/0001-28) → Payments (CNPJ 54.792.038/0001-73), effect 15 Sep 2026. André Silva and Sheila Esmeralda signed 22 Sep. Thiago Silvestre da Silva’s envelope signed the same day. Leandro Silva’s envelope is still open (deadline 14 Oct). Abner Maioralli and Renato Paulino: no envelope sent.</p>
+  <div class="banner section-space">
+    <div>
+      <div class="dim">Instruction total · Hansraj sends</div>
+      <div class="big">35,155.02 USDT</div>
+    </div>
+    <div class="dim">R$ 179,701.96 · PTAX 5.1117 · 0c9aa2b05c7a</div>
+  </div>
+  <div class="sigs">
+    <div class="sig">
+      <div class="name">André Silva</div>
+      <div class="role">SambaPay</div>
+      <div class="role">Date ________________</div>
+    </div>
+    <div class="sig">
+      <div class="name">Taina Chaves</div>
+      <div class="role">Treasury Analyst · SambaPay</div>
+      <div class="role">Date ________________</div>
+    </div>
+  </div>
+  <div class="foot">
+      <span>Board view · never in the Welcome Kit</span>
+      <span>Close · September 2026</span>
+    </div>
+</section>
+
+</body>
+</html>
